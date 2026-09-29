@@ -280,7 +280,7 @@ def interiors(w, rng):
         w.set(x, fy + 5, -21, "dark_oak_planks")
         w.set(x, fy + 5, -20, "red_wall_banner[facing=south]")
     # staircase to the upper storey (east side, rising westward)
-    for i in range(7):
+    for i in range(8):  # eight risers: the last step lands level with the upper floor
         x = 8 - i
         y = Y + i
         for z in (-7, -6):

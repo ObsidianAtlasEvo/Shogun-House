@@ -2,7 +2,7 @@
 torii, bridges, estate walls and the gable/bargeboard finishing of roofs."""
 import math
 
-from world import AIR, with_props, parse
+from world import AIR, with_props, parse, is_air as is_air_state
 from roofs import Roof, render_roofs, ridge_ornaments, TILE
 
 POST = "stripped_dark_oak_log[axis=y]"
@@ -312,36 +312,32 @@ def arched_bridge(w, axis, a0, a1, c, width, base_y, rise, deck="dark_oak", rail
     """Curved (drum) bridge spanning a0..a1 along `axis` centred on cross coordinate c.
     Deck follows a sine arch from base_y to base_y+rise using stairs/slabs."""
     L = a1 - a0
-    prof = {}
-    for i in range(L + 1):
-        t = i / max(L, 1)
-        h = base_y + rise * math.sin(math.pi * t)
-        prof[a0 + i] = h
+    # walkable arch: ends flush with the ground, every cell rises by at most half a block
+    raw = [int(math.floor((base_y + rise * math.sin(math.pi * i / max(L, 1))) * 2 + 0.5)) for i in range(L + 1)]
+    raw[0] = raw[-1] = 2 * base_y
+    for i in range(1, L + 1):
+        raw[i] = min(raw[i], raw[i - 1] + 1)
+    for i in range(L - 1, -1, -1):
+        raw[i] = min(raw[i], raw[i + 1] + 1)
+    prof = {a0 + i: raw[i] / 2.0 for i in range(L + 1)}
     half = width // 2
     for a in range(a0, a1 + 1):
-        h = prof[a]
-        h2 = int(math.floor(h * 2 + 0.5))
-        y = h2 // 2
-        prev = prof.get(a - 1, h)
-        nxt = prof.get(a + 1, h)
+        h2 = raw[a - a0]
         for k in range(-half, half + 1):
             x, z = (a, c + k) if axis == "x" else (c + k, a)
             if h2 % 2 == 1:
+                yy = h2 // 2
                 st = slab(deck, "bottom")
-                yy = y
             else:
-                yy = y - 1
-                if nxt > h + 0.25:
-                    f = "east" if axis == "x" else "south"
-                    st = stairs(deck, f)
-                elif prev > h + 0.25:
-                    f = "west" if axis == "x" else "north"
-                    st = stairs(deck, f)
-                else:
-                    st = slab(deck, "top")
+                yy = h2 // 2 - 1
+                st = slab(deck, "top")
             w.set(x, yy, z, st)
+            for y in range(yy + 1, yy + 4):
+                if not is_air_state(w.get(x, y, z)):
+                    w.set(x, y, z, AIR)
             # stringer beneath
-            w.set(x, yy - 1, z, slab(deck, "top") if not st.endswith("type=top]") else "dark_oak_planks")
+            w.set(x, yy - 1, z, slab(deck, "top") if h2 % 2 == 1 else "dark_oak_planks" if deck == "dark_oak"
+                  else f"{deck}s" if deck.endswith("brick") else "dark_oak_planks")
         # rails
         ry = (h2 + 1) // 2
         for k in (-half - 1, half + 1):
@@ -354,14 +350,14 @@ def arched_bridge(w, axis, a0, a1, c, width, base_y, rise, deck="dark_oak", rail
     for a in (a0, a1):
         for k in (-half - 1, half + 1):
             x, z = (a, c + k) if axis == "x" else (c + k, a)
-            yy = int(math.floor(prof[a] * 2 + 0.5)) // 2
+            yy = raw[a - a0] // 2
             w.fill(x, yy - 1, z, x, yy + 1, z, post or "dark_oak_planks")
             w.set(x, yy + 2, z, "lantern" if lanterns else "stone_button[face=floor,facing=north]")
     if support and water_y is not None:
         for a in (a0 + L // 4, a1 - L // 4):
             for k in (-half - 1, half + 1):
                 x, z = (a, c + k) if axis == "x" else (c + k, a)
-                yy = int(math.floor(prof[a] * 2 + 0.5)) // 2
+                yy = raw[a - a0] // 2
                 for y in range(water_y - 3, yy - 1):
                     w.set(x, y, z, "stripped_dark_oak_log[axis=y]")
     return prof

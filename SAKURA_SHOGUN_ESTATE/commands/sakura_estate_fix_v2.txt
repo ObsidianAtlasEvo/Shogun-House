@@ -1,0 +1,283 @@
+# SAKURA SHOGUN ESTATE - repair pass for an estate built with the first release
+# Only changed blocks are placed. {C} is replaced by the centre set in the .bat.
+#SETUP
+/gamemode spectator @s
+/execute positioned {C} run tp @s ~ ~62 ~24 180 58
+/execute positioned {C} run forceload add ~-74 ~-74 ~74 ~112
+#WAIT 6000
+/tick freeze
+#ENDSETUP
+#SECTION Clearing what the fixes replace
+/execute positioned {C} run fill ~-54 ~1 ~-42 ~-51 ~6 ~-40 air
+/execute positioned {C} run fill ~-53 ~1 ~-38 ~-51 ~11 ~-38 air
+/execute positioned {C} run fill ~-45 ~1 ~-33 ~-42 ~4 ~-32 air
+/execute positioned {C} run fill ~47 ~1 ~-25 ~47 ~4 ~-11 air
+/execute positioned {C} run fill ~49 ~1 ~-25 ~50 ~2 ~-23 air
+/execute positioned {C} run fill ~48 ~1 ~-24 ~54 ~2 ~-23 air
+/execute positioned {C} run fill ~48 ~1 ~-22 ~48 ~9 ~-18 air
+/execute positioned {C} run fill ~50 ~1 ~-22 ~51 ~2 ~-18 air
+/execute positioned {C} run fill ~53 ~1 ~-22 ~54 ~1 ~-11 air
+/execute positioned {C} run fill ~55 ~1 ~-22 ~57 ~2 ~-16 air
+/execute positioned {C} run fill ~58 ~1 ~-22 ~58 ~10 ~-22 air
+/execute positioned {C} run fill ~49 ~1 ~-21 ~57 ~2 ~-20 air
+/execute positioned {C} run fill ~58 ~1 ~-20 ~58 ~11 ~-20 air
+/execute positioned {C} run fill ~49 ~1 ~-18 ~58 ~9 ~-18 air
+/execute positioned {C} run fill ~49 ~1 ~-17 ~49 ~8 ~-16 air
+/execute positioned {C} run fill ~52 ~1 ~-17 ~57 ~8 ~-16 air
+/execute positioned {C} run fill ~48 ~1 ~-16 ~58 ~8 ~-16 air
+/execute positioned {C} run fill ~-1 ~1 ~87 ~20 ~6 ~87 air
+/execute positioned {C} run fill ~-1 ~1 ~93 ~1 ~46 ~106 air
+/execute positioned {C} run fill ~-54 ~2 ~-44 ~-54 ~9 ~-44 air
+/execute positioned {C} run fill ~-44 ~2 ~-34 ~-42 ~4 ~-32 air
+/execute positioned {C} run fill ~-2 ~2 ~87 ~70 ~6 ~88 air
+/execute positioned {C} run fill ~-1 ~2 ~89 ~1 ~46 ~89 air
+/execute positioned {C} run fill ~-1 ~2 ~91 ~70 ~4 ~94 air
+/execute positioned {C} run fill ~39 ~3 ~-14 ~41 ~4 ~-12 air
+/execute positioned {C} run fill ~48 ~3 ~43 ~49 ~4 ~43 air
+/execute positioned {C} run fill ~-2 ~3 ~91 ~70 ~4 ~95 air
+/execute positioned {C} run fill ~-7 ~4 ~-36 ~ ~15 ~-35 air
+/execute positioned {C} run fill ~-7 ~4 ~-30 ~-5 ~6 ~-24 air
+/execute positioned {C} run fill ~47 ~4 ~43 ~51 ~4 ~43 air
+/execute positioned {C} run fill ~-35 ~4 ~55 ~21 ~4 ~55 air
+/execute positioned {C} run fill ~-2 ~4 ~89 ~70 ~4 ~96 air
+/execute positioned {C} run fill ~-8 ~5 ~-36 ~8 ~6 ~-35 air
+/execute positioned {C} run fill ~-7 ~5 ~-34 ~-5 ~6 ~-24 air
+/execute positioned {C} run fill ~-43 ~5 ~-32 ~-42 ~5 ~-31 air
+/execute positioned {C} run fill ~-8 ~5 ~-30 ~10 ~5 ~-29 air
+/execute positioned {C} run fill ~-37 ~5 ~41 ~-33 ~5 ~52 air
+/execute positioned {C} run fill ~-8 ~6 ~-34 ~4 ~6 ~-24 air
+/execute positioned {C} run fill ~-42 ~6 ~-32 ~-42 ~8 ~-32 air
+/execute positioned {C} run fill ~49 ~7 ~-49 ~70 ~8 ~-49 air
+/execute positioned {C} run fill ~-54 ~7 ~-42 ~-54 ~7 ~-40 air
+/execute positioned {C} run fill ~-52 ~7 ~-37 ~-52 ~10 ~-36 air
+/execute positioned {C} run fill ~-51 ~7 ~-36 ~-50 ~11 ~-36 air
+#SECTION Steps, stair flights, floors and structure
+/execute positioned {C} run fill ~63 ~-1 ~19 ~63 ~ ~23 cobblestone
+/execute positioned {C} run fill ~47 ~ ~-25 ~58 ~ ~-16 cobblestone
+/execute positioned {C} run fill ~-50 ~8 ~-58 ~-49 ~8 ~-58 deepslate_tiles
+/execute positioned {C} run fill ~39 ~-1 ~-40 ~48 ~-1 ~-14 dirt
+/execute positioned {C} run fill ~-54 ~ ~-43 ~-54 ~ ~-42 moss_block
+/execute positioned {C} run fill ~-53 ~ ~-41 ~-53 ~ ~-38 moss_block
+/execute positioned {C} run fill ~-46 ~ ~-33 ~-45 ~ ~-33 moss_block
+/execute positioned {C} run fill ~-54 ~1 ~-44 ~-54 ~1 ~-43 moss_block
+/execute positioned {C} run fill ~-24 ~-9 ~-21 ~-23 ~-9 ~-20 stone_bricks
+/execute positioned {C} run fill ~-2 ~-1 ~33 ~2 ~ ~33 stone_bricks
+/execute positioned {C} run fill ~-2 ~-1 ~41 ~2 ~ ~41 stone_bricks
+/execute positioned {C} run fill ~-3 ~-1 ~63 ~3 ~ ~63 stone_bricks
+/execute positioned {C} run fill ~48 ~ ~-36 ~57 ~ ~-36 stone_bricks
+/execute positioned {C} run fill ~-43 ~ ~-34 ~-42 ~2 ~-32 stone_bricks
+/execute positioned {C} run fill ~-44 ~ ~-32 ~-42 ~1 ~-32 stone_bricks
+/execute positioned {C} run fill ~-32 ~ ~-15 ~-30 ~1 ~-13 stone_bricks
+/execute positioned {C} run fill ~39 ~ ~-14 ~41 ~1 ~-12 stone_bricks
+/execute positioned {C} run fill ~52 ~ ~3 ~52 ~1 ~3 stone_bricks
+/execute positioned {C} run fill ~28 ~ ~12 ~30 ~1 ~14 stone_bricks
+/execute positioned {C} run fill ~-5 ~ ~13 ~5 ~1 ~13 stone_bricks
+/execute positioned {C} run fill ~-24 ~ ~31 ~-24 ~1 ~32 stone_bricks
+/execute positioned {C} run fill ~38 ~ ~31 ~41 ~ ~31 stone_bricks
+/execute positioned {C} run fill ~-2 ~ ~35 ~2 ~1 ~35 stone_bricks
+/execute positioned {C} run fill ~-2 ~ ~39 ~2 ~1 ~39 stone_bricks
+/execute positioned {C} run fill ~-37 ~ ~41 ~-35 ~1 ~42 stone_bricks
+/execute positioned {C} run fill ~47 ~ ~43 ~49 ~1 ~43 stone_bricks
+/execute positioned {C} run fill ~-55 ~ ~47 ~-53 ~1 ~56 stone_bricks
+/execute positioned {C} run fill ~-35 ~ ~55 ~-35 ~ ~62 stone_bricks
+/execute positioned {C} run fill ~-28 ~ ~55 ~-28 ~ ~62 stone_bricks
+/execute positioned {C} run fill ~-21 ~ ~55 ~-21 ~ ~62 stone_bricks
+/execute positioned {C} run fill ~-14 ~ ~55 ~-14 ~ ~62 stone_bricks
+/execute positioned {C} run fill ~-4 ~1 ~12 ~5 ~2 ~12 stone_bricks
+/execute positioned {C} run fill ~-32 ~2 ~-15 ~-30 ~2 ~-14 stone_bricks
+/execute positioned {C} run fill ~39 ~2 ~-12 ~41 ~3 ~-12 stone_bricks
+/execute positioned {C} run fill ~-5 ~2 ~11 ~5 ~3 ~11 stone_bricks
+/execute positioned {C} run fill ~-5 ~2 ~12 ~5 ~2 ~12 stone_bricks
+/execute positioned {C} run fill ~28 ~2 ~12 ~30 ~2 ~13 stone_bricks
+/execute positioned {C} run fill ~-14 ~ ~29 ~-12 ~ ~29 white_concrete_powder
+/execute positioned {C} run fill ~56 ~2 ~-40 ~56 ~3 ~-40 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~2 ~-38 ~56 ~3 ~-38 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~2 ~-36 ~56 ~3 ~-36 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~2 ~-34 ~56 ~3 ~-34 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~2 ~-32 ~56 ~3 ~-32 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~8 ~-40 ~56 ~9 ~-40 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~8 ~-38 ~56 ~9 ~-38 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~8 ~-36 ~56 ~9 ~-36 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~8 ~-34 ~56 ~9 ~-34 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~8 ~-32 ~56 ~9 ~-32 barrel[facing=west]
+/execute positioned {C} run fill ~-1 ~-2 ~85 ~1 ~-1 ~85 dark_oak_planks
+/execute positioned {C} run fill ~-1 ~-2 ~95 ~1 ~-1 ~95 dark_oak_planks
+/execute positioned {C} run fill ~-1 ~-1 ~87 ~1 ~-1 ~87 dark_oak_planks
+/execute positioned {C} run fill ~-1 ~-1 ~93 ~1 ~-1 ~93 dark_oak_planks
+/execute positioned {C} run fill ~-2 ~ ~87 ~-2 ~1 ~87 dark_oak_planks
+/execute positioned {C} run fill ~2 ~ ~87 ~2 ~1 ~87 dark_oak_planks
+/execute positioned {C} run fill ~-1 ~ ~89 ~1 ~ ~89 dark_oak_planks
+/execute positioned {C} run fill ~-1 ~ ~91 ~1 ~ ~91 dark_oak_planks
+/execute positioned {C} run fill ~-7 ~1 ~-38 ~-5 ~2 ~-38 dark_oak_planks
+/execute positioned {C} run fill ~-7 ~1 ~-28 ~-5 ~2 ~-28 dark_oak_planks
+/execute positioned {C} run fill ~-2 ~1 ~91 ~-2 ~2 ~92 dark_oak_planks
+/execute positioned {C} run fill ~2 ~1 ~91 ~2 ~2 ~92 dark_oak_planks
+/execute positioned {C} run fill ~-7 ~2 ~-36 ~-5 ~2 ~-36 dark_oak_planks
+/execute positioned {C} run fill ~-7 ~2 ~-30 ~-5 ~2 ~-30 dark_oak_planks
+/execute positioned {C} run fill ~-8 ~3 ~-36 ~-8 ~4 ~-36 dark_oak_planks
+/execute positioned {C} run fill ~-4 ~3 ~-36 ~-4 ~4 ~-36 dark_oak_planks
+/execute positioned {C} run fill ~-7 ~3 ~-34 ~-5 ~4 ~-34 dark_oak_planks
+/execute positioned {C} run fill ~-7 ~3 ~-32 ~-5 ~4 ~-31 dark_oak_planks
+/execute positioned {C} run fill ~-8 ~4 ~-35 ~-4 ~4 ~-34 dark_oak_planks
+/execute positioned {C} run fill ~-8 ~4 ~-32 ~-4 ~4 ~-31 dark_oak_planks
+/execute positioned {C} run setblock ~-50 ~7 ~-58 dark_oak_planks
+/execute positioned {C} run fill ~44 ~13 ~-58 ~44 ~13 ~-53 dark_oak_planks
+/execute positioned {C} run fill ~56 ~16 ~-54 ~56 ~16 ~-53 gold_block
+/execute positioned {C} run fill ~-13 ~ ~28 ~-12 ~ ~28 light_gray_concrete_powder
+/execute positioned {C} run fill ~-13 ~ ~30 ~-12 ~ ~30 light_gray_concrete_powder
+/execute positioned {C} run fill ~-54 ~ ~-42 ~-53 ~ ~-42 polished_andesite
+/execute positioned {C} run setblock ~-53 ~ ~-40 polished_andesite
+/execute positioned {C} run fill ~-53 ~ ~-38 ~-52 ~ ~-38 polished_andesite
+/execute positioned {C} run setblock ~-52 ~ ~-37 polished_andesite
+/execute positioned {C} run setblock ~-45 ~ ~-33 polished_andesite
+/execute positioned {C} run fill ~-55 ~1 ~-46 ~-54 ~1 ~-46 polished_andesite
+/execute positioned {C} run setblock ~-54 ~1 ~-45 polished_andesite
+/execute positioned {C} run fill ~-2 ~ ~93 ~-2 ~2 ~93 red_concrete
+/execute positioned {C} run fill ~2 ~ ~93 ~2 ~2 ~93 red_concrete
+/execute positioned {C} run fill ~-2 ~1 ~89 ~-2 ~3 ~89 red_concrete
+/execute positioned {C} run fill ~2 ~1 ~89 ~2 ~3 ~89 red_concrete
+/execute positioned {C} run fill ~-8 ~3 ~-30 ~-8 ~4 ~-30 red_concrete
+/execute positioned {C} run fill ~-4 ~3 ~-30 ~-4 ~4 ~-30 red_concrete
+/execute positioned {C} run fill ~-8 ~4 ~-34 ~-4 ~4 ~-34 red_concrete
+/execute positioned {C} run fill ~37 ~11 ~-47 ~41 ~11 ~-47 red_concrete
+/execute positioned {C} run fill ~-49 ~1 ~-29 ~-49 ~2 ~-27 spruce_planks
+/execute positioned {C} run fill ~45 ~1 ~-6 ~45 ~2 ~-4 spruce_planks
+/execute positioned {C} run setblock ~56 ~7 ~-32 spruce_planks
+/execute positioned {C} run fill ~54 ~13 ~-43 ~57 ~13 ~-43 stripped_dark_oak_log[axis=x]
+/execute positioned {C} run setblock ~ ~8 ~10 stripped_dark_oak_wood[axis=x]
+/execute positioned {C} run fill ~42 ~13 ~-58 ~43 ~13 ~-57 white_concrete
+/execute positioned {C} run setblock ~42 ~15 ~-53 white_concrete
+/execute positioned {C} run setblock ~-2 ~3 ~90 dark_oak_fence[north=false,south=false,east=false,west=false]
+/execute positioned {C} run setblock ~2 ~3 ~90 dark_oak_fence[north=false,south=false,east=false,west=false]
+/execute positioned {C} run setblock ~-8 ~6 ~-33 dark_oak_fence[north=false,south=false,east=false,west=false]
+/execute positioned {C} run setblock ~-4 ~6 ~-33 dark_oak_fence[north=false,south=false,east=false,west=false]
+/execute positioned {C} run setblock ~-2 ~2 ~88 dark_oak_fence[north=false,south=true,east=false,west=false]
+/execute positioned {C} run setblock ~2 ~2 ~88 dark_oak_fence[north=false,south=true,east=false,west=false]
+/execute positioned {C} run setblock ~-8 ~5 ~-35 dark_oak_fence[north=false,south=true,east=false,west=false]
+/execute positioned {C} run setblock ~-4 ~5 ~-35 dark_oak_fence[north=false,south=true,east=false,west=false]
+/execute positioned {C} run fill ~-2 ~2 ~92 ~-2 ~2 ~93 dark_oak_fence[north=true,south=false,east=false,west=false]
+/execute positioned {C} run fill ~2 ~2 ~92 ~2 ~2 ~93 dark_oak_fence[north=true,south=false,east=false,west=false]
+/execute positioned {C} run setblock ~-8 ~5 ~-31 dark_oak_fence[north=true,south=false,east=false,west=false]
+/execute positioned {C} run setblock ~-4 ~5 ~-31 dark_oak_fence[north=true,south=false,east=false,west=false]
+/execute positioned {C} run setblock ~-2 ~1 ~87 dark_oak_fence[north=true,south=true,east=false,west=false]
+/execute positioned {C} run setblock ~2 ~1 ~87 dark_oak_fence[north=true,south=true,east=false,west=false]
+/execute positioned {C} run setblock ~-2 ~2 ~91 dark_oak_fence[north=true,south=true,east=false,west=false]
+/execute positioned {C} run setblock ~2 ~2 ~91 dark_oak_fence[north=true,south=true,east=false,west=false]
+/execute positioned {C} run setblock ~-8 ~4 ~-36 dark_oak_fence[north=true,south=true,east=false,west=false]
+/execute positioned {C} run setblock ~-4 ~4 ~-36 dark_oak_fence[north=true,south=true,east=false,west=false]
+/execute positioned {C} run setblock ~-8 ~5 ~-32 dark_oak_fence[north=true,south=true,east=false,west=false]
+/execute positioned {C} run setblock ~-4 ~5 ~-32 dark_oak_fence[north=true,south=true,east=false,west=false]
+/execute positioned {C} run fill ~-1 ~ ~86 ~1 ~ ~86 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~-1 ~ ~94 ~1 ~ ~94 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~-1 ~1 ~88 ~1 ~1 ~88 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~-1 ~1 ~92 ~1 ~1 ~92 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~-7 ~3 ~-37 ~-5 ~3 ~-37 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~-7 ~3 ~-29 ~-5 ~3 ~-29 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~-7 ~4 ~-35 ~-5 ~4 ~-31 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~-7 ~5 ~-33 ~-5 ~5 ~-33 dark_oak_slab[type=bottom]
+/execute positioned {C} run setblock ~57 ~13 ~-59 dark_oak_slab[type=bottom]
+/execute positioned {C} run setblock ~57 ~14 ~-58 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~-1 ~-1 ~85 ~1 ~-1 ~86 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-1 ~-1 ~95 ~1 ~-1 ~95 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-7 ~2 ~-38 ~-5 ~2 ~-37 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-7 ~2 ~-28 ~-5 ~2 ~-28 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-7 ~3 ~-35 ~-5 ~3 ~-35 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-7 ~3 ~-31 ~-5 ~3 ~-30 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-61 ~4 ~-44 ~-61 ~4 ~-6 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-7 ~4 ~-34 ~-5 ~4 ~-32 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~47 ~6 ~43 ~51 ~6 ~43 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~43 ~13 ~-58 ~43 ~13 ~-57 dark_oak_slab[type=top]
+/execute positioned {C} run setblock ~57 ~16 ~-55 dark_oak_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run fill ~1 ~11 ~-7 ~1 ~11 ~-6 dark_oak_stairs[facing=west,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~56 ~12 ~-46 deepslate_tile_slab
+/execute positioned {C} run fill ~44 ~13 ~-59 ~56 ~13 ~-59 deepslate_tile_slab
+/execute positioned {C} run fill ~54 ~13 ~-49 ~56 ~13 ~-49 deepslate_tile_slab
+/execute positioned {C} run setblock ~-44 ~10 ~-38 deepslate_tile_slab[type=double]
+/execute positioned {C} run setblock ~-50 ~8 ~-59 deepslate_tile_stairs[facing=east,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~-49 ~8 ~-58 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~56 ~12 ~-48 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~56 ~16 ~-53 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~-51 ~8 ~-58 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~56 ~12 ~-60 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~56 ~16 ~-55 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-61 ~5 ~-44 ~-61 ~5 ~16 deepslate_tile_stairs[facing=west,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~-50 ~8 ~-57 deepslate_tile_stairs[facing=west,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~-54 ~1 ~-43 mossy_stone_brick_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-5 ~1 ~13 ~5 ~1 ~13 polished_andesite_slab[type=bottom]
+/execute positioned {C} run fill ~-44 ~1 ~-34 ~-44 ~1 ~-32 polished_andesite_stairs[facing=east,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-43 ~2 ~-34 ~-43 ~2 ~-32 polished_andesite_stairs[facing=east,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-42 ~3 ~-34 ~-42 ~3 ~-32 polished_andesite_stairs[facing=east,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-32 ~1 ~-13 ~-30 ~1 ~-13 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-4 ~1 ~13 ~4 ~1 ~13 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~28 ~1 ~14 ~30 ~1 ~14 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-32 ~2 ~-14 ~-30 ~2 ~-14 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-4 ~2 ~12 ~4 ~2 ~12 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~28 ~2 ~13 ~30 ~2 ~13 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-32 ~3 ~-15 ~-30 ~3 ~-15 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-4 ~3 ~11 ~4 ~3 ~11 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~28 ~3 ~12 ~30 ~3 ~12 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~39 ~1 ~-14 ~41 ~1 ~-14 polished_andesite_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run fill ~39 ~2 ~-13 ~41 ~2 ~-13 polished_andesite_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run fill ~39 ~3 ~-12 ~41 ~3 ~-12 polished_andesite_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-9 ~3 ~-24 ~-7 ~3 ~-24 smooth_stone_slab[type=bottom]
+/execute positioned {C} run fill ~7 ~3 ~-24 ~9 ~3 ~-24 smooth_stone_slab[type=bottom]
+/execute positioned {C} run fill ~-18 ~3 ~-11 ~-18 ~3 ~-9 smooth_stone_slab[type=bottom]
+/execute positioned {C} run fill ~-9 ~3 ~3 ~-8 ~3 ~3 smooth_stone_slab[type=bottom]
+/execute positioned {C} run fill ~8 ~3 ~3 ~9 ~3 ~3 smooth_stone_slab[type=bottom]
+/execute positioned {C} run fill ~46 ~7 ~43 ~51 ~7 ~43 spruce_slab
+/execute positioned {C} run setblock ~38 ~1 ~31 spruce_stairs[facing=east,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-49 ~2 ~-29 ~-49 ~2 ~-27 spruce_stairs[facing=east,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-44 ~3 ~-29 ~-44 ~3 ~-27 spruce_stairs[facing=east,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~55 ~7 ~-32 spruce_stairs[facing=east,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-56 ~1 ~-23 ~-54 ~1 ~-23 spruce_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~47 ~1 ~43 ~49 ~1 ~43 spruce_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~45 ~2 ~-6 ~45 ~2 ~-4 spruce_stairs[facing=west,half=bottom,shape=straight]
+/execute positioned {C} run fill ~42 ~3 ~-6 ~42 ~3 ~-4 spruce_stairs[facing=west,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-2 ~ ~33 ~2 ~ ~34 stone_brick_slab[type=top]
+/execute positioned {C} run fill ~-2 ~ ~41 ~2 ~ ~41 stone_brick_slab[type=top]
+/execute positioned {C} run fill ~-2 ~1 ~35 ~2 ~1 ~39 stone_brick_slab[type=top]
+/execute positioned {C} run setblock ~48 ~1 ~-36 stone_brick_stairs[facing=east,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-39 ~-17 ~-11 ~-38 ~-17 ~-11 stone_brick_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-24 ~-9 ~-20 ~-23 ~-9 ~-20 stone_brick_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-24 ~-8 ~-21 ~-23 ~-8 ~-21 stone_brick_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-3 ~ ~63 ~3 ~ ~63 stone_brick_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~52 ~1 ~3 stone_brick_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-37 ~1 ~42 ~-35 ~1 ~42 stone_brick_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-55 ~2 ~-49 ~-54 ~2 ~-49 stone_brick_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-37 ~2 ~41 ~-35 ~2 ~41 stone_brick_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~47 ~6 ~-49 ~51 ~6 ~-49 stone_brick_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-55 ~1 ~47 ~-53 ~1 ~47 stone_brick_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~-35 ~1 ~55 stone_brick_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~-28 ~1 ~55 stone_brick_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~-21 ~1 ~55 stone_brick_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~-14 ~1 ~55 stone_brick_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-55 ~2 ~48 ~-53 ~2 ~48 stone_brick_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run fill ~63 ~ ~19 ~63 ~ ~23 stone_brick_stairs[facing=west,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-24 ~1 ~31 ~-24 ~1 ~32 stone_brick_stairs[facing=west,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-25 ~2 ~31 ~-25 ~2 ~32 stone_brick_stairs[facing=west,half=bottom,shape=straight]
+#SECTION Water
+/execute positioned {C} run fill ~27 ~-1 ~30 ~29 ~-1 ~53 water
+/execute positioned {C} run fill ~-47 ~ ~-8 ~-47 ~ ~-7 water
+#SECTION Re-seating plants, lanterns and details
+/execute positioned {C} run fill ~-54 ~7 ~-38 ~-54 ~9 ~-38 bamboo[age=1,leaves=large,stage=1]
+/execute positioned {C} run fill ~-52 ~1 ~-39 ~-52 ~8 ~-39 bamboo[age=1,leaves=none,stage=1]
+/execute positioned {C} run fill ~-54 ~1 ~-38 ~-54 ~6 ~-38 bamboo[age=1,leaves=none,stage=1]
+/execute positioned {C} run setblock ~-2 ~2 ~93 lantern
+/execute positioned {C} run setblock ~2 ~2 ~93 lantern
+/execute positioned {C} run setblock ~-2 ~3 ~89 lantern
+/execute positioned {C} run setblock ~2 ~3 ~89 lantern
+/execute positioned {C} run setblock ~-55 ~2 ~-42 pink_petals[flower_amount=2,facing=east]
+/execute positioned {C} run setblock ~-15 ~1 ~55 pink_petals[flower_amount=2,facing=south]
+/execute positioned {C} run setblock ~-3 ~ ~87 pink_petals[flower_amount=2,facing=west]
+#SECTION Invisible light
+/execute positioned {C} run setblock ~-6 ~5 ~-36 light[level=7]
+/execute positioned {C} run setblock ~-29 ~9 ~51 light[level=7]
+#SECTION Finishing
+/tick unfreeze
+#WAIT 3000
+/execute positioned {C} positioned ~-74 ~-30 ~-74 run kill @e[type=minecraft:item,dx=148,dy=80,dz=186]
+/execute positioned {C} run forceload remove ~-74 ~-74 ~74 ~112
+/gamemode {MODE} @s
+/execute positioned {C} run tp @s ~ ~1 ~17 180 8
+/title @s subtitle {"text":"Every step, stair and threshold now walks true.","color":"#f5c6d6","italic":true}
+/title @s title {"text":"Estate repaired","color":"#ffd7e4"}

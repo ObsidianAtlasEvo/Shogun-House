@@ -20,6 +20,18 @@ def _bez(p0, p1, p2, t):
     return tuple((1 - t) ** 2 * a + 2 * (1 - t) * t * b + t * t * c for a, b, c in zip(p0, p1, p2))
 
 
+LIMB_BLOCKED = []
+_GROUND = {"grass_block", "dirt", "coarse_dirt", "podzol", "moss_block", "rooted_dirt", "stone", "gravel", "mud",
+           "clay", "sand"}
+
+
+def _yields_to_wood(state):
+    """Branches may grow through air, blossom, plants and soil - never through buildings or paving."""
+    n = parse(state)[0]
+    return (is_air(state) or n.endswith("_leaves") or n.endswith("_wood") or n.endswith("_log") and "stripped" not in n
+            or n in _GROUND or n in ("short_grass", "fern", "pink_petals", "tall_grass", "firefly_bush"))
+
+
 def limb(w, p0, p1, p2, r0, r1, wood="cherry_wood", steps=None, protect_leaves=False):
     """Quadratic-bezier limb with radius tapering r0 -> r1."""
     L = math.dist(p0, p1) + math.dist(p1, p2)
@@ -36,6 +48,10 @@ def limb(w, p0, p1, p2, r0, r1, wood="cherry_wood", steps=None, protect_leaves=F
                     if dx * dx + dy * dy + dz * dz <= r * r + 0.35:
                         x, y, z = int(math.floor(c[0] + dx + 0.5)), int(math.floor(c[1] + dy + 0.5)), \
                             int(math.floor(c[2] + dz + 0.5))
+                        cur = w.get(x, y, z)
+                        if not _yields_to_wood(cur):
+                            LIMB_BLOCKED.append((x, y, z, cur))
+                            continue
                         w.set(x, y, z, f"{wood}[axis=y]")
                         placed.append((x, y, z))
     return placed

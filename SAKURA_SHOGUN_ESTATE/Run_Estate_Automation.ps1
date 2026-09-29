@@ -4,7 +4,10 @@ param(
     [ValidateSet("SAFE", "NORMAL", "FAST")][string]$Speed = "NORMAL",
     [string]$EndMode = "survival",
     [ValidateSet("YES", "NO")][string]$Sunset = "YES",
-    [string]$ChatKey = "t"
+    [string]$ChatKey = "t",
+    [string]$ConfirmWord = "SAKURA",
+    [string]$Title = "SAKURA SHOGUN ESTATE  -  complete build",
+    [ValidateSet("BUILD", "REPAIR")][string]$Mode = "BUILD"
 )
 # ============================================================================
 #  Sakura Shogun Estate - chat automation engine
@@ -31,7 +34,7 @@ $profiles = @{
     "FAST"   = @{ Open = 50;  Paste = 35; Base = 70;  PerVol = 110; Cap = 700;  Every = 80; Rest = 600 }
 }
 $P = $profiles[$Speed]
-$progressFile = Join-Path $PSScriptRoot "sakura_progress.txt"
+$progressFile = Join-Path $PSScriptRoot ("progress_" + [IO.Path]::GetFileNameWithoutExtension($CommandFile) + ".txt")
 
 function Write-Line([string]$text, [string]$color = "Gray") { Write-Host $text -ForegroundColor $color }
 
@@ -103,7 +106,7 @@ for ($i = $startIndex; $i -lt $steps.Count; $i++) {
 $estMs += [int]($total / $P.Every) * $P.Rest
 
 Write-Line ""
-Write-Line "  SAKURA SHOGUN ESTATE  -  complete build" Magenta
+Write-Line ("  " + $Title) Magenta
 Write-Line "  ----------------------------------------" DarkMagenta
 Write-Line ("  Centre           : {0}" -f $Center) Yellow
 Write-Line ("  Commands         : {0}" -f $total)
@@ -112,8 +115,13 @@ Write-Line ("  Estimated time   : about {0} minutes" -f [math]::Ceiling($estMs /
 Write-Line ("  Finish gamemode  : {0}   Sunset on finish: {1}" -f $EndMode, $Sunset)
 if ($startIndex -gt 0) { Write-Line ("  Resuming at step : {0}" -f $startIndex) Yellow }
 Write-Line ""
-Write-Line "  This CLEARS and REBUILDS a 141 x 181 area around the centre (the old estate)." Red
-Write-Line "  Back up the world first if you can. You need operator permission (level 3+)." Red
+if ($Mode -eq "REPAIR") {
+    Write-Line "  REPAIR PASS: only the blocks that need fixing are changed; nothing else is cleared." Green
+    Write-Line "  Run this on an estate built with the first release. Operator permission (level 3+) needed." Yellow
+} else {
+    Write-Line "  This CLEARS and REBUILDS a 141 x 181 area around the centre (the old estate)." Red
+    Write-Line "  Back up the world first if you can. You need operator permission (level 3+)." Red
+}
 Write-Line ""
 Write-Line "  Before you continue:" White
 Write-Line "   1. Join the world/server and stand anywhere (you will be moved automatically)."
@@ -122,8 +130,8 @@ Write-Line "   3. Chat must open with the '$ChatKey' key."
 Write-Line "   4. Once it starts, do not type or click. If you need the PC, just click away:"
 Write-Line "      the build PAUSES by itself and continues when you click back into Minecraft."
 Write-Line ""
-$confirm = Read-Host "Type SAKURA to begin"
-if ($confirm -ne "SAKURA") { Write-Line "Cancelled." Yellow; exit 0 }
+$confirm = Read-Host ("Type " + $ConfirmWord + " to begin")
+if ($confirm -ne $ConfirmWord) { Write-Line "Cancelled." Yellow; exit 0 }
 
 # ------------------------------------------------------------------ find Minecraft
 function Find-Minecraft {
@@ -203,13 +211,13 @@ finally {
         Remove-Item -LiteralPath $progressFile -ErrorAction SilentlyContinue
         $el = (Get-Date) - $t0
         Write-Line ""
-        Write-Line ("Finished in {0:hh\:mm\:ss}. Welcome to the Sakura Shogun Estate." -f $el) Green
+        Write-Line ("Finished in {0:hh\:mm\:ss}." -f $el) Green
         Write-Line "Scroll up in Minecraft chat if you want to check for any red error lines." Gray
     }
     else {
         Write-Line ""
         Write-Line "The build was stopped before it finished." Red
-        Write-Line "Progress is saved - run BUILD_SAKURA_ESTATE.bat again and choose Y to resume." Yellow
+        Write-Line "Progress is saved - run the same .bat again and choose Y to resume." Yellow
         Write-Line "If you are NOT resuming right away, type these in Minecraft so the world runs normally:" Yellow
         Write-Line "   /tick unfreeze" White
         Write-Line ("   /execute positioned {0} run forceload remove ~-74 ~-74 ~74 ~112" -f $Center) White

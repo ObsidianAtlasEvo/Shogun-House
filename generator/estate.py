@@ -15,6 +15,7 @@ import site_manor as M
 import site_zones as Z
 import site_planting as P
 import site_vault as V
+import site_access as A
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 PREV = os.environ.get("PREVIEW_DIR", os.path.join(ROOT, "previews"))
@@ -121,18 +122,29 @@ def build():
     P.water_life(w, rng, t.water)
     P.uplights(w)
     M.veranda_lanterns(w)
+    A.access(w)
     w.entities = entities(w)
     return w, t
 
 
-def compile_all(w, write=True):
+def compile_all(w, write=True, base=None):
     """Spawn-proof, compile and write the single command file."""
     from lighting import spawn_proof, region_mask, compute_light
     from emit import compile_model, chunked, PFX
     region = region_mask(w, [T.EST, T.APP], ymin=-22, ymax=44)
+    # keep the invisible lights of the first release where they still fit, so a fix run
+    # only touches what actually changed
+    import json
+    kept = 0
+    for (x, y, z, lv) in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data",
+                                                     "lights_v1.json"))):
+        if w.get(x, y, z) == AIR:
+            w.set(x, y, z, f"light[level={lv}]")
+            kept += 1
     placed, remaining, L = spawn_proof(w, region, level=7)
+    print("kept lights:", kept)
     print("invisible light blocks:", placed, "dark spawnable cells left:", remaining)
-    base = baseline(w)
+    base = baseline(w) if base is None else base
     cmds, pair_cmds = compile_model(w, base, work_region(w))
     return cmds, pair_cmds, L
 
@@ -205,6 +217,77 @@ def write_commands(w, path):
     return n, L
 
 
+def old_model_grid(w, pkl):
+    """The as-built world of the first release, mapped into this world's palette."""
+    import json
+    meta = json.load(open(pkl + ".json"))
+    g = np.load(pkl + ".npz")["g"].astype(np.int32)
+    remap = np.array([w.pid(s) for s in meta["palette"]], dtype=np.int32)
+    return remap[g], meta.get("entities", [])
+
+
+def write_fix(w, old_pkl, path):
+    """Repair file: only the cells that differ between the as-built estate and the fixed model,
+    plus any attachment (flower, lantern, petal...) touching a changed cell so nothing pops off."""
+    from emit import compile_model, klass
+    old, old_ents = old_model_grid(w, old_pkl)
+    # lights first (same as the full build) so both files describe the same final estate
+    compile_all(w, base=old)  # places the light blocks into w
+    G = w.g
+    diff = G != old
+    attach = np.array([klass(s) in (4, 5) for s in w.palette])
+    near = np.zeros_like(diff)
+    for ax in range(3):
+        for d in (1, -1):
+            near |= np.roll(diff, d, axis=ax)
+    touch = near & attach[G] & ~diff
+    base = old.copy()
+    base[touch] = -1          # force re-placement of those attachments after their neighbours change
+    cmds, pair_cmds = compile_model(w, base, work_region(w))
+    changed_pairs = []
+    for parts in w.pairs:
+        if any(diff[x - X0, y - Y0, z - Z0] for (x, y, z, s) in parts):
+            changed_pairs += [c for c in pair_cmds if any(f" ~{x} ~{y} ~{z} " in c.replace("~ ", "~0 ") for (x, y, z, s) in parts)]
+    lines = []
+    A = lines.append
+    A("# SAKURA SHOGUN ESTATE - repair pass for an estate built with the first release")
+    A("# Only changed blocks are placed. {C} is replaced by the centre set in the .bat.")
+    A("#SETUP")
+    A("/gamemode spectator @s")
+    A("/execute positioned {C} run tp @s ~ ~62 ~24 180 58")
+    A("/execute positioned {C} run forceload add ~-74 ~-74 ~74 ~112")
+    A("#WAIT 6000")
+    A("/tick freeze")
+    A("#ENDSETUP")
+    names = {0: "Clearing what the fixes replace", 1: "Steps, stair flights, floors and structure",
+             2: "Water", 3: "Chains", 4: "Re-seating plants, lanterns and details", 5: "Hanging lanterns",
+             6: "Invisible light"}
+    last = None
+    for k, c in cmds:
+        if k != last:
+            A(f"#SECTION {names[k]}")
+            last = k
+        A(c)
+    if changed_pairs:
+        A("#SECTION Beds")
+        lines.extend(changed_pairs)
+    A("#SECTION Finishing")
+    A("/tick unfreeze")
+    A("#WAIT 3000")
+    A(f"/execute positioned {{C}} {SEL} run kill @e[type=minecraft:item,{BOX}]")
+    A("/execute positioned {C} run forceload remove ~-74 ~-74 ~74 ~112")
+    A("/gamemode {MODE} @s")
+    A("/execute positioned {C} run tp @s ~ ~1 ~17 180 8")
+    A('/title @s subtitle {"text":"Every step, stair and threshold now walks true.","color":"#f5c6d6","italic":true}')
+    A('/title @s title {"text":"Estate repaired","color":"#ffd7e4"}')
+    bad = [l for l in lines if not l.startswith("#") and len(l.replace("{C}", "-29999999.5 319 -29999999.5")) > 255]
+    assert not bad, bad[:3]
+    with open(path, "w", newline="\r\n") as f:
+        f.write("\n".join(lines) + "\n")
+    n_cells = int(diff.sum())
+    return sum(1 for l in lines if l.startswith("/")), n_cells, int(touch.sum()), old_ents == w.entities
+
+
 if __name__ == "__main__":
     import render
     from finalize import finalize, check_water
@@ -219,6 +302,9 @@ if __name__ == "__main__":
     from support import check_support
     unsupported = check_support(w)
     assert not unsupported, unsupported[:20]
+    import audit
+    problems = {k: v for k, v in audit.run(w, verbose=False).items() if v}
+    assert not problems, problems
     out_dir = os.path.join(ROOT, "SAKURA_SHOGUN_ESTATE", "commands")
     os.makedirs(out_dir, exist_ok=True)
     n, L = write_commands(w, os.path.join(out_dir, "sakura_estate_full.txt"))
@@ -226,6 +312,13 @@ if __name__ == "__main__":
     errs = check_palette(used)
     assert not errs, errs
     print("commands:", n, "| block states validated:", len(used))
+    old_pkl = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "estate_v1_as_built")
+    if os.path.exists(old_pkl + ".npz"):
+        w2, _ = build()
+        finalize(w2)
+        nf, cells, touched, same_ents = write_fix(w2, old_pkl, os.path.join(out_dir, "sakura_estate_fix_v2.txt"))
+        print(f"fix file: {nf} commands, {cells} changed blocks, {touched} attachments re-seated, "
+              f"entities unchanged: {same_ents}")
     if "--no-render" not in sys.argv:
         render.plan(w, os.path.join(PREV, "plan.png"), px=4)
         render.iso(w, os.path.join(PREV, "aerial_day.png"), "SE", box=(-66, 66, -8, 34, -66, 110), scale=1)

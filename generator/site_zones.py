@@ -399,7 +399,7 @@ def shrine(w, rng):
             else:
                 w.set(x, 4, z, "gravel" if rng.random() < 0.9 else "moss_block")
     # stairs up from the south at x 39..41
-    for i in range(5):
+    for i in range(4):  # four steps: the last one rests ON the ground, never in it
         for x in range(39, 42):
             w.set(x, 4 - i, -44 + i, stairs("stone_brick", "north"))
             w.fill(x, -1, -44 + i, x, 3 - i, -44 + i, "stone_bricks")
@@ -743,7 +743,7 @@ def service(w, rng):
     # smithy / swordsmith forge: open timber shed
     x0, x1, z0, z1 = 46, 59, -26, -15
     w.fill(x0, 0, z0, x1, 0, z1, "stone_bricks")
-    w.fill(x0 + 1, 1, z0 + 1, x1 - 1, 1, z1 - 1, "cobblestone")
+    w.fill(x0 + 1, 0, z0 + 1, x1 - 1, 0, z1 - 1, "cobblestone")  # floor level; equipment stands ON it
     for x in range(x0, x1 + 1, 3):
         for z in (z0, z1):
             w.fill(x, 1, z, x, 6, z, POST)
@@ -814,16 +814,15 @@ def service(w, rng):
     # empty chests in neat rows on both floors
     for fy in (2, 8):
         for z in range(z0 + 1, z1, 2):
-            w.set(x1 - 1, fy, z, "chest[facing=west,type=single]")
+            w.set(x1 - 1, fy, z, "barrel[facing=west]")   # stacked barrels (a chest under a block can't open)
             w.set(x1 - 1, fy + 1, z, "barrel[facing=west]")
         for x in range(x0 + 2, x1 - 1, 2):
             w.set(x, fy, z0 + 1, "chest[facing=south,type=single]")
     # stairs to the upper floor
-    for i in range(5):
+    for i in range(6):  # six risers: the top step is level with the upper floor
         w.set(x0 + 1 + i, 2 + i, z1 - 1, stairs("spruce", "east"))
-    for i in range(5, 7):
-        w.set(x0 + 1 + i, 7, z1 - 1, AIR)
-    w.fill(x0 + 1, 7, z1 - 1, x0 + 6, 7, z1 - 1, AIR)
+    w.fill(x0 + 1, 7, z1 - 1, x0 + 5, 7, z1 - 1, AIR)
+    w.fill(x0 + 1, 8, z1 - 1, x0 + 6, 9, z1 - 1, AIR)
     andon(w, x0 + 2, 2, z0 + 2)
     andon(w, x0 + 2, 8, z0 + 2)
     r = Roof((x0 - 2, x1 + 2, z0 - 2, z1 + 2), 13, kind="gable", axis="z", s0=0.6, s1=1.15, lift=1.0, lift_len=3)

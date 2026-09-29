@@ -32,8 +32,40 @@ dusk and designed from the arrival sequence inward:
   * Every chest, barrel and storage block is EMPTY. (Only decor: armour on
     stands, weapons in the dojo's item frames, empty glow frames for maps.)
 
-HOW TO RUN (one run, everything)
---------------------------------
+ALREADY BUILT IT?  RUN THE REPAIR PASS (v2)
+-------------------------------------------
+If you built the estate with the first release, do NOT rebuild. Double-click
+FIX_SAKURA_ESTATE.bat, type REPAIR, and hands off for about 2-3 minutes.
+It places only the 860 blocks that change (271 commands), with game ticks
+frozen so nothing flows or pops while it works. Use the same CENTER you built with.
+
+What the repair fixes (found by a walk-through audit of the whole estate):
+  * Great Hall entrance: the porch steps were sunk into the ground. They are
+    now a proper 3-step flight from the forecourt up to the porch floor.
+  * Vault and shrine cavern: the last two steps of each stair had been carved
+    away, leaving a 2-block ledge you could drop down but never climb back up.
+  * Great Hall and kura interior staircases ended one block short of the
+    upper floor; both now land level with it.
+  * All three arched bridges (Moon, forecourt, arrival): their end steps were
+    sunk. Decks are now a smooth half-block-per-step arch, flush at both ends.
+  * Shrine terrace: its bottom step was buried in the ground.
+  * Every building could only be entered by jumping (veranda lips, the 2-block
+    manor podium, dojo / archery hall / pavilion plinths, gate thresholds).
+    Added stair flights at the podium edges, shoe-stones in front of the
+    verandas, and steps at every door, corridor and threshold, plus a
+    stepping-stone path to the Moon Pavilion.
+  * Kura storehouse: 10 chests had barrels on top and could never be opened.
+    They are now barrels (usable).
+  * Forge: anvils, furnaces and tables were set half into the floor. The
+    floor now sits under them.
+  * Cherry branches no longer cut through roofs, gables or torii (99 blocks
+    restored on the shrine, pavilion, tea house and West Wing roofs).
+  * The white block floating under the porch beam is now a timber strut.
+
+Everything else in your world is left exactly as it is.
+
+HOW TO BUILD FROM SCRATCH (one run, everything)
+-----------------------------------------------
 1. Back up your world if you can. The build CLEARS the old estate:
    141 x 181 blocks around the centre, from 24 blocks below it to 44 above.
 2. Optional: open BUILD_SAKURA_ESTATE.bat in Notepad to change CENTER, SPEED,
@@ -47,8 +79,9 @@ HOW TO RUN (one run, everything)
    gate at golden hour.
 
    Time: about 52 min on NORMAL, 35 on FAST, 110 on SAFE.
-   12,736 commands. Works in single-player or on a server (operators are not
-   affected by the chat spam limit).
+   12,779 commands (already includes every repair above). Works in
+   single-player or on a server (operators are not affected by the chat
+   spam limit).
 
 If you need your PC mid-build, just click away: the runner PAUSES by itself
 and resumes when you click back into Minecraft. If you close it, progress is
@@ -124,5 +157,7 @@ REGENERATING / MOVING THE ESTATE
 The whole estate is produced by the Python generator in /generator of the
 repository (python3 generator/estate.py). It builds a voxel model, checks it
 (every block state against the 26.1 registry, water containment, support for
-every plant/lantern/candle, walkable routes, spawn-proofing), and compiles the
+every plant/lantern/candle, spawn-proofing, and a walk-through audit: no buried
+steps, no chest you can't open, no workstation set into a floor, and every room
+reachable from the gate without jumping), and compiles the
 command file. Previews are in /previews.

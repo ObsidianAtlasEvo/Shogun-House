@@ -89,7 +89,6 @@
 /execute positioned {C} run fill ~20 ~-5 ~110 ~70 ~-2 ~110 dirt
 /execute positioned {C} run fill ~-70 ~-1 ~-70 ~70 ~-1 ~110 grass_block
 #SECTION Carving the vault and cavern
-/execute positioned {C} run fill ~-39 ~-17 ~-11 ~-38 ~-13 ~1 air
 /execute positioned {C} run fill ~-36 ~-17 ~-11 ~-36 ~-16 ~2 air
 /execute positioned {C} run fill ~-43 ~-17 ~-10 ~-35 ~-13 ~1 air
 /execute positioned {C} run fill ~-44 ~-17 ~-9 ~-34 ~-12 ~1 air
@@ -98,6 +97,7 @@
 /execute positioned {C} run fill ~-46 ~-17 ~-6 ~-30 ~-12 ~-1 air
 /execute positioned {C} run fill ~-45 ~-17 ~ ~-31 ~-13 ~ air
 /execute positioned {C} run fill ~-35 ~-17 ~2 ~-35 ~-11 ~2 air
+/execute positioned {C} run fill ~-38 ~-16 ~-11 ~-38 ~-13 ~1 air
 /execute positioned {C} run fill ~-44 ~-16 ~-10 ~-32 ~-13 ~1 air
 /execute positioned {C} run fill ~-45 ~-16 ~-9 ~-30 ~-14 ~1 air
 /execute positioned {C} run fill ~-46 ~-16 ~-7 ~-30 ~-12 ~-1 air
@@ -105,14 +105,16 @@
 /execute positioned {C} run fill ~-44 ~-16 ~2 ~-41 ~-14 ~3 air
 /execute positioned {C} run fill ~-34 ~-16 ~2 ~-30 ~-15 ~2 air
 /execute positioned {C} run fill ~-40 ~-16 ~3 ~-37 ~-14 ~3 air
-/execute positioned {C} run fill ~-39 ~-15 ~-12 ~-38 ~-12 ~-12 air
+/execute positioned {C} run fill ~-39 ~-15 ~-12 ~-37 ~-14 ~1 air
 /execute positioned {C} run fill ~-46 ~-15 ~-8 ~-41 ~-14 ~2 air
 /execute positioned {C} run fill ~-36 ~-15 ~2 ~-31 ~-13 ~2 air
 /execute positioned {C} run fill ~-39 ~-14 ~-13 ~-38 ~-11 ~-13 air
 /execute positioned {C} run setblock ~-34 ~-14 ~3 air
 /execute positioned {C} run fill ~-39 ~-13 ~-14 ~-38 ~-10 ~-14 air
+/execute positioned {C} run fill ~-39 ~-13 ~-12 ~-39 ~-13 ~3 air
+/execute positioned {C} run fill ~-38 ~-13 ~-12 ~-38 ~-13 ~2 air
 /execute positioned {C} run fill ~-42 ~-13 ~2 ~-39 ~-13 ~3 air
-/execute positioned {C} run fill ~-38 ~-13 ~2 ~-31 ~-13 ~2 air
+/execute positioned {C} run fill ~-37 ~-13 ~2 ~-31 ~-13 ~2 air
 /execute positioned {C} run fill ~-39 ~-12 ~-15 ~-38 ~-9 ~-15 air
 /execute positioned {C} run fill ~-33 ~-12 ~-9 ~-33 ~-11 ~ air
 /execute positioned {C} run fill ~-41 ~-12 ~2 ~-40 ~-12 ~2 air
@@ -170,8 +172,9 @@
 /execute positioned {C} run fill ~25 ~-4 ~92 ~44 ~-2 ~92 clay
 /execute positioned {C} run fill ~30 ~-4 ~93 ~35 ~-2 ~93 clay
 /execute positioned {C} run fill ~46 ~ ~18 ~62 ~ ~34 coarse_dirt
-/execute positioned {C} run fill ~62 ~ ~19 ~62 ~ ~62 cobblestone
-/execute positioned {C} run fill ~47 ~1 ~-25 ~59 ~1 ~-16 cobblestone
+/execute positioned {C} run fill ~63 ~-1 ~19 ~63 ~ ~23 cobblestone
+/execute positioned {C} run fill ~47 ~ ~-25 ~62 ~ ~17 cobblestone
+/execute positioned {C} run fill ~62 ~ ~19 ~63 ~ ~23 cobblestone
 /execute positioned {C} run fill ~-62 ~5 ~-46 ~-61 ~5 ~63 deepslate_tiles
 /execute positioned {C} run fill ~62 ~5 ~-43 ~63 ~5 ~18 deepslate_tiles
 /execute positioned {C} run fill ~62 ~5 ~25 ~62 ~5 ~63 deepslate_tiles
@@ -192,8 +195,8 @@
 /execute positioned {C} run fill ~48 ~7 ~4 ~63 ~7 ~5 deepslate_tiles
 /execute positioned {C} run fill ~48 ~7 ~19 ~63 ~7 ~19 deepslate_tiles
 /execute positioned {C} run fill ~62 ~7 ~20 ~63 ~7 ~24 deepslate_tiles
-/execute positioned {C} run fill ~-60 ~8 ~-58 ~-60 ~8 ~-47 deepslate_tiles
-/execute positioned {C} run fill ~-50 ~8 ~-48 ~-49 ~8 ~-47 deepslate_tiles
+/execute positioned {C} run fill ~-60 ~8 ~-58 ~-49 ~8 ~-58 deepslate_tiles
+/execute positioned {C} run fill ~-60 ~8 ~-48 ~-49 ~8 ~-48 deepslate_tiles
 /execute positioned {C} run fill ~-60 ~8 ~-33 ~-50 ~8 ~-33 deepslate_tiles
 /execute positioned {C} run fill ~-60 ~8 ~-24 ~-50 ~8 ~-24 deepslate_tiles
 /execute positioned {C} run fill ~61 ~8 ~-13 ~61 ~8 ~-11 deepslate_tiles
@@ -354,10 +357,11 @@
 /execute positioned {C} run fill ~-53 ~ ~-45 ~-51 ~ ~62 grass_block
 /execute positioned {C} run fill ~26 ~ ~-45 ~34 ~ ~-45 grass_block
 /execute positioned {C} run fill ~27 ~ ~-44 ~62 ~ ~-44 grass_block
-/execute positioned {C} run fill ~-54 ~ ~-43 ~-50 ~ ~62 grass_block
 /execute positioned {C} run fill ~28 ~ ~-43 ~62 ~ ~-42 grass_block
-/execute positioned {C} run fill ~-49 ~ ~-41 ~-49 ~ ~62 grass_block
-/execute positioned {C} run fill ~30 ~ ~-41 ~62 ~ ~17 grass_block
+/execute positioned {C} run fill ~-50 ~ ~-42 ~-49 ~ ~62 grass_block
+/execute positioned {C} run fill ~-54 ~ ~-41 ~-49 ~ ~62 grass_block
+/execute positioned {C} run fill ~30 ~ ~-41 ~45 ~ ~30 grass_block
+/execute positioned {C} run fill ~46 ~ ~-41 ~62 ~ ~-26 grass_block
 /execute positioned {C} run fill ~-61 ~ ~-40 ~-48 ~ ~62 grass_block
 /execute positioned {C} run fill ~-47 ~ ~-39 ~-47 ~ ~62 grass_block
 /execute positioned {C} run fill ~29 ~ ~-39 ~45 ~ ~29 grass_block
@@ -371,12 +375,15 @@
 /execute positioned {C} run fill ~24 ~ ~-33 ~24 ~ ~31 grass_block
 /execute positioned {C} run fill ~-16 ~ ~-32 ~-16 ~ ~29 grass_block
 /execute positioned {C} run fill ~9 ~ ~-32 ~10 ~ ~34 grass_block
-/execute positioned {C} run fill ~19 ~ ~-32 ~62 ~ ~17 grass_block
+/execute positioned {C} run fill ~19 ~ ~-32 ~62 ~ ~-26 grass_block
 /execute positioned {C} run fill ~8 ~ ~-31 ~22 ~ ~34 grass_block
 /execute positioned {C} run fill ~-15 ~ ~-30 ~-15 ~ ~31 grass_block
 /execute positioned {C} run fill ~-14 ~ ~-29 ~-14 ~ ~33 grass_block
 /execute positioned {C} run fill ~5 ~ ~-28 ~6 ~ ~35 grass_block
 /execute positioned {C} run fill ~7 ~ ~-28 ~22 ~ ~34 grass_block
+/execute positioned {C} run fill ~23 ~ ~-25 ~46 ~ ~17 grass_block
+/execute positioned {C} run fill ~60 ~ ~-25 ~62 ~ ~17 grass_block
+/execute positioned {C} run fill ~47 ~ ~-14 ~62 ~ ~17 grass_block
 /execute positioned {C} run fill ~-39 ~ ~-13 ~62 ~ ~-5 grass_block
 /execute positioned {C} run fill ~-39 ~ ~-4 ~-39 ~ ~-1 grass_block
 /execute positioned {C} run fill ~-38 ~ ~-4 ~-35 ~ ~-4 grass_block
@@ -399,7 +406,6 @@
 /execute positioned {C} run fill ~-20 ~ ~18 ~-20 ~ ~62 grass_block
 /execute positioned {C} run fill ~46 ~ ~25 ~62 ~ ~34 grass_block
 /execute positioned {C} run fill ~23 ~ ~26 ~23 ~ ~32 grass_block
-/execute positioned {C} run fill ~31 ~ ~30 ~62 ~ ~30 grass_block
 /execute positioned {C} run fill ~-13 ~ ~31 ~22 ~ ~34 grass_block
 /execute positioned {C} run fill ~35 ~ ~31 ~38 ~ ~33 grass_block
 /execute positioned {C} run fill ~-19 ~ ~32 ~-18 ~ ~62 grass_block
@@ -452,7 +458,6 @@
 /execute positioned {C} run fill ~-10 ~1 ~-46 ~-10 ~1 ~-41 grass_block
 /execute positioned {C} run fill ~-3 ~1 ~-46 ~-2 ~1 ~-46 grass_block
 /execute positioned {C} run fill ~-55 ~1 ~-45 ~-55 ~1 ~-41 grass_block
-/execute positioned {C} run fill ~-54 ~1 ~-45 ~-54 ~1 ~-44 grass_block
 /execute positioned {C} run fill ~-2 ~1 ~-45 ~-2 ~1 ~-42 grass_block
 /execute positioned {C} run fill ~-11 ~1 ~-43 ~-10 ~1 ~-43 grass_block
 /execute positioned {C} run fill ~-9 ~1 ~-42 ~-9 ~1 ~-40 grass_block
@@ -959,8 +964,11 @@
 /execute positioned {C} run fill ~-31 ~-18 ~ ~-30 ~-18 ~ moss_block
 /execute positioned {C} run setblock ~-44 ~-18 ~1 moss_block
 /execute positioned {C} run fill ~-38 ~-18 ~2 ~-35 ~-18 ~2 moss_block
+/execute positioned {C} run fill ~-54 ~ ~-43 ~-54 ~ ~-42 moss_block
 /execute positioned {C} run fill ~14 ~ ~-42 ~16 ~ ~-40 moss_block
+/execute positioned {C} run fill ~-53 ~ ~-41 ~-53 ~ ~-38 moss_block
 /execute positioned {C} run setblock ~15 ~ ~-39 moss_block
+/execute positioned {C} run fill ~-46 ~ ~-33 ~-16 ~ ~-33 moss_block
 /execute positioned {C} run fill ~8 ~ ~21 ~16 ~ ~30 moss_block
 /execute positioned {C} run setblock ~23 ~ ~24 moss_block
 /execute positioned {C} run setblock ~18 ~ ~25 moss_block
@@ -970,6 +978,7 @@
 /execute positioned {C} run setblock ~28 ~ ~27 moss_block
 /execute positioned {C} run setblock ~34 ~ ~28 moss_block
 /execute positioned {C} run setblock ~33 ~ ~29 moss_block
+/execute positioned {C} run fill ~-54 ~1 ~-44 ~-54 ~1 ~-43 moss_block
 /execute positioned {C} run fill ~-8 ~2 ~-47 ~-4 ~2 ~-42 moss_block
 /execute positioned {C} run fill ~-9 ~2 ~-46 ~-4 ~2 ~-43 moss_block
 /execute positioned {C} run fill ~-3 ~2 ~-45 ~-3 ~2 ~-42 moss_block
@@ -1090,25 +1099,25 @@
 /execute positioned {C} run fill ~-25 ~ ~51 ~-25 ~ ~54 sand
 /execute positioned {C} run fill ~-46 ~ ~52 ~-43 ~ ~52 sand
 /execute positioned {C} run fill ~-41 ~ ~52 ~-38 ~ ~52 sand
-/execute positioned {C} run fill ~-36 ~ ~52 ~-33 ~ ~52 sand
+/execute positioned {C} run fill ~-36 ~ ~52 ~-35 ~ ~62 sand
+/execute positioned {C} run fill ~-34 ~ ~52 ~-33 ~ ~52 sand
 /execute positioned {C} run fill ~-31 ~ ~52 ~-31 ~ ~62 sand
 /execute positioned {C} run fill ~-26 ~ ~52 ~-26 ~ ~62 sand
 /execute positioned {C} run fill ~-46 ~ ~53 ~-44 ~ ~53 sand
 /execute positioned {C} run fill ~-42 ~ ~53 ~-41 ~ ~55 sand
 /execute positioned {C} run fill ~-40 ~ ~53 ~-39 ~ ~53 sand
-/execute positioned {C} run fill ~-37 ~ ~53 ~-36 ~ ~62 sand
-/execute positioned {C} run fill ~-35 ~ ~53 ~-34 ~ ~53 sand
+/execute positioned {C} run fill ~-37 ~ ~53 ~-35 ~ ~62 sand
+/execute positioned {C} run setblock ~-34 ~ ~53 sand
 /execute positioned {C} run fill ~-32 ~ ~53 ~-31 ~ ~62 sand
 /execute positioned {C} run fill ~-27 ~ ~53 ~-26 ~ ~62 sand
 /execute positioned {C} run fill ~-46 ~ ~54 ~-45 ~ ~54 sand
 /execute positioned {C} run fill ~-43 ~ ~54 ~-40 ~2 ~54 sand
-/execute positioned {C} run fill ~-38 ~ ~54 ~-35 ~ ~54 sand
+/execute positioned {C} run fill ~-38 ~ ~54 ~-35 ~ ~55 sand
 /execute positioned {C} run fill ~-33 ~ ~54 ~-31 ~ ~62 sand
-/execute positioned {C} run fill ~-28 ~ ~54 ~-26 ~ ~62 sand
+/execute positioned {C} run fill ~-28 ~ ~54 ~-25 ~ ~54 sand
 /execute positioned {C} run setblock ~-46 ~ ~55 sand
 /execute positioned {C} run fill ~-44 ~ ~55 ~-41 ~ ~55 sand
-/execute positioned {C} run fill ~-39 ~ ~55 ~-36 ~ ~55 sand
-/execute positioned {C} run fill ~-34 ~ ~55 ~-31 ~ ~62 sand
+/execute positioned {C} run fill ~-39 ~ ~55 ~-31 ~ ~55 sand
 /execute positioned {C} run fill ~-29 ~ ~55 ~-26 ~ ~62 sand
 /execute positioned {C} run fill ~-24 ~ ~55 ~-24 ~ ~62 sand
 /execute positioned {C} run fill ~-61 ~1 ~18 ~-51 ~1 ~22 sand
@@ -1151,7 +1160,6 @@
 /execute positioned {C} run fill ~-15 ~-1 ~25 ~-4 ~ ~28 stone
 /execute positioned {C} run fill ~-14 ~-1 ~29 ~-4 ~ ~30 stone
 /execute positioned {C} run fill ~-46 ~-1 ~43 ~-24 ~-1 ~55 stone
-/execute positioned {C} run fill ~-1 ~-1 ~87 ~2 ~-1 ~87 stone
 /execute positioned {C} run fill ~ ~-1 ~92 ~1 ~-1 ~95 stone
 /execute positioned {C} run fill ~-3 ~-1 ~94 ~1 ~-1 ~95 stone
 /execute positioned {C} run fill ~-5 ~-1 ~95 ~-3 ~-1 ~97 stone
@@ -1256,26 +1264,25 @@
 /execute positioned {C} run fill ~7 ~6 ~-58 ~8 ~7 ~-54 stone
 /execute positioned {C} run fill ~7 ~7 ~-59 ~8 ~7 ~-54 stone
 /execute positioned {C} run fill ~-39 ~-18 ~-11 ~-38 ~-18 ~-9 stone_bricks
-/execute positioned {C} run fill ~-39 ~-17 ~-12 ~-37 ~-16 ~-12 stone_bricks
+/execute positioned {C} run fill ~-39 ~-17 ~-12 ~-37 ~-17 ~-11 stone_bricks
 /execute positioned {C} run fill ~-40 ~-17 ~-11 ~-40 ~-12 ~-11 stone_bricks
-/execute positioned {C} run fill ~-37 ~-17 ~-11 ~-37 ~-14 ~-11 stone_bricks
 /execute positioned {C} run fill ~-39 ~-16 ~-13 ~-38 ~-16 ~-12 stone_bricks
 /execute positioned {C} run fill ~-40 ~-16 ~-12 ~-40 ~-13 ~-11 stone_bricks
+/execute positioned {C} run fill ~-37 ~-16 ~-12 ~-37 ~-14 ~-11 stone_bricks
 /execute positioned {C} run fill ~-39 ~-15 ~-14 ~-38 ~-15 ~-13 stone_bricks
 /execute positioned {C} run fill ~-40 ~-15 ~-13 ~-40 ~-12 ~-13 stone_bricks
-/execute positioned {C} run fill ~-37 ~-15 ~-13 ~-37 ~-14 ~-11 stone_bricks
+/execute positioned {C} run fill ~-37 ~-15 ~-13 ~-37 ~-12 ~-13 stone_bricks
 /execute positioned {C} run fill ~-39 ~-14 ~-15 ~-38 ~-14 ~-14 stone_bricks
 /execute positioned {C} run fill ~-40 ~-14 ~-14 ~-40 ~-11 ~-14 stone_bricks
 /execute positioned {C} run fill ~-37 ~-14 ~-14 ~-37 ~-11 ~-14 stone_bricks
 /execute positioned {C} run fill ~-39 ~-13 ~-16 ~-38 ~-13 ~-15 stone_bricks
 /execute positioned {C} run fill ~-40 ~-13 ~-15 ~-40 ~-10 ~-15 stone_bricks
 /execute positioned {C} run fill ~-37 ~-13 ~-15 ~-37 ~-10 ~-15 stone_bricks
-/execute positioned {C} run fill ~-37 ~-13 ~-13 ~-37 ~-13 ~-12 stone_bricks
+/execute positioned {C} run setblock ~-37 ~-13 ~-12 stone_bricks
 /execute positioned {C} run fill ~-39 ~-13 ~-11 ~-38 ~-13 ~-11 stone_bricks
 /execute positioned {C} run fill ~-39 ~-12 ~-17 ~-38 ~-12 ~-16 stone_bricks
 /execute positioned {C} run fill ~-40 ~-12 ~-16 ~-40 ~-9 ~-16 stone_bricks
 /execute positioned {C} run fill ~-37 ~-12 ~-16 ~-37 ~-9 ~-16 stone_bricks
-/execute positioned {C} run setblock ~-37 ~-12 ~-13 stone_bricks
 /execute positioned {C} run fill ~-39 ~-12 ~-12 ~-38 ~-12 ~-12 stone_bricks
 /execute positioned {C} run fill ~-39 ~-11 ~-18 ~-38 ~-11 ~-17 stone_bricks
 /execute positioned {C} run fill ~-40 ~-11 ~-17 ~-40 ~-8 ~-17 stone_bricks
@@ -1325,11 +1332,11 @@
 /execute positioned {C} run fill ~-24 ~-2 ~-23 ~-23 ~-2 ~-23 stone_bricks
 /execute positioned {C} run fill ~-59 ~-1 ~-57 ~-51 ~1 ~-49 stone_bricks
 /execute positioned {C} run fill ~-62 ~-1 ~-46 ~-62 ~4 ~62 stone_bricks
-/execute positioned {C} run fill ~39 ~-1 ~-44 ~41 ~ ~-40 stone_bricks
+/execute positioned {C} run fill ~39 ~-1 ~-44 ~41 ~1 ~-41 stone_bricks
 /execute positioned {C} run fill ~62 ~-1 ~-43 ~62 ~4 ~18 stone_bricks
 /execute positioned {C} run fill ~49 ~-1 ~-41 ~57 ~1 ~-31 stone_bricks
 /execute positioned {C} run fill ~-44 ~-1 ~-37 ~-17 ~2 ~-37 stone_bricks
-/execute positioned {C} run fill ~-44 ~-1 ~-36 ~-44 ~2 ~-14 stone_bricks
+/execute positioned {C} run fill ~-44 ~-1 ~-36 ~-44 ~1 ~-14 stone_bricks
 /execute positioned {C} run fill ~-17 ~-1 ~-36 ~-17 ~2 ~-28 stone_bricks
 /execute positioned {C} run fill ~-24 ~-1 ~-29 ~-23 ~-1 ~-28 stone_bricks
 /execute positioned {C} run fill ~-25 ~-1 ~-28 ~-25 ~3 ~-28 stone_bricks
@@ -1346,44 +1353,64 @@
 /execute positioned {C} run fill ~17 ~-1 ~13 ~44 ~2 ~13 stone_bricks
 /execute positioned {C} run fill ~62 ~-1 ~24 ~62 ~4 ~62 stone_bricks
 /execute positioned {C} run fill ~39 ~-1 ~30 ~51 ~-1 ~42 stone_bricks
+/execute positioned {C} run fill ~-2 ~-1 ~33 ~2 ~ ~33 stone_bricks
 /execute positioned {C} run fill ~-3 ~-1 ~36 ~-3 ~-1 ~37 stone_bricks
 /execute positioned {C} run fill ~3 ~-1 ~38 ~7 ~-1 ~38 stone_bricks
+/execute positioned {C} run fill ~-2 ~-1 ~41 ~2 ~ ~41 stone_bricks
 /execute positioned {C} run fill ~-61 ~-1 ~62 ~-38 ~4 ~62 stone_bricks
 /execute positioned {C} run fill ~-8 ~-1 ~62 ~62 ~ ~62 stone_bricks
-/execute positioned {C} run fill ~-2 ~-1 ~69 ~2 ~-1 ~86 stone_bricks
+/execute positioned {C} run fill ~-3 ~-1 ~63 ~3 ~-1 ~66 stone_bricks
+/execute positioned {C} run fill ~-2 ~-1 ~69 ~2 ~-1 ~87 stone_bricks
 /execute positioned {C} run fill ~34 ~ ~-61 ~34 ~4 ~-44 stone_bricks
 /execute positioned {C} run fill ~35 ~ ~-44 ~61 ~4 ~-44 stone_bricks
+/execute positioned {C} run fill ~48 ~ ~-36 ~57 ~1 ~-36 stone_bricks
 /execute positioned {C} run fill ~-61 ~ ~-34 ~-49 ~ ~-23 stone_bricks
+/execute positioned {C} run fill ~-43 ~ ~-34 ~-42 ~2 ~-32 stone_bricks
 /execute positioned {C} run fill ~-24 ~ ~-30 ~-23 ~ ~-29 stone_bricks
 /execute positioned {C} run fill ~-25 ~ ~-29 ~-25 ~3 ~-28 stone_bricks
 /execute positioned {C} run fill ~-22 ~ ~-29 ~-22 ~3 ~-28 stone_bricks
 /execute positioned {C} run fill ~-16 ~ ~-27 ~19 ~2 ~-27 stone_bricks
 /execute positioned {C} run fill ~19 ~ ~-26 ~19 ~2 ~-14 stone_bricks
-/execute positioned {C} run fill ~46 ~ ~-26 ~59 ~ ~-15 stone_bricks
+/execute positioned {C} run fill ~46 ~ ~-26 ~59 ~8 ~-26 stone_bricks
 /execute positioned {C} run fill ~-24 ~ ~-25 ~-23 ~ ~-25 stone_bricks
+/execute positioned {C} run fill ~46 ~ ~-25 ~46 ~ ~-15 stone_bricks
+/execute positioned {C} run fill ~59 ~ ~-25 ~59 ~8 ~-15 stone_bricks
+/execute positioned {C} run fill ~-32 ~ ~-15 ~-30 ~1 ~-13 stone_bricks
+/execute positioned {C} run fill ~47 ~ ~-15 ~59 ~ ~-15 stone_bricks
+/execute positioned {C} run fill ~39 ~ ~-14 ~41 ~1 ~-12 stone_bricks
 /execute positioned {C} run fill ~-19 ~ ~-13 ~-19 ~2 ~12 stone_bricks
 /execute positioned {C} run fill ~44 ~ ~-12 ~44 ~2 ~13 stone_bricks
 /execute positioned {C} run fill ~46 ~ ~-10 ~58 ~ ~2 stone_bricks
+/execute positioned {C} run fill ~52 ~ ~3 ~52 ~1 ~3 stone_bricks
 /execute positioned {C} run fill ~50 ~ ~6 ~62 ~4 ~6 stone_bricks
 /execute positioned {C} run fill ~50 ~ ~7 ~50 ~ ~17 stone_bricks
 /execute positioned {C} run fill ~61 ~ ~7 ~62 ~4 ~17 stone_bricks
 /execute positioned {C} run fill ~-18 ~ ~12 ~16 ~2 ~12 stone_bricks
+/execute positioned {C} run fill ~28 ~ ~12 ~30 ~1 ~14 stone_bricks
+/execute positioned {C} run fill ~-5 ~ ~13 ~5 ~1 ~13 stone_bricks
 /execute positioned {C} run fill ~-3 ~ ~14 ~3 ~ ~35 stone_bricks
 /execute positioned {C} run fill ~51 ~ ~17 ~62 ~4 ~17 stone_bricks
 /execute positioned {C} run fill ~-47 ~ ~23 ~-25 ~1 ~40 stone_bricks
 /execute positioned {C} run fill ~39 ~ ~30 ~51 ~1 ~30 stone_bricks
-/execute positioned {C} run fill ~39 ~ ~31 ~41 ~1 ~31 stone_bricks
+/execute positioned {C} run fill ~-24 ~ ~31 ~-24 ~1 ~32 stone_bricks
+/execute positioned {C} run fill ~38 ~ ~31 ~41 ~1 ~31 stone_bricks
 /execute positioned {C} run fill ~43 ~ ~31 ~51 ~1 ~31 stone_bricks
 /execute positioned {C} run fill ~45 ~ ~32 ~51 ~1 ~32 stone_bricks
 /execute positioned {C} run fill ~46 ~ ~33 ~51 ~1 ~34 stone_bricks
 /execute positioned {C} run fill ~47 ~ ~35 ~51 ~1 ~42 stone_bricks
 /execute positioned {C} run setblock ~3 ~ ~36 stone_bricks
 /execute positioned {C} run fill ~-3 ~ ~38 ~1 ~ ~55 stone_bricks
+/execute positioned {C} run fill ~2 ~ ~39 ~3 ~ ~55 stone_bricks
 /execute positioned {C} run fill ~46 ~ ~39 ~51 ~1 ~42 stone_bricks
-/execute positioned {C} run fill ~3 ~ ~40 ~3 ~ ~55 stone_bricks
+/execute positioned {C} run fill ~-37 ~ ~41 ~-35 ~1 ~42 stone_bricks
+/execute positioned {C} run fill ~47 ~ ~43 ~49 ~1 ~43 stone_bricks
+/execute positioned {C} run fill ~-55 ~ ~47 ~-53 ~1 ~56 stone_bricks
 /execute positioned {C} run fill ~-61 ~ ~49 ~-51 ~2 ~56 stone_bricks
+/execute positioned {C} run fill ~-35 ~ ~55 ~-35 ~1 ~62 stone_bricks
+/execute positioned {C} run fill ~-28 ~ ~55 ~-28 ~1 ~62 stone_bricks
+/execute positioned {C} run fill ~-21 ~ ~55 ~-21 ~1 ~62 stone_bricks
+/execute positioned {C} run fill ~-14 ~ ~55 ~-14 ~1 ~62 stone_bricks
 /execute positioned {C} run fill ~-37 ~ ~56 ~-9 ~ ~62 stone_bricks
-/execute positioned {C} run fill ~39 ~1 ~-43 ~41 ~1 ~-41 stone_bricks
 /execute positioned {C} run fill ~-24 ~1 ~-31 ~-23 ~1 ~-30 stone_bricks
 /execute positioned {C} run fill ~-49 ~1 ~-30 ~-42 ~2 ~-26 stone_bricks
 /execute positioned {C} run fill ~-25 ~1 ~-30 ~-22 ~1 ~-30 stone_bricks
@@ -1405,6 +1432,10 @@
 /execute positioned {C} run fill ~-25 ~2 ~-30 ~-25 ~3 ~-28 stone_bricks
 /execute positioned {C} run fill ~-22 ~2 ~-30 ~-22 ~3 ~-28 stone_bricks
 /execute positioned {C} run fill ~-24 ~2 ~-27 ~-23 ~3 ~-27 stone_bricks
+/execute positioned {C} run fill ~-32 ~2 ~-15 ~-30 ~2 ~-14 stone_bricks
+/execute positioned {C} run fill ~39 ~2 ~-12 ~41 ~3 ~-11 stone_bricks
+/execute positioned {C} run fill ~-5 ~2 ~11 ~5 ~3 ~11 stone_bricks
+/execute positioned {C} run fill ~28 ~2 ~12 ~30 ~2 ~13 stone_bricks
 /execute positioned {C} run fill ~-3 ~2 ~37 ~3 ~2 ~38 stone_bricks
 /execute positioned {C} run fill ~15 ~3 ~-41 ~17 ~3 ~-41 stone_bricks
 /execute positioned {C} run fill ~-3 ~3 ~37 ~-3 ~3 ~38 stone_bricks
@@ -1447,8 +1478,7 @@
 /execute positioned {C} run fill ~-10 ~ ~26 ~-8 ~ ~30 white_concrete_powder
 /execute positioned {C} run fill ~-5 ~ ~26 ~-4 ~ ~30 white_concrete_powder
 /execute positioned {C} run fill ~-15 ~ ~28 ~-8 ~ ~28 white_concrete_powder
-/execute positioned {C} run fill ~-6 ~ ~29 ~-4 ~ ~30 white_concrete_powder
-/execute positioned {C} run fill ~-11 ~ ~30 ~-4 ~ ~30 white_concrete_powder
+/execute positioned {C} run fill ~-14 ~ ~29 ~-4 ~ ~30 white_concrete_powder
 /execute positioned {C} run fill ~31 ~1 ~-41 ~33 ~1 ~-39 azalea_leaves[persistent=true]
 /execute positioned {C} run fill ~-37 ~1 ~-12 ~-35 ~1 ~-12 azalea_leaves[persistent=true]
 /execute positioned {C} run setblock ~-36 ~1 ~-11 azalea_leaves[persistent=true]
@@ -1473,7 +1503,7 @@
 /execute positioned {C} run setblock ~26 ~2 ~16 azalea_leaves[persistent=true]
 /execute positioned {C} run setblock ~-40 ~2 ~44 azalea_leaves[persistent=true]
 /execute positioned {C} run fill ~-43 ~5 ~-59 ~-41 ~5 ~-57 azalea_leaves[persistent=true]
-/execute positioned {C} run fill ~-52 ~7 ~-37 ~-51 ~7 ~-22 azalea_leaves[persistent=true]
+/execute positioned {C} run setblock ~-51 ~7 ~-37 azalea_leaves[persistent=true]
 /execute positioned {C} run fill ~-46 ~7 ~-14 ~-42 ~8 ~-14 azalea_leaves[persistent=true]
 /execute positioned {C} run fill ~45 ~7 ~28 ~45 ~7 ~47 azalea_leaves[persistent=true]
 /execute positioned {C} run fill ~6 ~8 ~-60 ~7 ~8 ~-60 azalea_leaves[persistent=true]
@@ -1648,8 +1678,7 @@
 /execute positioned {C} run fill ~33 ~7 ~-49 ~33 ~10 ~-49 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-64 ~7 ~-46 ~-64 ~14 ~-46 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-57 ~7 ~-46 ~-56 ~14 ~-46 cherry_leaves[persistent=true]
-/execute positioned {C} run fill ~-54 ~7 ~-46 ~-54 ~13 ~-42 cherry_leaves[persistent=true]
-/execute positioned {C} run fill ~-53 ~7 ~-46 ~-53 ~13 ~-45 cherry_leaves[persistent=true]
+/execute positioned {C} run fill ~-54 ~7 ~-46 ~-53 ~13 ~-45 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-52 ~7 ~-46 ~-52 ~12 ~-46 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~26 ~7 ~-46 ~26 ~9 ~-46 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~36 ~7 ~-46 ~37 ~12 ~-46 cherry_leaves[persistent=true]
@@ -1660,6 +1689,7 @@
 /execute positioned {C} run fill ~-56 ~7 ~-44 ~-56 ~14 ~-44 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~30 ~7 ~-44 ~30 ~9 ~-44 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-61 ~7 ~-43 ~-61 ~14 ~-43 cherry_leaves[persistent=true]
+/execute positioned {C} run fill ~-54 ~7 ~-43 ~-54 ~13 ~-43 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~26 ~7 ~-43 ~26 ~9 ~-43 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-53 ~7 ~-42 ~-53 ~13 ~-42 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-56 ~7 ~-39 ~-54 ~13 ~-39 cherry_leaves[persistent=true]
@@ -1850,6 +1880,7 @@
 /execute positioned {C} run fill ~56 ~8 ~-44 ~56 ~14 ~-44 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-42 ~8 ~-43 ~-42 ~11 ~-43 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~30 ~8 ~-43 ~30 ~9 ~-42 cherry_leaves[persistent=true]
+/execute positioned {C} run fill ~-54 ~8 ~-42 ~-53 ~13 ~-42 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-39 ~8 ~-42 ~-39 ~12 ~-42 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-58 ~8 ~-41 ~-58 ~14 ~-41 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-60 ~8 ~-40 ~-60 ~13 ~-40 cherry_leaves[persistent=true]
@@ -2426,7 +2457,7 @@
 /execute positioned {C} run fill ~-52 ~10 ~-40 ~-52 ~12 ~-39 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-60 ~10 ~-39 ~-60 ~13 ~-39 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~27 ~10 ~-39 ~27 ~10 ~-30 cherry_leaves[persistent=true]
-/execute positioned {C} run fill ~-54 ~10 ~-38 ~-53 ~13 ~-38 cherry_leaves[persistent=true]
+/execute positioned {C} run fill ~-54 ~10 ~-38 ~-54 ~13 ~-38 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~16 ~10 ~-38 ~17 ~10 ~-31 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~21 ~10 ~-38 ~22 ~12 ~-36 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-56 ~10 ~-37 ~-56 ~13 ~-37 cherry_leaves[persistent=true]
@@ -2737,12 +2768,14 @@
 /execute positioned {C} run fill ~-38 ~11 ~-46 ~-38 ~11 ~-40 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-65 ~11 ~-45 ~-65 ~14 ~-44 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-44 ~11 ~-45 ~-38 ~11 ~-44 cherry_leaves[persistent=true]
-/execute positioned {C} run fill ~-55 ~11 ~-44 ~-50 ~11 ~-41 cherry_leaves[persistent=true]
+/execute positioned {C} run fill ~-55 ~11 ~-44 ~-52 ~13 ~-44 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-63 ~11 ~-43 ~-63 ~14 ~-43 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-56 ~11 ~-43 ~-56 ~14 ~-42 cherry_leaves[persistent=true]
+/execute positioned {C} run fill ~-55 ~11 ~-43 ~-53 ~13 ~-42 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~60 ~11 ~-43 ~61 ~14 ~-43 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-62 ~11 ~-42 ~-62 ~13 ~-42 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-37 ~11 ~-42 ~-37 ~11 ~-40 cherry_leaves[persistent=true]
+/execute positioned {C} run fill ~-55 ~11 ~-41 ~-50 ~12 ~-41 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-54 ~11 ~-40 ~-52 ~12 ~-40 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-42 ~11 ~-40 ~-38 ~12 ~-40 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~23 ~11 ~-40 ~25 ~11 ~-24 cherry_leaves[persistent=true]
@@ -2750,7 +2783,7 @@
 /execute positioned {C} run fill ~26 ~11 ~-39 ~26 ~11 ~-37 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-62 ~11 ~-38 ~-62 ~12 ~-38 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-58 ~11 ~-38 ~-58 ~14 ~-38 cherry_leaves[persistent=true]
-/execute positioned {C} run fill ~-55 ~11 ~-38 ~-53 ~13 ~-38 cherry_leaves[persistent=true]
+/execute positioned {C} run fill ~-55 ~11 ~-38 ~-54 ~13 ~-38 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-42 ~11 ~-38 ~-42 ~13 ~-35 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~20 ~11 ~-38 ~25 ~11 ~-30 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-60 ~11 ~-37 ~-60 ~13 ~-37 cherry_leaves[persistent=true]
@@ -2995,7 +3028,6 @@
 /execute positioned {C} run fill ~52 ~12 ~-46 ~53 ~14 ~-46 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-66 ~12 ~-45 ~-65 ~13 ~-45 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-52 ~12 ~-45 ~-51 ~12 ~-34 cherry_leaves[persistent=true]
-/execute positioned {C} run fill ~-55 ~12 ~-44 ~-51 ~12 ~-34 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-40 ~12 ~-44 ~-40 ~12 ~-33 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~60 ~12 ~-44 ~60 ~15 ~-44 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-47 ~12 ~-43 ~-47 ~12 ~-35 cherry_leaves[persistent=true]
@@ -3014,6 +3046,7 @@
 /execute positioned {C} run fill ~-59 ~12 ~-35 ~-58 ~12 ~-35 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-56 ~12 ~-35 ~-50 ~12 ~-35 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-46 ~12 ~-35 ~-45 ~12 ~-35 cherry_leaves[persistent=true]
+/execute positioned {C} run fill ~-55 ~12 ~-34 ~-51 ~12 ~-34 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~21 ~12 ~-34 ~23 ~12 ~-34 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-53 ~12 ~-33 ~-53 ~13 ~-33 cherry_leaves[persistent=true]
 /execute positioned {C} run fill ~-48 ~12 ~-33 ~-46 ~12 ~-32 cherry_leaves[persistent=true]
@@ -3973,14 +4006,13 @@
 /execute positioned {C} run fill ~-42 ~5 ~-57 ~-41 ~5 ~-57 flowering_azalea_leaves[persistent=true]
 /execute positioned {C} run setblock ~-42 ~6 ~-58 flowering_azalea_leaves[persistent=true]
 /execute positioned {C} run fill ~-53 ~7 ~-37 ~-53 ~7 ~-22 flowering_azalea_leaves[persistent=true]
-/execute positioned {C} run fill ~-52 ~7 ~-36 ~-51 ~8 ~-36 flowering_azalea_leaves[persistent=true]
 /execute positioned {C} run fill ~-44 ~7 ~-15 ~-44 ~9 ~-14 flowering_azalea_leaves[persistent=true]
 /execute positioned {C} run fill ~44 ~7 ~27 ~44 ~7 ~47 flowering_azalea_leaves[persistent=true]
 /execute positioned {C} run fill ~43 ~7 ~28 ~44 ~7 ~46 flowering_azalea_leaves[persistent=true]
 /execute positioned {C} run fill ~5 ~8 ~-61 ~7 ~8 ~-61 flowering_azalea_leaves[persistent=true]
 /execute positioned {C} run setblock ~5 ~8 ~-60 flowering_azalea_leaves[persistent=true]
-/execute positioned {C} run fill ~-52 ~8 ~-37 ~-52 ~8 ~-35 flowering_azalea_leaves[persistent=true]
-/execute positioned {C} run fill ~-53 ~8 ~-36 ~-51 ~8 ~-36 flowering_azalea_leaves[persistent=true]
+/execute positioned {C} run setblock ~-53 ~8 ~-36 flowering_azalea_leaves[persistent=true]
+/execute positioned {C} run setblock ~-52 ~8 ~-35 flowering_azalea_leaves[persistent=true]
 /execute positioned {C} run setblock ~-46 ~8 ~-14 flowering_azalea_leaves[persistent=true]
 /execute positioned {C} run setblock ~6 ~9 ~-60 flowering_azalea_leaves[persistent=true]
 /execute positioned {C} run setblock ~38 ~9 ~-46 flowering_azalea_leaves[persistent=true]
@@ -3995,10 +4027,12 @@
 /execute positioned {C} run setblock ~-7 ~3 ~19 spruce_leaves[persistent=true]
 /execute positioned {C} run fill ~-12 ~3 ~21 ~-10 ~3 ~21 spruce_leaves[persistent=true]
 /execute positioned {C} run setblock ~-8 ~3 ~21 spruce_leaves[persistent=true]
-/execute positioned {C} run fill ~48 ~3 ~42 ~51 ~3 ~46 spruce_leaves[persistent=true]
-/execute positioned {C} run fill ~52 ~3 ~43 ~52 ~3 ~45 spruce_leaves[persistent=true]
+/execute positioned {C} run fill ~48 ~3 ~42 ~51 ~3 ~42 spruce_leaves[persistent=true]
+/execute positioned {C} run fill ~50 ~3 ~43 ~52 ~3 ~45 spruce_leaves[persistent=true]
 /execute positioned {C} run fill ~47 ~3 ~44 ~49 ~7 ~44 spruce_leaves[persistent=true]
 /execute positioned {C} run setblock ~53 ~3 ~44 spruce_leaves[persistent=true]
+/execute positioned {C} run fill ~49 ~3 ~45 ~51 ~3 ~46 spruce_leaves[persistent=true]
+/execute positioned {C} run fill ~48 ~3 ~46 ~51 ~3 ~46 spruce_leaves[persistent=true]
 /execute positioned {C} run setblock ~50 ~3 ~47 spruce_leaves[persistent=true]
 /execute positioned {C} run fill ~-12 ~4 ~13 ~-8 ~4 ~16 spruce_leaves[persistent=true]
 /execute positioned {C} run fill ~-12 ~4 ~17 ~-9 ~5 ~17 spruce_leaves[persistent=true]
@@ -4154,7 +4188,6 @@
 /execute positioned {C} run fill ~-34 ~-10 ~-2 ~-33 ~-10 ~-2 andesite
 /execute positioned {C} run setblock ~-34 ~-10 ~-1 andesite
 /execute positioned {C} run fill ~1 ~-1 ~88 ~1 ~1 ~88 andesite
-/execute positioned {C} run fill ~ ~-1 ~93 ~2 ~-1 ~93 andesite
 /execute positioned {C} run fill ~-4 ~-1 ~96 ~-2 ~-1 ~96 andesite
 /execute positioned {C} run fill ~-9 ~-1 ~97 ~-6 ~-1 ~97 andesite
 /execute positioned {C} run fill ~-4 ~-1 ~97 ~-3 ~-1 ~97 andesite
@@ -4175,7 +4208,7 @@
 /execute positioned {C} run fill ~10 ~ ~20 ~12 ~ ~25 andesite
 /execute positioned {C} run fill ~9 ~ ~21 ~10 ~1 ~23 andesite
 /execute positioned {C} run fill ~8 ~ ~22 ~13 ~ ~24 andesite
-/execute positioned {C} run fill ~-13 ~ ~25 ~-12 ~ ~30 andesite
+/execute positioned {C} run fill ~-13 ~ ~25 ~-12 ~ ~28 andesite
 /execute positioned {C} run fill ~13 ~ ~25 ~15 ~ ~27 andesite
 /execute positioned {C} run fill ~-14 ~ ~26 ~-11 ~ ~27 andesite
 /execute positioned {C} run fill ~7 ~ ~26 ~8 ~ ~28 andesite
@@ -4197,24 +4230,24 @@
 /execute positioned {C} run fill ~-8 ~11 ~-7 ~1 ~11 ~-5 bamboo_mosaic
 /execute positioned {C} run fill ~5 ~11 ~-7 ~9 ~11 ~-5 bamboo_mosaic
 /execute positioned {C} run fill ~44 ~1 ~32 ~44 ~1 ~42 bamboo_planks
-/execute positioned {C} run fill ~48 ~1 ~32 ~48 ~1 ~42 bamboo_planks
+/execute positioned {C} run fill ~48 ~1 ~32 ~48 ~1 ~43 bamboo_planks
 /execute positioned {C} run fill ~41 ~1 ~38 ~51 ~1 ~38 bamboo_planks
 /execute positioned {C} run fill ~-35 ~3 ~-32 ~-35 ~3 ~-16 bamboo_planks
-/execute positioned {C} run fill ~-31 ~3 ~-32 ~-31 ~3 ~-16 bamboo_planks
+/execute positioned {C} run fill ~-31 ~3 ~-32 ~-31 ~3 ~-15 bamboo_planks
 /execute positioned {C} run fill ~-27 ~3 ~-32 ~-27 ~3 ~-16 bamboo_planks
 /execute positioned {C} run fill ~-23 ~3 ~-32 ~-23 ~3 ~-16 bamboo_planks
 /execute positioned {C} run fill ~-38 ~3 ~-26 ~-19 ~3 ~-26 bamboo_planks
 /execute positioned {C} run fill ~-11 ~3 ~-20 ~-11 ~3 ~2 bamboo_planks
 /execute positioned {C} run fill ~-7 ~3 ~-20 ~-7 ~3 ~2 bamboo_planks
-/execute positioned {C} run fill ~-3 ~3 ~-20 ~-3 ~3 ~10 bamboo_planks
-/execute positioned {C} run fill ~1 ~3 ~-20 ~1 ~3 ~10 bamboo_planks
+/execute positioned {C} run fill ~-3 ~3 ~-20 ~-3 ~3 ~11 bamboo_planks
+/execute positioned {C} run fill ~1 ~3 ~-20 ~1 ~3 ~11 bamboo_planks
 /execute positioned {C} run fill ~5 ~3 ~-20 ~5 ~3 ~10 bamboo_planks
-/execute positioned {C} run fill ~9 ~3 ~-20 ~9 ~3 ~2 bamboo_planks
+/execute positioned {C} run fill ~9 ~3 ~-20 ~9 ~3 ~3 bamboo_planks
 /execute positioned {C} run fill ~13 ~3 ~-20 ~13 ~3 ~2 bamboo_planks
 /execute positioned {C} run fill ~-38 ~3 ~-19 ~-15 ~3 ~-16 bamboo_planks
 /execute positioned {C} run fill ~-14 ~3 ~-14 ~17 ~3 ~-14 bamboo_planks
 /execute positioned {C} run fill ~25 ~3 ~-8 ~25 ~3 ~11 bamboo_planks
-/execute positioned {C} run fill ~29 ~3 ~-8 ~29 ~3 ~11 bamboo_planks
+/execute positioned {C} run fill ~29 ~3 ~-8 ~29 ~3 ~12 bamboo_planks
 /execute positioned {C} run fill ~33 ~3 ~-8 ~33 ~3 ~11 bamboo_planks
 /execute positioned {C} run fill ~37 ~3 ~-8 ~37 ~3 ~11 bamboo_planks
 /execute positioned {C} run fill ~-14 ~3 ~-7 ~21 ~3 ~-7 bamboo_planks
@@ -4244,17 +4277,16 @@
 /execute positioned {C} run fill ~-22 ~2 ~61 ~-22 ~2 ~62 barrel[facing=up]
 /execute positioned {C} run setblock ~-28 ~4 ~-21 barrel[facing=up]
 /execute positioned {C} run fill ~38 ~4 ~6 ~39 ~4 ~7 barrel[facing=up]
-/execute positioned {C} run setblock ~49 ~7 ~-49 barrel[facing=up]
-/execute positioned {C} run fill ~56 ~3 ~-40 ~57 ~3 ~-40 barrel[facing=west]
-/execute positioned {C} run fill ~56 ~3 ~-38 ~57 ~3 ~-38 barrel[facing=west]
-/execute positioned {C} run fill ~56 ~3 ~-36 ~57 ~3 ~-36 barrel[facing=west]
-/execute positioned {C} run fill ~56 ~3 ~-34 ~57 ~3 ~-34 barrel[facing=west]
-/execute positioned {C} run fill ~56 ~3 ~-32 ~57 ~3 ~-31 barrel[facing=west]
-/execute positioned {C} run fill ~56 ~9 ~-40 ~57 ~9 ~-40 barrel[facing=west]
-/execute positioned {C} run fill ~56 ~9 ~-38 ~57 ~9 ~-38 barrel[facing=west]
-/execute positioned {C} run fill ~56 ~9 ~-36 ~57 ~9 ~-36 barrel[facing=west]
-/execute positioned {C} run fill ~56 ~9 ~-34 ~57 ~9 ~-34 barrel[facing=west]
-/execute positioned {C} run fill ~56 ~9 ~-32 ~57 ~9 ~-31 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~2 ~-40 ~57 ~3 ~-40 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~2 ~-38 ~57 ~3 ~-38 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~2 ~-36 ~57 ~3 ~-36 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~2 ~-34 ~57 ~3 ~-34 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~2 ~-32 ~57 ~3 ~-31 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~8 ~-40 ~57 ~9 ~-40 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~8 ~-38 ~57 ~9 ~-38 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~8 ~-36 ~57 ~9 ~-36 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~8 ~-34 ~57 ~9 ~-34 barrel[facing=west]
+/execute positioned {C} run fill ~56 ~8 ~-32 ~57 ~9 ~-31 barrel[facing=west]
 /execute positioned {C} run setblock ~30 ~3 ~-49 beehive[facing=south,honey_level=0]
 /execute positioned {C} run fill ~37 ~9 ~-57 ~37 ~11 ~-57 beehive[facing=south,honey_level=0]
 /execute positioned {C} run fill ~-30 ~2 ~58 ~-30 ~5 ~62 birch_planks
@@ -4313,7 +4345,7 @@
 /execute positioned {C} run fill ~-40 ~-1 ~9 ~-40 ~8 ~9 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-24 ~-1 ~11 ~-24 ~9 ~11 cherry_wood[axis=y]
 /execute positioned {C} run fill ~44 ~-1 ~21 ~44 ~10 ~21 cherry_wood[axis=y]
-/execute positioned {C} run fill ~-13 ~-1 ~29 ~-13 ~3 ~29 cherry_wood[axis=y]
+/execute positioned {C} run setblock ~-13 ~-1 ~29 cherry_wood[axis=y]
 /execute positioned {C} run fill ~27 ~-1 ~29 ~27 ~1 ~31 cherry_wood[axis=y]
 /execute positioned {C} run fill ~26 ~-1 ~30 ~28 ~1 ~30 cherry_wood[axis=y]
 /execute positioned {C} run fill ~14 ~-1 ~48 ~14 ~10 ~48 cherry_wood[axis=y]
@@ -4348,15 +4380,12 @@
 /execute positioned {C} run fill ~24 ~ ~-31 ~24 ~2 ~-29 cherry_wood[axis=y]
 /execute positioned {C} run fill ~23 ~ ~-30 ~25 ~2 ~-30 cherry_wood[axis=y]
 /execute positioned {C} run fill ~12 ~ ~-29 ~12 ~2 ~-29 cherry_wood[axis=y]
-/execute positioned {C} run fill ~-47 ~ ~-8 ~-47 ~8 ~-8 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-40 ~ ~8 ~-40 ~4 ~10 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-41 ~ ~9 ~-39 ~4 ~9 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-24 ~ ~10 ~-24 ~2 ~12 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-25 ~ ~11 ~-23 ~2 ~11 cherry_wood[axis=y]
 /execute positioned {C} run fill ~44 ~ ~20 ~44 ~2 ~22 cherry_wood[axis=y]
 /execute positioned {C} run fill ~43 ~ ~21 ~45 ~2 ~21 cherry_wood[axis=y]
-/execute positioned {C} run fill ~-13 ~ ~28 ~-13 ~2 ~30 cherry_wood[axis=y]
-/execute positioned {C} run fill ~-14 ~ ~29 ~-12 ~2 ~29 cherry_wood[axis=y]
 /execute positioned {C} run fill ~14 ~ ~47 ~14 ~4 ~49 cherry_wood[axis=y]
 /execute positioned {C} run fill ~13 ~ ~48 ~15 ~4 ~48 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-28 ~ ~50 ~-28 ~2 ~52 cherry_wood[axis=y]
@@ -4369,6 +4398,9 @@
 /execute positioned {C} run fill ~22 ~ ~54 ~22 ~2 ~56 cherry_wood[axis=y]
 /execute positioned {C} run fill ~21 ~ ~55 ~23 ~2 ~55 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-7 ~1 ~-45 ~-5 ~14 ~-43 cherry_wood[axis=y]
+/execute positioned {C} run fill ~-47 ~1 ~-8 ~-47 ~8 ~-8 cherry_wood[axis=y]
+/execute positioned {C} run fill ~-13 ~1 ~28 ~-13 ~2 ~30 cherry_wood[axis=y]
+/execute positioned {C} run fill ~-14 ~1 ~29 ~-12 ~2 ~29 cherry_wood[axis=y]
 /execute positioned {C} run fill ~28 ~1 ~29 ~28 ~1 ~31 cherry_wood[axis=y]
 /execute positioned {C} run setblock ~29 ~1 ~30 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-6 ~2 ~-46 ~-6 ~3 ~-43 cherry_wood[axis=y]
@@ -4383,7 +4415,7 @@
 /execute positioned {C} run fill ~-60 ~3 ~-45 ~-60 ~5 ~-43 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-61 ~3 ~-44 ~-59 ~5 ~-44 cherry_wood[axis=y]
 /execute positioned {C} run fill ~24 ~3 ~-31 ~24 ~3 ~-30 cherry_wood[axis=y]
-/execute positioned {C} run setblock ~-12 ~3 ~29 cherry_wood[axis=y]
+/execute positioned {C} run fill ~-13 ~3 ~29 ~-12 ~3 ~29 cherry_wood[axis=y]
 /execute positioned {C} run fill ~27 ~3 ~31 ~29 ~3 ~31 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-7 ~3 ~83 ~-7 ~8 ~83 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-9 ~4 ~-60 ~-9 ~9 ~-60 cherry_wood[axis=y]
@@ -4469,7 +4501,6 @@
 /execute positioned {C} run fill ~13 ~6 ~99 ~13 ~6 ~100 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-39 ~6 ~104 ~-39 ~7 ~104 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-19 ~6 ~104 ~-17 ~6 ~105 cherry_wood[axis=y]
-/execute positioned {C} run fill ~-50 ~7 ~-58 ~-50 ~18 ~-58 cherry_wood[axis=y]
 /execute positioned {C} run fill ~34 ~7 ~-55 ~35 ~7 ~-55 cherry_wood[axis=y]
 /execute positioned {C} run setblock ~34 ~7 ~-54 cherry_wood[axis=y]
 /execute positioned {C} run fill ~30 ~7 ~-53 ~30 ~7 ~-50 cherry_wood[axis=y]
@@ -4518,7 +4549,7 @@
 /execute positioned {C} run fill ~-28 ~7 ~50 ~-28 ~8 ~52 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-27 ~7 ~50 ~-27 ~8 ~50 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-12 ~7 ~50 ~-12 ~9 ~51 cherry_wood[axis=y]
-/execute positioned {C} run fill ~-29 ~7 ~51 ~-28 ~8 ~51 cherry_wood[axis=y]
+/execute positioned {C} run fill ~-29 ~7 ~51 ~-28 ~9 ~51 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-13 ~7 ~52 ~-13 ~8 ~52 cherry_wood[axis=y]
 /execute positioned {C} run fill ~50 ~7 ~52 ~50 ~9 ~52 cherry_wood[axis=y]
 /execute positioned {C} run fill ~23 ~7 ~53 ~23 ~8 ~54 cherry_wood[axis=y]
@@ -4569,9 +4600,7 @@
 /execute positioned {C} run fill ~-21 ~7 ~108 ~-20 ~7 ~108 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-22 ~7 ~109 ~-22 ~7 ~110 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-23 ~7 ~110 ~-22 ~7 ~110 cherry_wood[axis=y]
-/execute positioned {C} run fill ~-50 ~8 ~-59 ~-50 ~12 ~-57 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-10 ~8 ~-59 ~-8 ~9 ~-59 cherry_wood[axis=y]
-/execute positioned {C} run fill ~-51 ~8 ~-58 ~-49 ~12 ~-58 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-9 ~8 ~-58 ~-9 ~9 ~-58 cherry_wood[axis=y]
 /execute positioned {C} run fill ~29 ~8 ~-57 ~29 ~8 ~-53 cherry_wood[axis=y]
 /execute positioned {C} run fill ~34 ~8 ~-53 ~36 ~8 ~-53 cherry_wood[axis=y]
@@ -4707,6 +4736,8 @@
 /execute positioned {C} run fill ~26 ~8 ~105 ~28 ~8 ~105 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-16 ~8 ~106 ~-14 ~8 ~106 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-15 ~8 ~107 ~-13 ~8 ~107 cherry_wood[axis=y]
+/execute positioned {C} run fill ~-50 ~9 ~-59 ~-50 ~12 ~-57 cherry_wood[axis=y]
+/execute positioned {C} run fill ~-51 ~9 ~-58 ~-49 ~12 ~-58 cherry_wood[axis=y]
 /execute positioned {C} run setblock ~26 ~9 ~-50 cherry_wood[axis=y]
 /execute positioned {C} run fill ~34 ~9 ~-48 ~35 ~9 ~-47 cherry_wood[axis=y]
 /execute positioned {C} run fill ~57 ~9 ~-47 ~57 ~14 ~-47 cherry_wood[axis=y]
@@ -5018,10 +5049,10 @@
 /execute positioned {C} run setblock ~29 ~11 ~109 cherry_wood[axis=y]
 /execute positioned {C} run setblock ~-38 ~11 ~110 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-9 ~12 ~-60 ~-9 ~14 ~-59 cherry_wood[axis=y]
-/execute positioned {C} run fill ~56 ~12 ~-60 ~57 ~13 ~-59 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-10 ~12 ~-59 ~-8 ~13 ~-59 cherry_wood[axis=y]
 /execute positioned {C} run fill ~23 ~12 ~-59 ~23 ~12 ~-57 cherry_wood[axis=y]
 /execute positioned {C} run fill ~36 ~12 ~-59 ~38 ~12 ~-59 cherry_wood[axis=y]
+/execute positioned {C} run fill ~57 ~12 ~-59 ~57 ~14 ~-59 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-38 ~12 ~-58 ~-38 ~14 ~-58 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-10 ~12 ~-58 ~-10 ~13 ~-58 cherry_wood[axis=y]
 /execute positioned {C} run fill ~21 ~12 ~-58 ~21 ~13 ~-58 cherry_wood[axis=y]
@@ -5031,12 +5062,11 @@
 /execute positioned {C} run setblock ~38 ~12 ~-57 cherry_wood[axis=y]
 /execute positioned {C} run fill ~58 ~12 ~-51 ~58 ~12 ~-46 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-58 ~12 ~-48 ~-58 ~12 ~-47 cherry_wood[axis=y]
-/execute positioned {C} run fill ~56 ~12 ~-48 ~56 ~13 ~-48 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-59 ~12 ~-47 ~-59 ~12 ~-46 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-6 ~12 ~-46 ~-6 ~14 ~-42 cherry_wood[axis=y]
-/execute positioned {C} run fill ~56 ~12 ~-46 ~56 ~12 ~-45 cherry_wood[axis=y]
 /execute positioned {C} run setblock ~-56 ~12 ~-45 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-4 ~12 ~-45 ~-4 ~14 ~-43 cherry_wood[axis=y]
+/execute positioned {C} run fill ~56 ~12 ~-45 ~56 ~13 ~-45 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-64 ~12 ~-44 ~-61 ~12 ~-44 cherry_wood[axis=y]
 /execute positioned {C} run setblock ~-57 ~12 ~-44 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-8 ~12 ~-44 ~-4 ~14 ~-43 cherry_wood[axis=y]
@@ -5060,17 +5090,17 @@
 /execute positioned {C} run fill ~24 ~13 ~-60 ~24 ~13 ~-59 cherry_wood[axis=y]
 /execute positioned {C} run fill ~36 ~13 ~-60 ~36 ~13 ~-59 cherry_wood[axis=y]
 /execute positioned {C} run fill ~38 ~13 ~-60 ~38 ~13 ~-59 cherry_wood[axis=y]
+/execute positioned {C} run fill ~56 ~13 ~-60 ~56 ~13 ~-47 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-39 ~13 ~-59 ~-37 ~14 ~-59 cherry_wood[axis=y]
 /execute positioned {C} run fill ~20 ~13 ~-59 ~20 ~14 ~-58 cherry_wood[axis=y]
 /execute positioned {C} run fill ~21 ~13 ~-59 ~21 ~13 ~-58 cherry_wood[axis=y]
-/execute positioned {C} run fill ~44 ~13 ~-59 ~44 ~13 ~-53 cherry_wood[axis=y]
+/execute positioned {C} run fill ~-50 ~13 ~-58 ~-50 ~18 ~-58 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-37 ~13 ~-58 ~-37 ~14 ~-58 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-8 ~13 ~-58 ~-8 ~14 ~-58 cherry_wood[axis=y]
 /execute positioned {C} run fill ~40 ~13 ~-58 ~44 ~13 ~-58 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-10 ~13 ~-57 ~-10 ~14 ~-57 cherry_wood[axis=y]
 /execute positioned {C} run fill ~25 ~13 ~-57 ~28 ~13 ~-57 cherry_wood[axis=y]
 /execute positioned {C} run fill ~33 ~13 ~-57 ~35 ~13 ~-57 cherry_wood[axis=y]
-/execute positioned {C} run fill ~42 ~13 ~-57 ~44 ~14 ~-57 cherry_wood[axis=y]
 /execute positioned {C} run fill ~23 ~13 ~-56 ~23 ~14 ~-56 cherry_wood[axis=y]
 /execute positioned {C} run fill ~28 ~13 ~-56 ~29 ~13 ~-56 cherry_wood[axis=y]
 /execute positioned {C} run fill ~31 ~13 ~-56 ~33 ~13 ~-56 cherry_wood[axis=y]
@@ -5108,11 +5138,10 @@
 /execute positioned {C} run fill ~-40 ~14 ~-59 ~-40 ~15 ~-59 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-22 ~14 ~-59 ~-21 ~15 ~-59 cherry_wood[axis=y]
 /execute positioned {C} run fill ~17 ~14 ~-59 ~20 ~14 ~-58 cherry_wood[axis=y]
-/execute positioned {C} run fill ~57 ~14 ~-59 ~58 ~14 ~-59 cherry_wood[axis=y]
+/execute positioned {C} run fill ~58 ~14 ~-59 ~58 ~15 ~-59 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-49 ~14 ~-58 ~-49 ~16 ~-58 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-7 ~14 ~-58 ~-7 ~14 ~-57 cherry_wood[axis=y]
 /execute positioned {C} run fill ~15 ~14 ~-58 ~20 ~14 ~-58 cherry_wood[axis=y]
-/execute positioned {C} run fill ~57 ~14 ~-58 ~57 ~15 ~-57 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-50 ~14 ~-57 ~-50 ~16 ~-57 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-37 ~14 ~-57 ~-37 ~15 ~-57 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-11 ~14 ~-56 ~-11 ~14 ~-52 cherry_wood[axis=y]
@@ -5144,12 +5173,13 @@
 /execute positioned {C} run fill ~-43 ~15 ~-60 ~-40 ~15 ~-60 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-13 ~15 ~-60 ~-11 ~15 ~-60 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-5 ~15 ~-60 ~-2 ~15 ~-60 cherry_wood[axis=y]
-/execute positioned {C} run fill ~58 ~15 ~-60 ~58 ~15 ~-59 cherry_wood[axis=y]
+/execute positioned {C} run fill ~58 ~15 ~-60 ~58 ~16 ~-60 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-37 ~15 ~-59 ~-36 ~15 ~-59 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-20 ~15 ~-59 ~-20 ~16 ~-59 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-5 ~15 ~-59 ~-4 ~15 ~-59 cherry_wood[axis=y]
 /execute positioned {C} run fill ~59 ~15 ~-59 ~59 ~16 ~-59 cherry_wood[axis=y]
 /execute positioned {C} run setblock ~-3 ~15 ~-58 cherry_wood[axis=y]
+/execute positioned {C} run fill ~57 ~15 ~-58 ~57 ~15 ~-56 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-38 ~15 ~-57 ~-36 ~15 ~-57 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-7 ~15 ~-57 ~-6 ~15 ~-57 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-36 ~15 ~-56 ~-36 ~16 ~-56 cherry_wood[axis=y]
@@ -5187,7 +5217,6 @@
 /execute positioned {C} run fill ~-23 ~16 ~-60 ~-23 ~16 ~-59 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-17 ~16 ~-60 ~-13 ~16 ~-60 cherry_wood[axis=y]
 /execute positioned {C} run fill ~54 ~16 ~-60 ~55 ~16 ~-60 cherry_wood[axis=y]
-/execute positioned {C} run setblock ~58 ~16 ~-60 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-49 ~16 ~-59 ~-48 ~16 ~-59 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-44 ~16 ~-59 ~-42 ~16 ~-59 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-36 ~16 ~-59 ~-35 ~16 ~-59 cherry_wood[axis=y]
@@ -5205,12 +5234,12 @@
 /execute positioned {C} run setblock ~22 ~16 ~-57 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-50 ~16 ~-56 ~-50 ~17 ~-56 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-35 ~16 ~-56 ~-35 ~16 ~-54 cherry_wood[axis=y]
-/execute positioned {C} run fill ~56 ~16 ~-56 ~56 ~16 ~-52 cherry_wood[axis=y]
-/execute positioned {C} run fill ~57 ~16 ~-56 ~57 ~16 ~-55 cherry_wood[axis=y]
+/execute positioned {C} run fill ~56 ~16 ~-56 ~57 ~16 ~-55 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-34 ~16 ~-55 ~-34 ~16 ~-53 cherry_wood[axis=y]
 /execute positioned {C} run setblock ~-33 ~16 ~-55 cherry_wood[axis=y]
 /execute positioned {C} run setblock ~58 ~16 ~-55 cherry_wood[axis=y]
 /execute positioned {C} run setblock ~22 ~16 ~-52 cherry_wood[axis=y]
+/execute positioned {C} run setblock ~56 ~16 ~-52 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-8 ~16 ~-49 ~-8 ~16 ~-48 cherry_wood[axis=y]
 /execute positioned {C} run fill ~4 ~16 ~-49 ~5 ~16 ~-49 cherry_wood[axis=y]
 /execute positioned {C} run fill ~-3 ~16 ~-48 ~-2 ~16 ~-48 cherry_wood[axis=y]
@@ -5315,23 +5344,13 @@
 /execute positioned {C} run setblock ~-29 ~-8 ~-20 chest[facing=north,type=single]
 /execute positioned {C} run fill ~51 ~2 ~-40 ~51 ~2 ~-39 chest[facing=south,type=single]
 /execute positioned {C} run setblock ~53 ~2 ~-40 chest[facing=south,type=single]
-/execute positioned {C} run fill ~55 ~2 ~-40 ~57 ~2 ~-40 chest[facing=south,type=single]
+/execute positioned {C} run setblock ~55 ~2 ~-40 chest[facing=south,type=single]
 /execute positioned {C} run setblock ~55 ~2 ~-9 chest[facing=south,type=single]
 /execute positioned {C} run fill ~-32 ~4 ~-32 ~-31 ~4 ~-32 chest[facing=south,type=single]
 /execute positioned {C} run fill ~51 ~8 ~-40 ~51 ~8 ~-39 chest[facing=south,type=single]
 /execute positioned {C} run setblock ~53 ~8 ~-40 chest[facing=south,type=single]
-/execute positioned {C} run fill ~55 ~8 ~-40 ~57 ~8 ~-40 chest[facing=south,type=single]
+/execute positioned {C} run setblock ~55 ~8 ~-40 chest[facing=south,type=single]
 /execute positioned {C} run setblock ~-3 ~12 ~-15 chest[facing=south,type=single]
-/execute positioned {C} run fill ~56 ~2 ~-40 ~57 ~2 ~-40 chest[facing=west,type=single]
-/execute positioned {C} run fill ~56 ~2 ~-38 ~57 ~2 ~-38 chest[facing=west,type=single]
-/execute positioned {C} run fill ~56 ~2 ~-36 ~57 ~2 ~-36 chest[facing=west,type=single]
-/execute positioned {C} run fill ~56 ~2 ~-34 ~57 ~2 ~-34 chest[facing=west,type=single]
-/execute positioned {C} run fill ~56 ~2 ~-32 ~57 ~2 ~-31 chest[facing=west,type=single]
-/execute positioned {C} run fill ~56 ~8 ~-40 ~57 ~8 ~-40 chest[facing=west,type=single]
-/execute positioned {C} run fill ~56 ~8 ~-38 ~57 ~8 ~-38 chest[facing=west,type=single]
-/execute positioned {C} run fill ~56 ~8 ~-36 ~57 ~8 ~-36 chest[facing=west,type=single]
-/execute positioned {C} run fill ~56 ~8 ~-34 ~57 ~8 ~-34 chest[facing=west,type=single]
-/execute positioned {C} run fill ~56 ~8 ~-32 ~57 ~8 ~-31 chest[facing=west,type=single]
 /execute positioned {C} run setblock ~-39 ~-7 ~-34 chiseled_bookshelf[facing=south]
 /execute positioned {C} run setblock ~-35 ~-7 ~-34 chiseled_bookshelf[facing=south]
 /execute positioned {C} run setblock ~-33 ~-7 ~-34 chiseled_bookshelf[facing=south]
@@ -5357,7 +5376,6 @@
 /execute positioned {C} run fill ~-7 ~27 ~-11 ~7 ~27 ~-11 chiseled_deepslate
 /execute positioned {C} run fill ~ ~6 ~62 ~4 ~10 ~62 chiseled_quartz_block
 /execute positioned {C} run fill ~49 ~7 ~-58 ~50 ~7 ~-58 chiseled_quartz_block
-/execute positioned {C} run fill ~ ~8 ~10 ~6 ~8 ~10 chiseled_quartz_block
 /execute positioned {C} run fill ~-39 ~10 ~59 ~-37 ~10 ~60 chiseled_quartz_block
 /execute positioned {C} run fill ~-7 ~10 ~59 ~-7 ~10 ~64 chiseled_quartz_block
 /execute positioned {C} run fill ~43 ~11 ~-21 ~44 ~11 ~-19 chiseled_quartz_block
@@ -5432,8 +5450,16 @@
 /execute positioned {C} run fill ~-41 ~-8 ~-33 ~-41 ~-5 ~-31 dark_oak_planks
 /execute positioned {C} run fill ~-41 ~-8 ~-29 ~-41 ~-5 ~-27 dark_oak_planks
 /execute positioned {C} run fill ~-41 ~-8 ~-25 ~-41 ~-5 ~-23 dark_oak_planks
-/execute positioned {C} run fill ~-2 ~ ~86 ~2 ~ ~86 dark_oak_planks
+/execute positioned {C} run fill ~-1 ~-2 ~85 ~1 ~-1 ~85 dark_oak_planks
+/execute positioned {C} run fill ~-1 ~-2 ~95 ~1 ~-1 ~95 dark_oak_planks
+/execute positioned {C} run fill ~-1 ~-1 ~87 ~2 ~ ~87 dark_oak_planks
+/execute positioned {C} run fill ~-1 ~-1 ~93 ~2 ~ ~93 dark_oak_planks
+/execute positioned {C} run fill ~-2 ~ ~86 ~2 ~ ~87 dark_oak_planks
+/execute positioned {C} run fill ~-1 ~ ~89 ~1 ~1 ~89 dark_oak_planks
+/execute positioned {C} run fill ~-1 ~ ~91 ~1 ~ ~94 dark_oak_planks
 /execute positioned {C} run fill ~-2 ~ ~94 ~2 ~ ~94 dark_oak_planks
+/execute positioned {C} run fill ~-7 ~1 ~-38 ~-5 ~2 ~-38 dark_oak_planks
+/execute positioned {C} run fill ~-7 ~1 ~-28 ~-5 ~2 ~-28 dark_oak_planks
 /execute positioned {C} run fill ~47 ~1 ~-26 ~59 ~8 ~-26 dark_oak_planks
 /execute positioned {C} run fill ~59 ~1 ~-25 ~59 ~9 ~-16 dark_oak_planks
 /execute positioned {C} run fill ~51 ~1 ~6 ~59 ~9 ~6 dark_oak_planks
@@ -5443,12 +5469,14 @@
 /execute positioned {C} run fill ~-3 ~1 ~39 ~3 ~1 ~40 dark_oak_planks
 /execute positioned {C} run fill ~-3 ~1 ~60 ~-3 ~5 ~61 dark_oak_planks
 /execute positioned {C} run fill ~3 ~1 ~60 ~3 ~5 ~61 dark_oak_planks
-/execute positioned {C} run fill ~-2 ~1 ~87 ~2 ~1 ~88 dark_oak_planks
-/execute positioned {C} run fill ~-2 ~1 ~92 ~2 ~1 ~93 dark_oak_planks
+/execute positioned {C} run fill ~-2 ~1 ~88 ~2 ~1 ~89 dark_oak_planks
+/execute positioned {C} run fill ~-2 ~1 ~91 ~2 ~1 ~92 dark_oak_planks
 /execute positioned {C} run fill ~-58 ~2 ~-56 ~-52 ~2 ~-50 dark_oak_planks
+/execute positioned {C} run fill ~-7 ~2 ~-36 ~-4 ~3 ~-36 dark_oak_planks
 /execute positioned {C} run fill ~-59 ~2 ~-33 ~-50 ~7 ~-33 dark_oak_planks
 /execute positioned {C} run fill ~-60 ~2 ~-32 ~-60 ~7 ~-24 dark_oak_planks
 /execute positioned {C} run fill ~-50 ~2 ~-32 ~-50 ~8 ~-30 dark_oak_planks
+/execute positioned {C} run fill ~-7 ~2 ~-30 ~-4 ~3 ~-30 dark_oak_planks
 /execute positioned {C} run fill ~-50 ~2 ~-27 ~-50 ~7 ~-24 dark_oak_planks
 /execute positioned {C} run fill ~-59 ~2 ~-24 ~-57 ~8 ~-24 dark_oak_planks
 /execute positioned {C} run fill ~-53 ~2 ~-24 ~-50 ~7 ~-24 dark_oak_planks
@@ -5474,8 +5502,10 @@
 /execute positioned {C} run fill ~-12 ~2 ~56 ~-9 ~8 ~56 dark_oak_planks
 /execute positioned {C} run fill ~-37 ~2 ~57 ~-37 ~9 ~61 dark_oak_planks
 /execute positioned {C} run fill ~-9 ~2 ~57 ~-9 ~9 ~61 dark_oak_planks
-/execute positioned {C} run fill ~-2 ~2 ~90 ~2 ~2 ~91 dark_oak_planks
+/execute positioned {C} run fill ~-2 ~2 ~90 ~2 ~2 ~90 dark_oak_planks
 /execute positioned {C} run fill ~-8 ~3 ~-37 ~-4 ~3 ~-36 dark_oak_planks
+/execute positioned {C} run fill ~-7 ~3 ~-34 ~-5 ~4 ~-34 dark_oak_planks
+/execute positioned {C} run fill ~-7 ~3 ~-32 ~-5 ~3 ~-29 dark_oak_planks
 /execute positioned {C} run fill ~-8 ~3 ~-29 ~-4 ~3 ~-29 dark_oak_planks
 /execute positioned {C} run fill ~-45 ~3 ~24 ~-26 ~9 ~24 dark_oak_planks
 /execute positioned {C} run fill ~-46 ~3 ~25 ~-46 ~9 ~39 dark_oak_planks
@@ -5485,15 +5515,15 @@
 /execute positioned {C} run fill ~-45 ~3 ~39 ~-38 ~10 ~39 dark_oak_planks
 /execute positioned {C} run fill ~-33 ~3 ~39 ~-26 ~9 ~39 dark_oak_planks
 /execute positioned {C} run fill ~-60 ~3 ~56 ~-51 ~8 ~56 dark_oak_planks
-/execute positioned {C} run fill ~-62 ~4 ~-45 ~-62 ~4 ~63 dark_oak_planks
+/execute positioned {C} run fill ~-62 ~4 ~-45 ~-61 ~4 ~63 dark_oak_planks
 /execute positioned {C} run fill ~62 ~4 ~-42 ~63 ~4 ~18 dark_oak_planks
 /execute positioned {C} run fill ~49 ~4 ~-37 ~49 ~12 ~-31 dark_oak_planks
-/execute positioned {C} run fill ~-8 ~4 ~-36 ~-4 ~4 ~-36 dark_oak_planks
-/execute positioned {C} run fill ~-7 ~4 ~-34 ~-5 ~4 ~-30 dark_oak_planks
+/execute positioned {C} run fill ~-8 ~4 ~-35 ~-4 ~4 ~-34 dark_oak_planks
 /execute positioned {C} run fill ~-38 ~4 ~-33 ~-33 ~11 ~-33 dark_oak_planks
 /execute positioned {C} run fill ~-26 ~4 ~-33 ~-21 ~10 ~-33 dark_oak_planks
 /execute positioned {C} run fill ~-39 ~4 ~-32 ~-39 ~11 ~-27 dark_oak_planks
 /execute positioned {C} run fill ~-21 ~4 ~-32 ~-21 ~11 ~-27 dark_oak_planks
+/execute positioned {C} run fill ~-8 ~4 ~-32 ~-4 ~4 ~-31 dark_oak_planks
 /execute positioned {C} run fill ~-39 ~4 ~-23 ~-39 ~10 ~-18 dark_oak_planks
 /execute positioned {C} run fill ~-14 ~4 ~-21 ~-12 ~12 ~-21 dark_oak_planks
 /execute positioned {C} run fill ~-2 ~4 ~-21 ~3 ~12 ~-21 dark_oak_planks
@@ -5518,9 +5548,9 @@
 /execute positioned {C} run fill ~28 ~4 ~9 ~33 ~11 ~9 dark_oak_planks
 /execute positioned {C} run fill ~37 ~4 ~9 ~39 ~10 ~9 dark_oak_planks
 /execute positioned {C} run fill ~62 ~4 ~25 ~62 ~4 ~63 dark_oak_planks
-/execute positioned {C} run fill ~-61 ~4 ~62 ~-4 ~4 ~62 dark_oak_planks
+/execute positioned {C} run fill ~-60 ~4 ~62 ~-4 ~4 ~62 dark_oak_planks
 /execute positioned {C} run fill ~8 ~4 ~62 ~62 ~4 ~63 dark_oak_planks
-/execute positioned {C} run fill ~-8 ~5 ~-35 ~-4 ~5 ~-31 dark_oak_planks
+/execute positioned {C} run fill ~-8 ~5 ~-33 ~-4 ~5 ~-33 dark_oak_planks
 /execute positioned {C} run fill ~ ~5 ~-20 ~2 ~5 ~-20 dark_oak_planks
 /execute positioned {C} run fill ~-61 ~5 ~19 ~-61 ~5 ~61 dark_oak_planks
 /execute positioned {C} run fill ~-51 ~5 ~19 ~-50 ~5 ~21 dark_oak_planks
@@ -5540,12 +5570,12 @@
 /execute positioned {C} run fill ~37 ~6 ~43 ~53 ~6 ~44 dark_oak_planks
 /execute positioned {C} run fill ~36 ~6 ~44 ~53 ~6 ~44 dark_oak_planks
 /execute positioned {C} run fill ~45 ~7 ~-59 ~54 ~13 ~-59 dark_oak_planks
-/execute positioned {C} run fill ~-60 ~7 ~-58 ~-60 ~7 ~-47 dark_oak_planks
-/execute positioned {C} run fill ~44 ~7 ~-58 ~44 ~12 ~-52 dark_oak_planks
+/execute positioned {C} run fill ~-60 ~7 ~-58 ~-49 ~7 ~-58 dark_oak_planks
+/execute positioned {C} run fill ~44 ~7 ~-58 ~44 ~14 ~-53 dark_oak_planks
 /execute positioned {C} run fill ~54 ~7 ~-58 ~54 ~14 ~-53 dark_oak_planks
 /execute positioned {C} run fill ~45 ~7 ~-52 ~47 ~12 ~-52 dark_oak_planks
 /execute positioned {C} run fill ~51 ~7 ~-52 ~54 ~12 ~-52 dark_oak_planks
-/execute positioned {C} run fill ~-50 ~7 ~-48 ~-49 ~7 ~-48 dark_oak_planks
+/execute positioned {C} run fill ~-60 ~7 ~-48 ~-49 ~7 ~-48 dark_oak_planks
 /execute positioned {C} run fill ~-60 ~7 ~-33 ~-48 ~7 ~-24 dark_oak_planks
 /execute positioned {C} run fill ~46 ~7 ~-26 ~59 ~8 ~-26 dark_oak_planks
 /execute positioned {C} run fill ~59 ~7 ~-15 ~59 ~7 ~-12 dark_oak_planks
@@ -5617,7 +5647,7 @@
 /execute positioned {C} run fill ~55 ~11 ~5 ~56 ~11 ~6 dark_oak_planks
 /execute positioned {C} run fill ~55 ~11 ~18 ~56 ~11 ~18 dark_oak_planks
 /execute positioned {C} run fill ~44 ~11 ~32 ~45 ~11 ~40 dark_oak_planks
-/execute positioned {C} run fill ~44 ~12 ~-59 ~56 ~12 ~-59 dark_oak_planks
+/execute positioned {C} run fill ~44 ~12 ~-59 ~56 ~13 ~-59 dark_oak_planks
 /execute positioned {C} run fill ~42 ~12 ~-21 ~42 ~12 ~-20 dark_oak_planks
 /execute positioned {C} run fill ~63 ~12 ~-21 ~63 ~12 ~-20 dark_oak_planks
 /execute positioned {C} run fill ~-8 ~12 ~-17 ~-6 ~20 ~-17 dark_oak_planks
@@ -5628,13 +5658,12 @@
 /execute positioned {C} run setblock ~55 ~12 ~3 dark_oak_planks
 /execute positioned {C} run setblock ~55 ~12 ~20 dark_oak_planks
 /execute positioned {C} run fill ~44 ~12 ~34 ~45 ~12 ~38 dark_oak_planks
-/execute positioned {C} run fill ~44 ~13 ~-55 ~44 ~16 ~-53 dark_oak_planks
-/execute positioned {C} run fill ~44 ~14 ~-56 ~44 ~15 ~-53 dark_oak_planks
 /execute positioned {C} run setblock ~47 ~14 ~-4 dark_oak_planks
 /execute positioned {C} run setblock ~57 ~14 ~-4 dark_oak_planks
+/execute positioned {C} run fill ~44 ~15 ~-55 ~44 ~16 ~-53 dark_oak_planks
 /execute positioned {C} run fill ~54 ~15 ~-55 ~54 ~15 ~-52 dark_oak_planks
 /execute positioned {C} run fill ~43 ~16 ~-54 ~44 ~16 ~-53 dark_oak_planks
-/execute positioned {C} run fill ~54 ~16 ~-54 ~55 ~16 ~-53 dark_oak_planks
+/execute positioned {C} run fill ~54 ~16 ~-54 ~56 ~16 ~-53 dark_oak_planks
 /execute positioned {C} run fill ~-45 ~16 ~31 ~-45 ~16 ~32 dark_oak_planks
 /execute positioned {C} run fill ~-27 ~16 ~31 ~-27 ~16 ~32 dark_oak_planks
 /execute positioned {C} run setblock ~41 ~17 ~-54 dark_oak_planks
@@ -5685,6 +5714,7 @@
 /execute positioned {C} run fill ~-44 ~15 ~31 ~-44 ~15 ~33 gold_block
 /execute positioned {C} run fill ~-28 ~15 ~31 ~-28 ~15 ~33 gold_block
 /execute positioned {C} run fill ~42 ~16 ~-54 ~42 ~16 ~-53 gold_block
+/execute positioned {C} run fill ~56 ~16 ~-54 ~56 ~16 ~-53 gold_block
 /execute positioned {C} run fill ~53 ~17 ~-43 ~53 ~18 ~-43 gold_block
 /execute positioned {C} run fill ~53 ~17 ~-29 ~53 ~18 ~-29 gold_block
 /execute positioned {C} run fill ~-30 ~18 ~-30 ~-29 ~18 ~-30 gold_block
@@ -5786,6 +5816,7 @@
 /execute positioned {C} run setblock ~9 ~ ~27 light_gray_concrete_powder
 /execute positioned {C} run fill ~12 ~ ~27 ~12 ~ ~28 light_gray_concrete_powder
 /execute positioned {C} run fill ~14 ~ ~27 ~14 ~ ~28 light_gray_concrete_powder
+/execute positioned {C} run fill ~-13 ~ ~28 ~-12 ~ ~28 light_gray_concrete_powder
 /execute positioned {C} run fill ~-10 ~ ~28 ~-10 ~ ~29 light_gray_concrete_powder
 /execute positioned {C} run setblock ~-8 ~ ~28 light_gray_concrete_powder
 /execute positioned {C} run setblock ~-6 ~ ~28 light_gray_concrete_powder
@@ -5801,8 +5832,7 @@
 /execute positioned {C} run setblock ~7 ~ ~29 light_gray_concrete_powder
 /execute positioned {C} run setblock ~11 ~ ~29 light_gray_concrete_powder
 /execute positioned {C} run fill ~15 ~ ~29 ~16 ~ ~29 light_gray_concrete_powder
-/execute positioned {C} run setblock ~-14 ~ ~30 light_gray_concrete_powder
-/execute positioned {C} run setblock ~-12 ~ ~30 light_gray_concrete_powder
+/execute positioned {C} run fill ~-14 ~ ~30 ~-12 ~ ~30 light_gray_concrete_powder
 /execute positioned {C} run fill ~-9 ~ ~30 ~-8 ~ ~30 light_gray_concrete_powder
 /execute positioned {C} run fill ~-6 ~ ~30 ~-5 ~ ~30 light_gray_concrete_powder
 /execute positioned {C} run fill ~5 ~ ~30 ~6 ~ ~30 light_gray_concrete_powder
@@ -5835,7 +5865,7 @@
 /execute positioned {C} run fill ~-60 ~ ~-17 ~-60 ~ ~-10 mossy_cobblestone
 /execute positioned {C} run fill ~-49 ~ ~-17 ~-49 ~ ~-5 mossy_cobblestone
 /execute positioned {C} run fill ~-61 ~ ~-16 ~-48 ~ ~-11 mossy_cobblestone
-/execute positioned {C} run fill ~-47 ~ ~-15 ~-47 ~ ~-9 mossy_cobblestone
+/execute positioned {C} run fill ~-47 ~ ~-15 ~-47 ~ ~-7 mossy_cobblestone
 /execute positioned {C} run fill ~-46 ~ ~-11 ~-46 ~ ~-7 mossy_cobblestone
 /execute positioned {C} run fill ~-50 ~ ~-5 ~-48 ~ ~-5 mossy_cobblestone
 /execute positioned {C} run fill ~-32 ~ ~-5 ~-32 ~1 ~-5 mossy_cobblestone
@@ -5861,7 +5891,7 @@
 /execute positioned {C} run setblock ~-16 ~ ~34 mossy_cobblestone
 /execute positioned {C} run fill ~11 ~ ~34 ~12 ~ ~34 mossy_cobblestone
 /execute positioned {C} run fill ~37 ~ ~34 ~37 ~1 ~34 mossy_cobblestone
-/execute positioned {C} run fill ~-4 ~ ~35 ~3 ~ ~35 mossy_cobblestone
+/execute positioned {C} run fill ~-4 ~ ~35 ~-3 ~ ~35 mossy_cobblestone
 /execute positioned {C} run setblock ~22 ~ ~35 mossy_cobblestone
 /execute positioned {C} run setblock ~10 ~ ~38 mossy_cobblestone
 /execute positioned {C} run fill ~22 ~ ~42 ~22 ~1 ~42 mossy_cobblestone
@@ -5989,7 +6019,6 @@
 /execute positioned {C} run fill ~-20 ~ ~-37 ~-19 ~ ~-37 mossy_stone_bricks
 /execute positioned {C} run setblock ~-17 ~ ~-36 mossy_stone_bricks
 /execute positioned {C} run fill ~-17 ~ ~-34 ~-17 ~ ~-32 mossy_stone_bricks
-/execute positioned {C} run setblock ~-44 ~ ~-32 mossy_stone_bricks
 /execute positioned {C} run setblock ~-44 ~ ~-30 mossy_stone_bricks
 /execute positioned {C} run setblock ~-44 ~ ~-28 mossy_stone_bricks
 /execute positioned {C} run setblock ~-17 ~ ~-28 mossy_stone_bricks
@@ -6036,7 +6065,6 @@
 /execute positioned {C} run fill ~-62 ~1 ~-37 ~-62 ~3 ~-37 mossy_stone_bricks
 /execute positioned {C} run fill ~-42 ~1 ~-37 ~-42 ~2 ~-37 mossy_stone_bricks
 /execute positioned {C} run fill ~-29 ~1 ~-37 ~-29 ~2 ~-37 mossy_stone_bricks
-/execute positioned {C} run fill ~-44 ~1 ~-34 ~-44 ~2 ~-33 mossy_stone_bricks
 /execute positioned {C} run fill ~-44 ~1 ~-31 ~-44 ~2 ~-31 mossy_stone_bricks
 /execute positioned {C} run fill ~62 ~1 ~-28 ~62 ~3 ~-28 mossy_stone_bricks
 /execute positioned {C} run fill ~-62 ~1 ~-27 ~-62 ~3 ~-27 mossy_stone_bricks
@@ -6048,13 +6076,11 @@
 /execute positioned {C} run fill ~-62 ~1 ~-17 ~-62 ~3 ~-17 mossy_stone_bricks
 /execute positioned {C} run fill ~-44 ~1 ~-14 ~-44 ~2 ~-14 mossy_stone_bricks
 /execute positioned {C} run fill ~-41 ~1 ~-14 ~-41 ~2 ~-14 mossy_stone_bricks
-/execute positioned {C} run fill ~-31 ~1 ~-14 ~-31 ~2 ~-14 mossy_stone_bricks
 /execute positioned {C} run fill ~-29 ~1 ~-14 ~-28 ~2 ~-14 mossy_stone_bricks
 /execute positioned {C} run fill ~22 ~1 ~-13 ~22 ~2 ~-13 mossy_stone_bricks
 /execute positioned {C} run fill ~28 ~1 ~-13 ~28 ~2 ~-13 mossy_stone_bricks
 /execute positioned {C} run fill ~32 ~1 ~-13 ~33 ~2 ~-13 mossy_stone_bricks
 /execute positioned {C} run fill ~36 ~1 ~-13 ~36 ~2 ~-13 mossy_stone_bricks
-/execute positioned {C} run fill ~39 ~1 ~-13 ~39 ~2 ~-13 mossy_stone_bricks
 /execute positioned {C} run fill ~42 ~1 ~-13 ~42 ~2 ~-13 mossy_stone_bricks
 /execute positioned {C} run fill ~-19 ~1 ~-12 ~-19 ~2 ~-12 mossy_stone_bricks
 /execute positioned {C} run fill ~44 ~1 ~-11 ~44 ~2 ~-11 mossy_stone_bricks
@@ -6075,7 +6101,6 @@
 /execute positioned {C} run fill ~62 ~1 ~12 ~62 ~3 ~12 mossy_stone_bricks
 /execute positioned {C} run fill ~-62 ~1 ~13 ~-62 ~3 ~13 mossy_stone_bricks
 /execute positioned {C} run fill ~21 ~1 ~13 ~21 ~2 ~13 mossy_stone_bricks
-/execute positioned {C} run fill ~30 ~1 ~13 ~30 ~2 ~13 mossy_stone_bricks
 /execute positioned {C} run fill ~36 ~1 ~13 ~36 ~2 ~13 mossy_stone_bricks
 /execute positioned {C} run fill ~43 ~1 ~13 ~44 ~2 ~13 mossy_stone_bricks
 /execute positioned {C} run fill ~-62 ~1 ~23 ~-62 ~3 ~23 mossy_stone_bricks
@@ -6116,12 +6141,9 @@
 /execute positioned {C} run fill ~-37 ~-17 ~1 ~-37 ~-15 ~1 obsidian
 /execute positioned {C} run fill ~-39 ~-14 ~1 ~-38 ~-14 ~1 obsidian
 /execute positioned {C} run setblock ~2 ~-1 ~38 polished_andesite
-/execute positioned {C} run fill ~-2 ~-1 ~63 ~3 ~-1 ~66 polished_andesite
 /execute positioned {C} run fill ~-3 ~-1 ~64 ~3 ~-1 ~66 polished_andesite
 /execute positioned {C} run fill ~-1 ~-1 ~69 ~1 ~-1 ~86 polished_andesite
-/execute positioned {C} run fill ~1 ~-1 ~87 ~2 ~-1 ~87 polished_andesite
 /execute positioned {C} run fill ~-1 ~-1 ~88 ~ ~1 ~88 polished_andesite
-/execute positioned {C} run fill ~1 ~-1 ~93 ~2 ~-1 ~93 polished_andesite
 /execute positioned {C} run fill ~-3 ~-1 ~95 ~2 ~-1 ~95 polished_andesite
 /execute positioned {C} run fill ~-7 ~-1 ~97 ~-6 ~-1 ~97 polished_andesite
 /execute positioned {C} run fill ~-14 ~-1 ~98 ~-12 ~-1 ~99 polished_andesite
@@ -6137,8 +6159,13 @@
 /execute positioned {C} run fill ~-35 ~-1 ~107 ~-30 ~-1 ~107 polished_andesite
 /execute positioned {C} run setblock ~-34 ~-1 ~108 polished_andesite
 /execute positioned {C} run setblock ~-32 ~-1 ~108 polished_andesite
+/execute positioned {C} run fill ~-54 ~ ~-42 ~-53 ~ ~-42 polished_andesite
+/execute positioned {C} run setblock ~-53 ~ ~-40 polished_andesite
 /execute positioned {C} run fill ~40 ~ ~-40 ~41 ~ ~-15 polished_andesite
-/execute positioned {C} run fill ~-2 ~ ~14 ~2 ~ ~36 polished_andesite
+/execute positioned {C} run fill ~-53 ~ ~-38 ~-52 ~ ~-38 polished_andesite
+/execute positioned {C} run setblock ~-52 ~ ~-37 polished_andesite
+/execute positioned {C} run setblock ~-45 ~ ~-33 polished_andesite
+/execute positioned {C} run fill ~-2 ~ ~14 ~2 ~ ~34 polished_andesite
 /execute positioned {C} run setblock ~8 ~ ~20 polished_andesite
 /execute positioned {C} run setblock ~14 ~ ~21 polished_andesite
 /execute positioned {C} run setblock ~12 ~ ~22 polished_andesite
@@ -6150,10 +6177,13 @@
 /execute positioned {C} run setblock ~27 ~ ~27 polished_andesite
 /execute positioned {C} run setblock ~30 ~ ~27 polished_andesite
 /execute positioned {C} run setblock ~33 ~ ~28 polished_andesite
-/execute positioned {C} run fill ~-2 ~ ~38 ~1 ~ ~55 polished_andesite
-/execute positioned {C} run fill ~2 ~ ~42 ~2 ~ ~55 polished_andesite
-/execute positioned {C} run fill ~-3 ~ ~58 ~3 ~ ~62 polished_andesite
+/execute positioned {C} run fill ~-2 ~ ~36 ~2 ~2 ~36 polished_andesite
+/execute positioned {C} run fill ~-2 ~ ~38 ~1 ~2 ~38 polished_andesite
+/execute positioned {C} run fill ~-2 ~ ~42 ~2 ~ ~55 polished_andesite
+/execute positioned {C} run fill ~-3 ~ ~58 ~3 ~ ~63 polished_andesite
 /execute positioned {C} run fill ~-4 ~ ~59 ~4 ~ ~59 polished_andesite
+/execute positioned {C} run fill ~-55 ~1 ~-46 ~-54 ~1 ~-46 polished_andesite
+/execute positioned {C} run setblock ~-54 ~1 ~-45 polished_andesite
 /execute positioned {C} run fill ~51 ~1 ~-5 ~53 ~1 ~-5 polished_andesite
 /execute positioned {C} run fill ~51 ~1 ~-4 ~51 ~1 ~-3 polished_andesite
 /execute positioned {C} run fill ~53 ~1 ~-4 ~53 ~1 ~-3 polished_andesite
@@ -6183,9 +6213,10 @@
 /execute positioned {C} run fill ~49 ~2 ~-39 ~49 ~3 ~-37 polished_andesite
 /execute positioned {C} run fill ~57 ~2 ~-39 ~57 ~8 ~-31 polished_andesite
 /execute positioned {C} run fill ~-44 ~2 ~-37 ~-17 ~2 ~-37 polished_andesite
-/execute positioned {C} run fill ~-44 ~2 ~-36 ~-44 ~2 ~-14 polished_andesite
+/execute positioned {C} run fill ~-44 ~2 ~-36 ~-44 ~2 ~-35 polished_andesite
 /execute positioned {C} run fill ~-17 ~2 ~-36 ~-17 ~2 ~-28 polished_andesite
 /execute positioned {C} run fill ~49 ~2 ~-35 ~49 ~3 ~-31 polished_andesite
+/execute positioned {C} run fill ~-44 ~2 ~-31 ~-44 ~2 ~-14 polished_andesite
 /execute positioned {C} run fill ~51 ~2 ~-31 ~57 ~8 ~-31 polished_andesite
 /execute positioned {C} run fill ~-16 ~2 ~-27 ~19 ~2 ~-27 polished_andesite
 /execute positioned {C} run fill ~19 ~2 ~-26 ~19 ~2 ~-14 polished_andesite
@@ -6193,7 +6224,8 @@
 /execute positioned {C} run fill ~-19 ~2 ~-13 ~-19 ~2 ~12 polished_andesite
 /execute positioned {C} run fill ~20 ~2 ~-13 ~44 ~2 ~-13 polished_andesite
 /execute positioned {C} run fill ~44 ~2 ~-12 ~44 ~2 ~13 polished_andesite
-/execute positioned {C} run fill ~-18 ~2 ~12 ~16 ~2 ~12 polished_andesite
+/execute positioned {C} run fill ~-18 ~2 ~12 ~-6 ~2 ~12 polished_andesite
+/execute positioned {C} run fill ~6 ~2 ~12 ~16 ~2 ~12 polished_andesite
 /execute positioned {C} run fill ~17 ~2 ~13 ~44 ~2 ~13 polished_andesite
 /execute positioned {C} run fill ~49 ~3 ~-40 ~49 ~3 ~-37 polished_andesite
 /execute positioned {C} run fill ~57 ~3 ~-40 ~57 ~8 ~-31 polished_andesite
@@ -6233,8 +6265,7 @@
 /execute positioned {C} run fill ~42 ~1 ~-20 ~42 ~6 ~-20 polished_blackstone
 /execute positioned {C} run fill ~38 ~1 ~-17 ~38 ~6 ~-17 polished_blackstone
 /execute positioned {C} run fill ~42 ~1 ~-17 ~42 ~6 ~-17 polished_blackstone
-/execute positioned {C} run fill ~38 ~1 ~-14 ~38 ~8 ~-14 polished_blackstone
-/execute positioned {C} run fill ~42 ~1 ~-14 ~42 ~6 ~-14 polished_blackstone
+/execute positioned {C} run fill ~38 ~1 ~-14 ~42 ~1 ~-14 polished_blackstone
 /execute positioned {C} run fill ~38 ~3 ~-42 ~38 ~8 ~-42 polished_blackstone
 /execute positioned {C} run fill ~42 ~3 ~-42 ~42 ~8 ~-42 polished_blackstone
 /execute positioned {C} run fill ~-3 ~3 ~60 ~-3 ~3 ~61 polished_blackstone
@@ -6256,7 +6287,8 @@
 /execute positioned {C} run fill ~-40 ~-9 ~-34 ~-40 ~-9 ~-20 polished_deepslate
 /execute positioned {C} run fill ~-39 ~-9 ~-34 ~-27 ~-9 ~-34 polished_deepslate
 /execute positioned {C} run fill ~-27 ~-9 ~-33 ~-27 ~-9 ~-20 polished_deepslate
-/execute positioned {C} run fill ~-26 ~-9 ~-21 ~-22 ~-9 ~-20 polished_deepslate
+/execute positioned {C} run fill ~-26 ~-9 ~-21 ~-25 ~-9 ~-20 polished_deepslate
+/execute positioned {C} run fill ~-22 ~-9 ~-21 ~-22 ~-9 ~-19 polished_deepslate
 /execute positioned {C} run fill ~-39 ~-9 ~-20 ~-22 ~-9 ~-20 polished_deepslate
 /execute positioned {C} run fill ~-25 ~-9 ~-19 ~-22 ~-9 ~-19 polished_deepslate
 /execute positioned {C} run fill ~-61 ~7 ~19 ~-51 ~7 ~19 polished_deepslate
@@ -6283,9 +6315,12 @@
 /execute positioned {C} run fill ~2 ~-1 ~85 ~2 ~2 ~85 red_concrete
 /execute positioned {C} run fill ~-2 ~-1 ~95 ~-2 ~2 ~95 red_concrete
 /execute positioned {C} run fill ~2 ~-1 ~95 ~2 ~2 ~95 red_concrete
+/execute positioned {C} run fill ~-2 ~ ~93 ~2 ~ ~93 red_concrete
 /execute positioned {C} run fill ~-4 ~1 ~72 ~-4 ~9 ~72 red_concrete
 /execute positioned {C} run fill ~4 ~1 ~72 ~4 ~9 ~72 red_concrete
-/execute positioned {C} run fill ~-2 ~1 ~93 ~2 ~1 ~93 red_concrete
+/execute positioned {C} run fill ~-2 ~1 ~89 ~2 ~1 ~89 red_concrete
+/execute positioned {C} run fill ~-2 ~1 ~93 ~-2 ~1 ~95 red_concrete
+/execute positioned {C} run fill ~2 ~1 ~93 ~2 ~1 ~95 red_concrete
 /execute positioned {C} run fill ~-8 ~2 ~-38 ~-8 ~5 ~-38 red_concrete
 /execute positioned {C} run fill ~-4 ~2 ~-38 ~-4 ~5 ~-38 red_concrete
 /execute positioned {C} run fill ~38 ~2 ~-38 ~38 ~5 ~-38 red_concrete
@@ -6308,39 +6343,36 @@
 /execute positioned {C} run fill ~42 ~2 ~-17 ~42 ~5 ~-17 red_concrete
 /execute positioned {C} run fill ~38 ~2 ~-14 ~38 ~5 ~-14 red_concrete
 /execute positioned {C} run fill ~42 ~2 ~-14 ~42 ~5 ~-14 red_concrete
-/execute positioned {C} run fill ~-2 ~2 ~89 ~2 ~2 ~89 red_concrete
-/execute positioned {C} run fill ~-2 ~2 ~93 ~-2 ~3 ~93 red_concrete
-/execute positioned {C} run fill ~2 ~2 ~93 ~2 ~3 ~93 red_concrete
+/execute positioned {C} run fill ~-2 ~2 ~89 ~-2 ~3 ~89 red_concrete
+/execute positioned {C} run fill ~2 ~2 ~89 ~2 ~3 ~89 red_concrete
 /execute positioned {C} run fill ~39 ~3 ~-38 ~43 ~3 ~-38 red_concrete
 /execute positioned {C} run fill ~39 ~3 ~-35 ~43 ~3 ~-35 red_concrete
 /execute positioned {C} run fill ~39 ~3 ~-32 ~43 ~3 ~-32 red_concrete
+/execute positioned {C} run fill ~-8 ~3 ~-30 ~-4 ~3 ~-30 red_concrete
 /execute positioned {C} run fill ~39 ~3 ~-29 ~43 ~3 ~-29 red_concrete
 /execute positioned {C} run fill ~39 ~3 ~-26 ~43 ~3 ~-26 red_concrete
 /execute positioned {C} run fill ~39 ~3 ~-23 ~43 ~3 ~-23 red_concrete
 /execute positioned {C} run fill ~39 ~3 ~-20 ~43 ~3 ~-20 red_concrete
 /execute positioned {C} run fill ~39 ~3 ~-17 ~43 ~3 ~-17 red_concrete
-/execute positioned {C} run fill ~39 ~3 ~-14 ~43 ~3 ~-14 red_concrete
-/execute positioned {C} run fill ~-2 ~3 ~89 ~-2 ~3 ~91 red_concrete
-/execute positioned {C} run fill ~2 ~3 ~89 ~2 ~3 ~91 red_concrete
 /execute positioned {C} run fill ~38 ~4 ~-42 ~38 ~7 ~-42 red_concrete
 /execute positioned {C} run fill ~42 ~4 ~-42 ~42 ~7 ~-42 red_concrete
 /execute positioned {C} run fill ~40 ~4 ~-38 ~40 ~5 ~-38 red_concrete
 /execute positioned {C} run fill ~40 ~4 ~-35 ~40 ~5 ~-35 red_concrete
+/execute positioned {C} run fill ~-8 ~4 ~-34 ~-4 ~4 ~-34 red_concrete
 /execute positioned {C} run fill ~40 ~4 ~-32 ~40 ~5 ~-32 red_concrete
-/execute positioned {C} run fill ~-8 ~4 ~-30 ~-4 ~4 ~-30 red_concrete
+/execute positioned {C} run fill ~-8 ~4 ~-30 ~-8 ~4 ~-28 red_concrete
+/execute positioned {C} run fill ~-4 ~4 ~-30 ~-4 ~4 ~-28 red_concrete
 /execute positioned {C} run fill ~40 ~4 ~-29 ~40 ~5 ~-29 red_concrete
 /execute positioned {C} run fill ~40 ~4 ~-26 ~40 ~5 ~-26 red_concrete
 /execute positioned {C} run fill ~40 ~4 ~-23 ~40 ~5 ~-23 red_concrete
 /execute positioned {C} run fill ~40 ~4 ~-20 ~40 ~5 ~-20 red_concrete
 /execute positioned {C} run fill ~40 ~4 ~-17 ~40 ~5 ~-17 red_concrete
-/execute positioned {C} run fill ~40 ~4 ~-14 ~40 ~5 ~-14 red_concrete
 /execute positioned {C} run fill ~39 ~5 ~-42 ~43 ~5 ~-42 red_concrete
 /execute positioned {C} run fill ~37 ~5 ~-38 ~43 ~5 ~-38 red_concrete
 /execute positioned {C} run fill ~37 ~5 ~-35 ~43 ~5 ~-35 red_concrete
-/execute positioned {C} run fill ~-8 ~5 ~-34 ~-4 ~5 ~-34 red_concrete
+/execute positioned {C} run setblock ~-8 ~5 ~-34 red_concrete
+/execute positioned {C} run setblock ~-4 ~5 ~-34 red_concrete
 /execute positioned {C} run fill ~37 ~5 ~-32 ~43 ~5 ~-32 red_concrete
-/execute positioned {C} run setblock ~-8 ~5 ~-30 red_concrete
-/execute positioned {C} run setblock ~-4 ~5 ~-30 red_concrete
 /execute positioned {C} run fill ~37 ~5 ~-29 ~43 ~5 ~-29 red_concrete
 /execute positioned {C} run fill ~37 ~5 ~-26 ~43 ~5 ~-26 red_concrete
 /execute positioned {C} run fill ~37 ~5 ~-23 ~43 ~5 ~-23 red_concrete
@@ -6350,8 +6382,6 @@
 /execute positioned {C} run fill ~37 ~6 ~-47 ~37 ~11 ~-47 red_concrete
 /execute positioned {C} run fill ~43 ~6 ~-47 ~43 ~12 ~-47 red_concrete
 /execute positioned {C} run fill ~40 ~6 ~-42 ~40 ~7 ~-42 red_concrete
-/execute positioned {C} run fill ~-8 ~6 ~-34 ~-8 ~6 ~-31 red_concrete
-/execute positioned {C} run fill ~-4 ~6 ~-34 ~-4 ~6 ~-31 red_concrete
 /execute positioned {C} run fill ~44 ~7 ~-59 ~44 ~11 ~-59 red_concrete
 /execute positioned {C} run fill ~54 ~7 ~-59 ~54 ~11 ~-59 red_concrete
 /execute positioned {C} run fill ~44 ~7 ~-52 ~44 ~12 ~-52 red_concrete
@@ -6393,10 +6423,6 @@
 /execute positioned {C} run setblock ~-27 ~3 ~37 smithing_table
 /execute positioned {C} run setblock ~57 ~2 ~-8 smoker[facing=west]
 /execute positioned {C} run setblock ~57 ~2 ~-6 smoker[facing=west]
-/execute positioned {C} run setblock ~-3 ~-1 ~63 smooth_stone
-/execute positioned {C} run setblock ~-1 ~-1 ~63 smooth_stone
-/execute positioned {C} run setblock ~1 ~-1 ~63 smooth_stone
-/execute positioned {C} run setblock ~3 ~-1 ~63 smooth_stone
 /execute positioned {C} run setblock ~-2 ~-1 ~64 smooth_stone
 /execute positioned {C} run setblock ~ ~-1 ~64 smooth_stone
 /execute positioned {C} run setblock ~2 ~-1 ~64 smooth_stone
@@ -6413,7 +6439,7 @@
 /execute positioned {C} run fill ~-1 ~-1 ~79 ~1 ~-1 ~80 smooth_stone
 /execute positioned {C} run fill ~-1 ~-1 ~82 ~1 ~-1 ~83 smooth_stone
 /execute positioned {C} run fill ~ ~-1 ~88 ~ ~1 ~88 smooth_stone
-/execute positioned {C} run fill ~-1 ~-1 ~92 ~-1 ~-1 ~95 smooth_stone
+/execute positioned {C} run fill ~-1 ~-1 ~92 ~-1 ~1 ~92 smooth_stone
 /execute positioned {C} run fill ~-2 ~-1 ~94 ~1 ~-1 ~94 smooth_stone
 /execute positioned {C} run setblock ~-4 ~-1 ~95 smooth_stone
 /execute positioned {C} run fill ~-11 ~-1 ~97 ~-10 ~-1 ~97 smooth_stone
@@ -6435,8 +6461,10 @@
 /execute positioned {C} run setblock ~-31 ~-1 ~107 smooth_stone
 /execute positioned {C} run fill ~39 ~ ~-40 ~39 ~ ~-15 smooth_stone
 /execute positioned {C} run fill ~41 ~ ~-40 ~41 ~ ~-15 smooth_stone
-/execute positioned {C} run fill ~-1 ~ ~14 ~1 ~ ~36 smooth_stone
-/execute positioned {C} run fill ~-1 ~ ~38 ~1 ~ ~55 smooth_stone
+/execute positioned {C} run fill ~-1 ~ ~14 ~1 ~ ~34 smooth_stone
+/execute positioned {C} run fill ~-1 ~ ~36 ~1 ~2 ~36 smooth_stone
+/execute positioned {C} run fill ~-1 ~ ~38 ~1 ~2 ~38 smooth_stone
+/execute positioned {C} run fill ~-1 ~ ~42 ~1 ~ ~55 smooth_stone
 /execute positioned {C} run setblock ~-2 ~ ~58 smooth_stone
 /execute positioned {C} run setblock ~ ~ ~58 smooth_stone
 /execute positioned {C} run setblock ~2 ~ ~58 smooth_stone
@@ -6451,9 +6479,9 @@
 /execute positioned {C} run setblock ~-1 ~ ~61 smooth_stone
 /execute positioned {C} run setblock ~1 ~ ~61 smooth_stone
 /execute positioned {C} run setblock ~3 ~ ~61 smooth_stone
-/execute positioned {C} run setblock ~-2 ~ ~62 smooth_stone
-/execute positioned {C} run setblock ~ ~ ~62 smooth_stone
-/execute positioned {C} run setblock ~2 ~ ~62 smooth_stone
+/execute positioned {C} run fill ~-2 ~ ~62 ~-2 ~ ~63 smooth_stone
+/execute positioned {C} run fill ~ ~ ~62 ~ ~ ~63 smooth_stone
+/execute positioned {C} run fill ~2 ~ ~62 ~2 ~ ~63 smooth_stone
 /execute positioned {C} run fill ~-1 ~7 ~56 ~1 ~7 ~57 smooth_stone
 /execute positioned {C} run fill ~-1 ~7 ~68 ~1 ~7 ~68 smooth_stone
 /execute positioned {C} run fill ~39 ~8 ~-14 ~39 ~8 ~-13 smooth_stone
@@ -6467,12 +6495,14 @@
 /execute positioned {C} run fill ~-38 ~-9 ~-32 ~-29 ~-9 ~-22 spruce_planks
 /execute positioned {C} run fill ~50 ~1 ~-40 ~56 ~1 ~-32 spruce_planks
 /execute positioned {C} run fill ~-60 ~1 ~-33 ~-50 ~1 ~-24 spruce_planks
+/execute positioned {C} run fill ~-49 ~1 ~-29 ~-49 ~2 ~-27 spruce_planks
+/execute positioned {C} run fill ~45 ~1 ~-6 ~45 ~2 ~-4 spruce_planks
 /execute positioned {C} run fill ~39 ~1 ~30 ~51 ~1 ~31 spruce_planks
 /execute positioned {C} run fill ~36 ~1 ~32 ~40 ~1 ~40 spruce_planks
 /execute positioned {C} run fill ~50 ~1 ~32 ~51 ~1 ~42 spruce_planks
 /execute positioned {C} run fill ~39 ~1 ~41 ~51 ~1 ~42 spruce_planks
 /execute positioned {C} run fill ~-36 ~1 ~57 ~-10 ~1 ~61 spruce_planks
-/execute positioned {C} run fill ~-49 ~2 ~-29 ~-41 ~2 ~-26 spruce_planks
+/execute positioned {C} run fill ~-48 ~2 ~-29 ~-41 ~2 ~-26 spruce_planks
 /execute positioned {C} run fill ~42 ~2 ~-6 ~45 ~2 ~-4 spruce_planks
 /execute positioned {C} run fill ~-47 ~2 ~23 ~-25 ~2 ~23 spruce_planks
 /execute positioned {C} run fill ~-47 ~2 ~40 ~-25 ~2 ~40 spruce_planks
@@ -6493,6 +6523,7 @@
 /execute positioned {C} run fill ~19 ~3 ~3 ~21 ~3 ~11 spruce_planks
 /execute positioned {C} run fill ~22 ~3 ~9 ~41 ~3 ~11 spruce_planks
 /execute positioned {C} run fill ~50 ~7 ~-40 ~57 ~7 ~-33 spruce_planks
+/execute positioned {C} run fill ~56 ~7 ~-32 ~57 ~7 ~-31 spruce_planks
 /execute positioned {C} run fill ~36 ~7 ~28 ~38 ~7 ~28 spruce_planks
 /execute positioned {C} run fill ~53 ~7 ~28 ~53 ~7 ~30 spruce_planks
 /execute positioned {C} run fill ~52 ~7 ~29 ~52 ~7 ~44 spruce_planks
@@ -6725,8 +6756,7 @@
 /execute positioned {C} run fill ~6 ~4 ~17 ~8 ~4 ~17 spruce_wood[axis=y]
 /execute positioned {C} run setblock ~-11 ~4 ~18 spruce_wood[axis=y]
 /execute positioned {C} run fill ~10 ~4 ~18 ~10 ~5 ~18 spruce_wood[axis=y]
-/execute positioned {C} run fill ~47 ~4 ~43 ~47 ~6 ~44 spruce_wood[axis=y]
-/execute positioned {C} run fill ~48 ~4 ~44 ~49 ~6 ~44 spruce_wood[axis=y]
+/execute positioned {C} run fill ~47 ~4 ~44 ~49 ~6 ~44 spruce_wood[axis=y]
 /execute positioned {C} run setblock ~48 ~4 ~45 spruce_wood[axis=y]
 /execute positioned {C} run fill ~-43 ~5 ~-50 ~-43 ~5 ~-49 spruce_wood[axis=y]
 /execute positioned {C} run setblock ~36 ~5 ~-48 spruce_wood[axis=y]
@@ -6735,8 +6765,8 @@
 /execute positioned {C} run setblock ~-10 ~5 ~15 spruce_wood[axis=y]
 /execute positioned {C} run fill ~-9 ~5 ~17 ~-9 ~6 ~17 spruce_wood[axis=y]
 /execute positioned {C} run fill ~10 ~5 ~17 ~11 ~5 ~17 spruce_wood[axis=y]
-/execute positioned {C} run fill ~46 ~5 ~42 ~46 ~7 ~43 spruce_wood[axis=y]
-/execute positioned {C} run setblock ~47 ~5 ~45 spruce_wood[axis=y]
+/execute positioned {C} run fill ~46 ~5 ~42 ~46 ~6 ~44 spruce_wood[axis=y]
+/execute positioned {C} run fill ~47 ~5 ~43 ~47 ~5 ~45 spruce_wood[axis=y]
 /execute positioned {C} run setblock ~-44 ~6 ~-49 spruce_wood[axis=y]
 /execute positioned {C} run fill ~36 ~6 ~-47 ~36 ~10 ~-47 spruce_wood[axis=y]
 /execute positioned {C} run fill ~36 ~6 ~-46 ~36 ~6 ~-44 spruce_wood[axis=y]
@@ -6749,13 +6779,11 @@
 /execute positioned {C} run fill ~10 ~7 ~15 ~10 ~7 ~16 spruce_wood[axis=y]
 /execute positioned {C} run setblock ~-9 ~7 ~16 spruce_wood[axis=y]
 /execute positioned {C} run fill ~9 ~7 ~16 ~10 ~7 ~16 spruce_wood[axis=y]
-/execute positioned {C} run fill ~47 ~7 ~43 ~51 ~7 ~43 spruce_wood[axis=y]
 /execute positioned {C} run fill ~38 ~8 ~-46 ~38 ~8 ~-45 spruce_wood[axis=y]
 /execute positioned {C} run fill ~9 ~8 ~18 ~9 ~8 ~19 spruce_wood[axis=y]
 /execute positioned {C} run setblock ~10 ~8 ~19 spruce_wood[axis=y]
 /execute positioned {C} run fill ~34 ~9 ~-47 ~36 ~9 ~-47 spruce_wood[axis=y]
 /execute positioned {C} run setblock ~37 ~10 ~-48 spruce_wood[axis=y]
-/execute positioned {C} run setblock ~37 ~11 ~-47 spruce_wood[axis=y]
 /execute positioned {C} run fill ~-17 ~11 ~-25 ~-17 ~12 ~-25 spruce_wood[axis=y]
 /execute positioned {C} run fill ~-16 ~12 ~-25 ~-16 ~16 ~-25 spruce_wood[axis=y]
 /execute positioned {C} run fill ~-16 ~12 ~-24 ~-16 ~13 ~-24 spruce_wood[axis=y]
@@ -6833,8 +6861,7 @@
 /execute positioned {C} run fill ~49 ~11 ~-49 ~52 ~11 ~-49 stripped_dark_oak_log[axis=x]
 /execute positioned {C} run fill ~44 ~12 ~-52 ~54 ~12 ~-52 stripped_dark_oak_log[axis=x]
 /execute positioned {C} run fill ~44 ~12 ~-50 ~54 ~12 ~-50 stripped_dark_oak_log[axis=x]
-/execute positioned {C} run fill ~49 ~13 ~-43 ~53 ~14 ~-43 stripped_dark_oak_log[axis=x]
-/execute positioned {C} run fill ~55 ~13 ~-43 ~59 ~13 ~-43 stripped_dark_oak_log[axis=x]
+/execute positioned {C} run fill ~49 ~13 ~-43 ~59 ~13 ~-43 stripped_dark_oak_log[axis=x]
 /execute positioned {C} run fill ~-35 ~13 ~-30 ~-24 ~13 ~-30 stripped_dark_oak_log[axis=x]
 /execute positioned {C} run fill ~49 ~13 ~-29 ~59 ~13 ~-29 stripped_dark_oak_log[axis=x]
 /execute positioned {C} run fill ~-35 ~13 ~-21 ~-24 ~13 ~-21 stripped_dark_oak_log[axis=x]
@@ -6853,8 +6880,8 @@
 /execute positioned {C} run fill ~2 ~-5 ~93 ~2 ~-1 ~93 stripped_dark_oak_log[axis=y]
 /execute positioned {C} run fill ~-47 ~-4 ~-54 ~-47 ~3 ~-54 stripped_dark_oak_log[axis=y]
 /execute positioned {C} run fill ~-47 ~-4 ~-52 ~-47 ~3 ~-52 stripped_dark_oak_log[axis=y]
-/execute positioned {C} run fill ~-8 ~-4 ~-36 ~-8 ~3 ~-36 stripped_dark_oak_log[axis=y]
-/execute positioned {C} run fill ~-4 ~-4 ~-36 ~-4 ~3 ~-36 stripped_dark_oak_log[axis=y]
+/execute positioned {C} run fill ~-8 ~-4 ~-36 ~-8 ~2 ~-36 stripped_dark_oak_log[axis=y]
+/execute positioned {C} run fill ~-4 ~-4 ~-36 ~-4 ~2 ~-36 stripped_dark_oak_log[axis=y]
 /execute positioned {C} run fill ~-8 ~-4 ~-30 ~ ~-1 ~-30 stripped_dark_oak_log[axis=y]
 /execute positioned {C} run fill ~36 ~-4 ~32 ~36 ~ ~32 stripped_dark_oak_log[axis=y]
 /execute positioned {C} run fill ~40 ~-4 ~34 ~40 ~ ~34 stripped_dark_oak_log[axis=y]
@@ -6872,8 +6899,8 @@
 /execute positioned {C} run fill ~43 ~-4 ~40 ~43 ~ ~40 stripped_dark_oak_log[axis=y]
 /execute positioned {C} run fill ~39 ~-4 ~42 ~39 ~ ~42 stripped_dark_oak_log[axis=y]
 /execute positioned {C} run fill ~30 ~-1 ~48 ~40 ~-1 ~54 stripped_dark_oak_log[axis=y]
-/execute positioned {C} run fill ~-8 ~ ~-30 ~-8 ~3 ~-30 stripped_dark_oak_log[axis=y]
-/execute positioned {C} run fill ~-4 ~ ~-30 ~-4 ~3 ~-30 stripped_dark_oak_log[axis=y]
+/execute positioned {C} run fill ~-8 ~ ~-30 ~-8 ~2 ~-30 stripped_dark_oak_log[axis=y]
+/execute positioned {C} run fill ~-4 ~ ~-30 ~-4 ~2 ~-30 stripped_dark_oak_log[axis=y]
 /execute positioned {C} run fill ~62 ~ ~18 ~62 ~8 ~18 stripped_dark_oak_log[axis=y]
 /execute positioned {C} run fill ~62 ~ ~24 ~62 ~6 ~24 stripped_dark_oak_log[axis=y]
 /execute positioned {C} run fill ~-4 ~ ~62 ~-4 ~6 ~62 stripped_dark_oak_log[axis=y]
@@ -7317,7 +7344,7 @@
 /execute positioned {C} run fill ~9 ~12 ~-5 ~9 ~17 ~-5 stripped_dark_oak_log[axis=y]
 /execute positioned {C} run fill ~48 ~12 ~-4 ~48 ~12 ~-2 stripped_dark_oak_log[axis=y]
 /execute positioned {C} run fill ~56 ~12 ~-4 ~56 ~12 ~-2 stripped_dark_oak_log[axis=y]
-/execute positioned {C} run fill ~42 ~13 ~-54 ~42 ~15 ~-54 stripped_dark_oak_log[axis=y]
+/execute positioned {C} run fill ~42 ~13 ~-54 ~42 ~15 ~-52 stripped_dark_oak_log[axis=y]
 /execute positioned {C} run fill ~56 ~13 ~-54 ~56 ~15 ~-52 stripped_dark_oak_log[axis=y]
 /execute positioned {C} run fill ~-44 ~13 ~31 ~-44 ~14 ~35 stripped_dark_oak_log[axis=y]
 /execute positioned {C} run fill ~-28 ~13 ~31 ~-28 ~14 ~35 stripped_dark_oak_log[axis=y]
@@ -7486,7 +7513,7 @@
 /execute positioned {C} run fill ~48 ~11 ~-6 ~48 ~11 ~ stripped_dark_oak_log[axis=z]
 /execute positioned {C} run fill ~56 ~11 ~-6 ~56 ~11 ~ stripped_dark_oak_log[axis=z]
 /execute positioned {C} run fill ~42 ~12 ~-59 ~42 ~12 ~-48 stripped_dark_oak_log[axis=z]
-/execute positioned {C} run fill ~56 ~12 ~-59 ~56 ~12 ~-49 stripped_dark_oak_log[axis=z]
+/execute positioned {C} run fill ~56 ~12 ~-59 ~56 ~12 ~-48 stripped_dark_oak_log[axis=z]
 /execute positioned {C} run fill ~-44 ~12 ~27 ~-44 ~12 ~37 stripped_dark_oak_log[axis=z]
 /execute positioned {C} run fill ~-28 ~12 ~27 ~-28 ~12 ~37 stripped_dark_oak_log[axis=z]
 /execute positioned {C} run fill ~-9 ~15 ~-16 ~-9 ~17 ~-15 stripped_dark_oak_log[axis=z]
@@ -7499,6 +7526,7 @@
 /execute positioned {C} run fill ~9 ~15 ~-7 ~9 ~17 ~-6 stripped_dark_oak_log[axis=z]
 /execute positioned {C} run fill ~-7 ~22 ~-13 ~-7 ~22 ~-7 stripped_dark_oak_log[axis=z]
 /execute positioned {C} run fill ~7 ~22 ~-13 ~7 ~22 ~-7 stripped_dark_oak_log[axis=z]
+/execute positioned {C} run fill ~ ~8 ~10 ~4 ~8 ~10 stripped_dark_oak_wood[axis=x]
 /execute positioned {C} run fill ~-58 ~7 ~-31 ~-55 ~7 ~-28 stripped_spruce_wood[axis=x]
 /execute positioned {C} run fill ~-53 ~7 ~-31 ~-51 ~7 ~-28 stripped_spruce_wood[axis=x]
 /execute positioned {C} run fill ~-58 ~7 ~-26 ~-55 ~7 ~-25 stripped_spruce_wood[axis=x]
@@ -7909,11 +7937,10 @@
 /execute positioned {C} run fill ~56 ~12 ~-5 ~56 ~13 ~-5 white_concrete
 /execute positioned {C} run fill ~48 ~12 ~-3 ~48 ~12 ~-2 white_concrete
 /execute positioned {C} run fill ~56 ~12 ~-3 ~56 ~12 ~-2 white_concrete
+/execute positioned {C} run fill ~42 ~13 ~-58 ~42 ~14 ~-55 white_concrete
 /execute positioned {C} run fill ~56 ~13 ~-58 ~56 ~14 ~-55 white_concrete
-/execute positioned {C} run fill ~42 ~13 ~-56 ~42 ~15 ~-55 white_concrete
-/execute positioned {C} run fill ~42 ~13 ~-53 ~42 ~14 ~-50 white_concrete
-/execute positioned {C} run fill ~56 ~13 ~-53 ~56 ~15 ~-52 white_concrete
-/execute positioned {C} run fill ~56 ~13 ~-51 ~56 ~13 ~-49 white_concrete
+/execute positioned {C} run fill ~42 ~13 ~-53 ~42 ~13 ~-49 white_concrete
+/execute positioned {C} run fill ~56 ~13 ~-53 ~56 ~13 ~-49 white_concrete
 /execute positioned {C} run fill ~-9 ~13 ~-16 ~-9 ~14 ~-15 white_concrete
 /execute positioned {C} run fill ~9 ~13 ~-16 ~9 ~14 ~-15 white_concrete
 /execute positioned {C} run fill ~-9 ~13 ~-13 ~-9 ~14 ~-12 white_concrete
@@ -7929,6 +7956,8 @@
 /execute positioned {C} run fill ~-28 ~13 ~28 ~-28 ~14 ~30 white_concrete
 /execute positioned {C} run fill ~-44 ~13 ~33 ~-44 ~13 ~36 white_concrete
 /execute positioned {C} run fill ~-28 ~13 ~33 ~-28 ~13 ~36 white_concrete
+/execute positioned {C} run fill ~42 ~14 ~-53 ~42 ~14 ~-50 white_concrete
+/execute positioned {C} run fill ~56 ~14 ~-53 ~56 ~14 ~-50 white_concrete
 /execute positioned {C} run fill ~51 ~14 ~-43 ~52 ~15 ~-43 white_concrete
 /execute positioned {C} run fill ~54 ~14 ~-43 ~57 ~14 ~-43 white_concrete
 /execute positioned {C} run fill ~-34 ~14 ~-30 ~-31 ~15 ~-30 white_concrete
@@ -7943,7 +7972,10 @@
 /execute positioned {C} run fill ~31 ~14 ~6 ~35 ~14 ~6 white_concrete
 /execute positioned {C} run fill ~-44 ~14 ~33 ~-44 ~14 ~35 white_concrete
 /execute positioned {C} run fill ~-28 ~14 ~33 ~-28 ~14 ~35 white_concrete
-/execute positioned {C} run setblock ~56 ~15 ~-55 white_concrete
+/execute positioned {C} run fill ~42 ~15 ~-55 ~43 ~16 ~-55 white_concrete
+/execute positioned {C} run fill ~56 ~15 ~-55 ~56 ~16 ~-55 white_concrete
+/execute positioned {C} run fill ~42 ~15 ~-53 ~43 ~15 ~-52 white_concrete
+/execute positioned {C} run fill ~56 ~15 ~-53 ~56 ~15 ~-52 white_concrete
 /execute positioned {C} run fill ~54 ~15 ~-43 ~55 ~15 ~-42 white_concrete
 /execute positioned {C} run fill ~-29 ~15 ~-30 ~-26 ~15 ~-30 white_concrete
 /execute positioned {C} run fill ~54 ~15 ~-29 ~55 ~15 ~-29 white_concrete
@@ -7993,12 +8025,16 @@
 /execute positioned {C} run setblock ~-33 ~2 ~47 dark_oak_fence[north=false,south=false,east=false,west=false]
 /execute positioned {C} run setblock ~-28 ~2 ~47 dark_oak_fence[north=false,south=false,east=false,west=false]
 /execute positioned {C} run fill ~-28 ~3 ~30 ~-28 ~4 ~30 dark_oak_fence[north=false,south=false,east=false,west=false]
+/execute positioned {C} run setblock ~-2 ~3 ~90 dark_oak_fence[north=false,south=false,east=false,west=false]
+/execute positioned {C} run setblock ~2 ~3 ~90 dark_oak_fence[north=false,south=false,east=false,west=false]
 /execute positioned {C} run fill ~-12 ~4 ~-18 ~-12 ~5 ~-18 dark_oak_fence[north=false,south=false,east=false,west=false]
 /execute positioned {C} run fill ~12 ~4 ~-18 ~12 ~5 ~-18 dark_oak_fence[north=false,south=false,east=false,west=false]
 /execute positioned {C} run fill ~-12 ~4 ~-3 ~-12 ~5 ~-3 dark_oak_fence[north=false,south=false,east=false,west=false]
 /execute positioned {C} run fill ~12 ~4 ~-3 ~12 ~5 ~-3 dark_oak_fence[north=false,south=false,east=false,west=false]
 /execute positioned {C} run fill ~22 ~4 ~-1 ~22 ~5 ~-1 dark_oak_fence[north=false,south=false,east=false,west=false]
 /execute positioned {C} run fill ~29 ~4 ~-1 ~29 ~5 ~-1 dark_oak_fence[north=false,south=false,east=false,west=false]
+/execute positioned {C} run setblock ~-8 ~6 ~-33 dark_oak_fence[north=false,south=false,east=false,west=false]
+/execute positioned {C} run setblock ~-4 ~6 ~-33 dark_oak_fence[north=false,south=false,east=false,west=false]
 /execute positioned {C} run fill ~51 ~8 ~-39 ~51 ~9 ~-39 dark_oak_fence[north=false,south=false,east=false,west=false]
 /execute positioned {C} run fill ~-7 ~12 ~-15 ~-7 ~13 ~-15 dark_oak_fence[north=false,south=false,east=false,west=false]
 /execute positioned {C} run fill ~7 ~12 ~-15 ~7 ~13 ~-15 dark_oak_fence[north=false,south=false,east=false,west=false]
@@ -8100,15 +8136,13 @@
 /execute positioned {C} run fill ~1 ~16 ~-5 ~2 ~16 ~-5 dark_oak_fence[north=false,south=false,east=true,west=true]
 /execute positioned {C} run fill ~4 ~16 ~-5 ~5 ~16 ~-5 dark_oak_fence[north=false,south=false,east=true,west=true]
 /execute positioned {C} run fill ~7 ~16 ~-5 ~8 ~16 ~-5 dark_oak_fence[north=false,south=false,east=true,west=true]
-/execute positioned {C} run fill ~-2 ~2 ~87 ~-2 ~2 ~88 dark_oak_fence[north=false,south=true,east=false,west=false]
-/execute positioned {C} run fill ~2 ~2 ~87 ~2 ~2 ~88 dark_oak_fence[north=false,south=true,east=false,west=false]
+/execute positioned {C} run setblock ~-2 ~2 ~88 dark_oak_fence[north=false,south=true,east=false,west=false]
+/execute positioned {C} run setblock ~2 ~2 ~88 dark_oak_fence[north=false,south=true,east=false,west=false]
 /execute positioned {C} run fill ~-44 ~3 ~38 ~-44 ~4 ~38 dark_oak_fence[north=false,south=true,east=false,west=false]
 /execute positioned {C} run fill ~-32 ~4 ~-19 ~-32 ~5 ~-19 dark_oak_fence[north=false,south=true,east=false,west=false]
 /execute positioned {C} run fill ~-23 ~4 ~-19 ~-23 ~5 ~-19 dark_oak_fence[north=false,south=true,east=false,west=false]
-/execute positioned {C} run setblock ~-8 ~5 ~-36 dark_oak_fence[north=false,south=true,east=false,west=false]
-/execute positioned {C} run setblock ~-4 ~5 ~-36 dark_oak_fence[north=false,south=true,east=false,west=false]
-/execute positioned {C} run setblock ~-8 ~6 ~-35 dark_oak_fence[north=false,south=true,east=false,west=false]
-/execute positioned {C} run setblock ~-4 ~6 ~-35 dark_oak_fence[north=false,south=true,east=false,west=false]
+/execute positioned {C} run setblock ~-8 ~5 ~-35 dark_oak_fence[north=false,south=true,east=false,west=false]
+/execute positioned {C} run setblock ~-4 ~5 ~-35 dark_oak_fence[north=false,south=true,east=false,west=false]
 /execute positioned {C} run fill ~-59 ~2 ~-25 ~-59 ~3 ~-25 dark_oak_fence[north=false,south=true,east=false,west=true]
 /execute positioned {C} run fill ~-29 ~4 ~-26 ~-29 ~5 ~-26 dark_oak_fence[north=false,south=true,east=false,west=true]
 /execute positioned {C} run fill ~22 ~4 ~8 ~22 ~5 ~8 dark_oak_fence[north=false,south=true,east=false,west=true]
@@ -8116,32 +8150,28 @@
 /execute positioned {C} run setblock ~31 ~7 ~-9 dark_oak_fence[north=false,south=true,east=true,west=true]
 /execute positioned {C} run setblock ~-2 ~8 ~-21 dark_oak_fence[north=false,south=true,east=true,west=true]
 /execute positioned {C} run setblock ~2 ~8 ~-21 dark_oak_fence[north=false,south=true,east=true,west=true]
-/execute positioned {C} run setblock ~-2 ~3 ~91 dark_oak_fence[north=true,south=false,east=false,west=false]
-/execute positioned {C} run setblock ~2 ~3 ~91 dark_oak_fence[north=true,south=false,east=false,west=false]
-/execute positioned {C} run setblock ~-8 ~6 ~-31 dark_oak_fence[north=true,south=false,east=false,west=false]
-/execute positioned {C} run setblock ~-4 ~6 ~-31 dark_oak_fence[north=true,south=false,east=false,west=false]
+/execute positioned {C} run fill ~-2 ~2 ~92 ~-2 ~2 ~93 dark_oak_fence[north=true,south=false,east=false,west=false]
+/execute positioned {C} run fill ~2 ~2 ~92 ~2 ~2 ~93 dark_oak_fence[north=true,south=false,east=false,west=false]
+/execute positioned {C} run setblock ~-8 ~5 ~-31 dark_oak_fence[north=true,south=false,east=false,west=false]
+/execute positioned {C} run setblock ~-4 ~5 ~-31 dark_oak_fence[north=true,south=false,east=false,west=false]
 /execute positioned {C} run fill ~-47 ~2 ~-52 ~-47 ~3 ~-52 dark_oak_fence[north=true,south=false,east=false,west=true]
 /execute positioned {C} run setblock ~-48 ~2 ~-52 dark_oak_fence[north=true,south=false,east=true,west=false]
 /execute positioned {C} run fill ~-50 ~2 ~-54 ~-47 ~2 ~-54 dark_oak_fence[north=true,south=false,east=true,west=true]
 /execute positioned {C} run fill ~-23 ~3 ~62 ~-23 ~4 ~62 dark_oak_fence[north=true,south=false,east=true,west=true]
 /execute positioned {C} run fill ~-16 ~3 ~62 ~-16 ~4 ~62 dark_oak_fence[north=true,south=false,east=true,west=true]
 /execute positioned {C} run setblock ~31 ~7 ~9 dark_oak_fence[north=true,south=false,east=true,west=true]
-/execute positioned {C} run setblock ~-2 ~1 ~86 dark_oak_fence[north=true,south=true,east=false,west=false]
-/execute positioned {C} run setblock ~2 ~1 ~86 dark_oak_fence[north=true,south=true,east=false,west=false]
+/execute positioned {C} run fill ~-2 ~1 ~86 ~-2 ~1 ~87 dark_oak_fence[north=true,south=true,east=false,west=false]
+/execute positioned {C} run fill ~2 ~1 ~86 ~2 ~1 ~87 dark_oak_fence[north=true,south=true,east=false,west=false]
 /execute positioned {C} run setblock ~-2 ~1 ~94 dark_oak_fence[north=true,south=true,east=false,west=false]
 /execute positioned {C} run setblock ~2 ~1 ~94 dark_oak_fence[north=true,south=true,east=false,west=false]
-/execute positioned {C} run setblock ~-2 ~2 ~88 dark_oak_fence[north=true,south=true,east=false,west=false]
-/execute positioned {C} run setblock ~2 ~2 ~88 dark_oak_fence[north=true,south=true,east=false,west=false]
-/execute positioned {C} run setblock ~-2 ~2 ~92 dark_oak_fence[north=true,south=true,east=false,west=false]
-/execute positioned {C} run setblock ~2 ~2 ~92 dark_oak_fence[north=true,south=true,east=false,west=false]
-/execute positioned {C} run setblock ~-2 ~3 ~90 dark_oak_fence[north=true,south=true,east=false,west=false]
-/execute positioned {C} run setblock ~2 ~3 ~90 dark_oak_fence[north=true,south=true,east=false,west=false]
-/execute positioned {C} run setblock ~-8 ~4 ~-37 dark_oak_fence[north=true,south=true,east=false,west=false]
-/execute positioned {C} run setblock ~-4 ~4 ~-37 dark_oak_fence[north=true,south=true,east=false,west=false]
+/execute positioned {C} run setblock ~-2 ~2 ~91 dark_oak_fence[north=true,south=true,east=false,west=false]
+/execute positioned {C} run setblock ~2 ~2 ~91 dark_oak_fence[north=true,south=true,east=false,west=false]
+/execute positioned {C} run fill ~-8 ~4 ~-37 ~-8 ~4 ~-36 dark_oak_fence[north=true,south=true,east=false,west=false]
+/execute positioned {C} run fill ~-4 ~4 ~-37 ~-4 ~4 ~-36 dark_oak_fence[north=true,south=true,east=false,west=false]
 /execute positioned {C} run setblock ~-8 ~4 ~-29 dark_oak_fence[north=true,south=true,east=false,west=false]
 /execute positioned {C} run setblock ~-4 ~4 ~-29 dark_oak_fence[north=true,south=true,east=false,west=false]
-/execute positioned {C} run fill ~-8 ~6 ~-33 ~-8 ~6 ~-32 dark_oak_fence[north=true,south=true,east=false,west=false]
-/execute positioned {C} run fill ~-4 ~6 ~-33 ~-4 ~6 ~-32 dark_oak_fence[north=true,south=true,east=false,west=false]
+/execute positioned {C} run setblock ~-8 ~5 ~-32 dark_oak_fence[north=true,south=true,east=false,west=false]
+/execute positioned {C} run setblock ~-4 ~5 ~-32 dark_oak_fence[north=true,south=true,east=false,west=false]
 /execute positioned {C} run fill ~46 ~6 ~-9 ~46 ~6 ~-8 dark_oak_fence[north=true,south=true,east=false,west=false]
 /execute positioned {C} run fill ~46 ~6 ~-6 ~46 ~6 ~-5 dark_oak_fence[north=true,south=true,east=false,west=false]
 /execute positioned {C} run fill ~46 ~6 ~-3 ~46 ~6 ~-2 dark_oak_fence[north=true,south=true,east=false,west=false]
@@ -8201,15 +8231,20 @@
 /execute positioned {C} run setblock ~-48 ~2 ~-54 dark_oak_fence[north=true,south=true,east=true,west=true]
 /execute positioned {C} run fill ~-5 ~4 ~-18 ~-5 ~5 ~-18 dark_oak_fence[north=true,south=true,east=true,west=true]
 /execute positioned {C} run fill ~5 ~4 ~-18 ~5 ~5 ~-18 dark_oak_fence[north=true,south=true,east=true,west=true]
-/execute positioned {C} run fill ~-1 ~1 ~87 ~1 ~1 ~93 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~-1 ~ ~86 ~1 ~ ~88 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~-1 ~ ~94 ~1 ~ ~94 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~-1 ~1 ~88 ~1 ~1 ~92 dark_oak_slab[type=bottom]
 /execute positioned {C} run fill ~-44 ~2 ~54 ~-40 ~2 ~54 dark_oak_slab[type=bottom]
-/execute positioned {C} run fill ~-1 ~2 ~89 ~1 ~2 ~91 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~-1 ~2 ~90 ~1 ~2 ~90 dark_oak_slab[type=bottom]
 /execute positioned {C} run fill ~-57 ~3 ~-56 ~-53 ~3 ~-56 dark_oak_slab[type=bottom]
 /execute positioned {C} run fill ~-58 ~3 ~-55 ~-58 ~3 ~-51 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~-7 ~3 ~-37 ~-5 ~3 ~-35 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~-7 ~3 ~-29 ~-5 ~3 ~-29 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~-7 ~4 ~-35 ~-5 ~4 ~-31 dark_oak_slab[type=bottom]
 /execute positioned {C} run fill ~-28 ~4 ~-28 ~-27 ~4 ~-28 dark_oak_slab[type=bottom]
 /execute positioned {C} run fill ~25 ~4 ~5 ~26 ~4 ~5 dark_oak_slab[type=bottom]
 /execute positioned {C} run fill ~-36 ~4 ~25 ~-36 ~5 ~25 dark_oak_slab[type=bottom]
-/execute positioned {C} run fill ~-7 ~5 ~-35 ~-5 ~5 ~-31 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~-7 ~5 ~-33 ~-5 ~5 ~-33 dark_oak_slab[type=bottom]
 /execute positioned {C} run fill ~-40 ~8 ~55 ~-39 ~8 ~56 dark_oak_slab[type=bottom]
 /execute positioned {C} run fill ~-6 ~8 ~55 ~-6 ~8 ~59 dark_oak_slab[type=bottom]
 /execute positioned {C} run fill ~-40 ~8 ~63 ~-39 ~8 ~63 dark_oak_slab[type=bottom]
@@ -8244,12 +8279,11 @@
 /execute positioned {C} run fill ~-1 ~12 ~-9 ~1 ~12 ~-9 dark_oak_slab[type=bottom]
 /execute positioned {C} run setblock ~-3 ~12 ~12 dark_oak_slab[type=bottom]
 /execute positioned {C} run setblock ~3 ~12 ~12 dark_oak_slab[type=bottom]
-/execute positioned {C} run fill ~41 ~13 ~-59 ~43 ~13 ~-59 dark_oak_slab[type=bottom]
-/execute positioned {C} run fill ~41 ~13 ~-49 ~53 ~13 ~-49 dark_oak_slab[type=bottom]
-/execute positioned {C} run setblock ~57 ~13 ~-49 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~41 ~13 ~-59 ~57 ~13 ~-59 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~41 ~13 ~-49 ~57 ~13 ~-49 dark_oak_slab[type=bottom]
 /execute positioned {C} run fill ~-45 ~13 ~27 ~-27 ~13 ~27 dark_oak_slab[type=bottom]
 /execute positioned {C} run fill ~-45 ~13 ~36 ~-27 ~13 ~36 dark_oak_slab[type=bottom]
-/execute positioned {C} run fill ~41 ~14 ~-58 ~56 ~14 ~-57 dark_oak_slab[type=bottom]
+/execute positioned {C} run fill ~41 ~14 ~-58 ~57 ~14 ~-57 dark_oak_slab[type=bottom]
 /execute positioned {C} run fill ~41 ~14 ~-50 ~57 ~14 ~-50 dark_oak_slab[type=bottom]
 /execute positioned {C} run fill ~49 ~14 ~-44 ~50 ~14 ~-28 dark_oak_slab[type=bottom]
 /execute positioned {C} run fill ~57 ~14 ~-44 ~57 ~14 ~-28 dark_oak_slab[type=bottom]
@@ -8287,32 +8321,26 @@
 /execute positioned {C} run setblock ~ ~22 ~1 dark_oak_slab[type=double]
 /execute positioned {C} run fill ~-8 ~26 ~-11 ~8 ~26 ~-11 dark_oak_slab[type=double]
 /execute positioned {C} run fill ~-35 ~-8 ~-27 ~-32 ~-8 ~-27 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-1 ~-2 ~85 ~1 ~-1 ~85 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-1 ~-2 ~95 ~1 ~-1 ~95 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-1 ~-1 ~86 ~1 ~ ~86 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-1 ~-1 ~85 ~1 ~-1 ~86 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-1 ~-1 ~94 ~1 ~-1 ~95 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~28 ~ ~48 ~34 ~ ~48 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~34 ~ ~49 ~34 ~ ~52 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~35 ~ ~52 ~40 ~ ~52 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-1 ~ ~87 ~1 ~ ~88 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-1 ~ ~92 ~1 ~ ~94 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-1 ~ ~92 ~1 ~ ~93 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-50 ~1 ~-54 ~-47 ~1 ~-52 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-7 ~1 ~-38 ~-5 ~2 ~-38 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-7 ~1 ~-28 ~-5 ~2 ~-28 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-1 ~1 ~89 ~1 ~1 ~92 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-7 ~2 ~-37 ~-5 ~3 ~-37 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-1 ~1 ~89 ~1 ~1 ~91 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-7 ~2 ~-38 ~-5 ~2 ~-37 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-7 ~2 ~-29 ~-5 ~2 ~-28 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-7 ~3 ~-36 ~-5 ~4 ~-36 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-7 ~3 ~-30 ~-5 ~3 ~-29 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-7 ~3 ~-36 ~-5 ~3 ~-35 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-7 ~3 ~-31 ~-5 ~3 ~-30 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-61 ~3 ~16 ~-51 ~4 ~16 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-61 ~3 ~22 ~-51 ~4 ~22 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-63 ~4 ~-46 ~-63 ~5 ~61 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-61 ~4 ~-46 ~-61 ~5 ~-45 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-61 ~4 ~-43 ~-61 ~4 ~20 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-61 ~4 ~-46 ~-61 ~4 ~20 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~61 ~4 ~-43 ~61 ~5 ~5 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~63 ~4 ~-43 ~63 ~5 ~18 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-7 ~4 ~-35 ~-5 ~4 ~-35 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-7 ~4 ~-31 ~-5 ~4 ~-30 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-7 ~4 ~-34 ~-5 ~4 ~-32 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-62 ~4 ~16 ~-50 ~4 ~17 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-62 ~4 ~18 ~-61 ~5 ~18 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-51 ~4 ~18 ~-50 ~5 ~18 dark_oak_slab[type=top]
@@ -8333,9 +8361,9 @@
 /execute positioned {C} run fill ~-8 ~4 ~63 ~-7 ~5 ~63 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~7 ~4 ~63 ~62 ~5 ~63 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-60 ~5 ~-36 ~-50 ~6 ~-36 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-7 ~5 ~-34 ~-5 ~5 ~-32 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-47 ~5 ~-33 ~-47 ~5 ~-24 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-49 ~5 ~-32 ~-41 ~6 ~-32 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-49 ~5 ~-32 ~-44 ~6 ~-32 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-41 ~5 ~-32 ~-41 ~6 ~-32 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~45 ~5 ~-29 ~61 ~6 ~-29 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-49 ~5 ~-24 ~-41 ~6 ~-24 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-60 ~5 ~-21 ~-50 ~6 ~-21 dark_oak_slab[type=top]
@@ -8358,7 +8386,9 @@
 /execute positioned {C} run fill ~-47 ~6 ~-35 ~-47 ~6 ~-31 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-62 ~6 ~-34 ~-62 ~7 ~-23 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-48 ~6 ~-34 ~-47 ~6 ~-31 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-50 ~6 ~-32 ~-40 ~6 ~-31 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-50 ~6 ~-32 ~-43 ~6 ~-31 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-40 ~6 ~-32 ~-40 ~7 ~-30 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-42 ~6 ~-31 ~-40 ~7 ~-31 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-50 ~6 ~-30 ~-49 ~7 ~-30 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-41 ~6 ~-30 ~-40 ~7 ~-30 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-48 ~6 ~-29 ~-47 ~6 ~-27 dark_oak_slab[type=top]
@@ -8394,10 +8424,9 @@
 /execute positioned {C} run fill ~53 ~6 ~29 ~53 ~6 ~43 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~37 ~6 ~30 ~37 ~7 ~42 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~52 ~6 ~30 ~53 ~6 ~42 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~38 ~6 ~43 ~46 ~6 ~44 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~48 ~6 ~43 ~51 ~6 ~44 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~38 ~6 ~43 ~51 ~7 ~43 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~37 ~6 ~44 ~46 ~6 ~44 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~52 ~6 ~44 ~52 ~7 ~44 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~51 ~6 ~44 ~52 ~7 ~44 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-61 ~6 ~46 ~-51 ~7 ~46 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-39 ~6 ~53 ~-7 ~6 ~54 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-38 ~6 ~55 ~-38 ~7 ~55 dark_oak_slab[type=top]
@@ -8410,7 +8439,7 @@
 /execute positioned {C} run fill ~-5 ~6 ~68 ~5 ~6 ~68 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-60 ~7 ~-59 ~-50 ~7 ~-59 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-61 ~7 ~-58 ~-61 ~7 ~-48 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-59 ~7 ~-58 ~-51 ~7 ~-58 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-59 ~7 ~-58 ~-51 ~8 ~-58 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-49 ~7 ~-58 ~-49 ~7 ~-48 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-60 ~7 ~-57 ~-60 ~8 ~-49 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-50 ~7 ~-57 ~-49 ~7 ~-49 dark_oak_slab[type=top]
@@ -8460,7 +8489,7 @@
 /execute positioned {C} run fill ~-7 ~7 ~68 ~-4 ~7 ~68 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~6 ~7 ~68 ~7 ~8 ~68 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-61 ~8 ~-59 ~-59 ~8 ~-59 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~-49 ~8 ~-59 ~-49 ~9 ~-59 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~-49 ~8 ~-59 ~-49 ~8 ~-57 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-61 ~8 ~-47 ~-59 ~8 ~-47 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-49 ~8 ~-47 ~-49 ~9 ~-47 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~-43 ~8 ~-38 ~-17 ~8 ~-38 dark_oak_slab[type=top]
@@ -8579,10 +8608,10 @@
 /execute positioned {C} run fill ~42 ~11 ~-62 ~56 ~11 ~-62 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~43 ~11 ~-61 ~55 ~12 ~-61 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~42 ~11 ~-60 ~43 ~12 ~-60 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~55 ~11 ~-60 ~56 ~11 ~-60 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~55 ~11 ~-60 ~56 ~12 ~-60 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~42 ~11 ~-48 ~43 ~12 ~-48 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~55 ~11 ~-48 ~55 ~12 ~-46 dark_oak_slab[type=top]
-/execute positioned {C} run setblock ~56 ~11 ~-48 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~56 ~11 ~-48 ~56 ~12 ~-48 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~43 ~11 ~-47 ~55 ~11 ~-46 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~42 ~11 ~-46 ~56 ~11 ~-46 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~47 ~11 ~-41 ~47 ~12 ~-31 dark_oak_slab[type=top]
@@ -8597,9 +8626,10 @@
 /execute positioned {C} run fill ~55 ~12 ~-49 ~55 ~12 ~-46 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~47 ~12 ~-43 ~48 ~12 ~-29 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~58 ~12 ~-43 ~59 ~12 ~-29 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~43 ~13 ~-58 ~43 ~14 ~-57 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~55 ~13 ~-58 ~55 ~14 ~-57 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~43 ~13 ~-51 ~43 ~13 ~-49 dark_oak_slab[type=top]
-/execute positioned {C} run fill ~55 ~13 ~-51 ~55 ~14 ~-50 dark_oak_slab[type=top]
+/execute positioned {C} run fill ~55 ~13 ~-51 ~55 ~13 ~-49 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~49 ~13 ~-42 ~50 ~14 ~-42 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~56 ~13 ~-42 ~59 ~13 ~-42 dark_oak_slab[type=top]
 /execute positioned {C} run fill ~49 ~13 ~-30 ~50 ~14 ~-30 dark_oak_slab[type=top]
@@ -8684,13 +8714,7 @@
 /execute positioned {C} run fill ~-18 ~8 ~-6 ~-18 ~8 ~-5 dark_oak_stairs[facing=east,half=top,shape=straight]
 /execute positioned {C} run setblock ~-18 ~8 ~-3 dark_oak_stairs[facing=east,half=top,shape=straight]
 /execute positioned {C} run fill ~-18 ~8 ~ ~-18 ~8 ~3 dark_oak_stairs[facing=east,half=top,shape=straight]
-/execute positioned {C} run fill ~-1 ~-1 ~95 ~1 ~-1 ~95 dark_oak_stairs[facing=north,half=bottom,shape=straight]
-/execute positioned {C} run fill ~-1 ~ ~94 ~1 ~ ~94 dark_oak_stairs[facing=north,half=bottom,shape=straight]
-/execute positioned {C} run fill ~-1 ~1 ~92 ~1 ~1 ~92 dark_oak_stairs[facing=north,half=bottom,shape=straight]
-/execute positioned {C} run fill ~-7 ~2 ~-28 ~-5 ~2 ~-28 dark_oak_stairs[facing=north,half=bottom,shape=straight]
-/execute positioned {C} run fill ~-7 ~3 ~-29 ~-5 ~3 ~-29 dark_oak_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-41 ~3 ~28 ~-31 ~3 ~28 dark_oak_stairs[facing=north,half=bottom,shape=straight]
-/execute positioned {C} run fill ~-7 ~4 ~-30 ~-5 ~4 ~-30 dark_oak_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-7 ~4 ~-16 ~7 ~4 ~-16 dark_oak_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-51 ~8 ~-27 ~-39 ~8 ~-27 dark_oak_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~42 ~8 ~-15 ~63 ~8 ~-15 dark_oak_stairs[facing=north,half=bottom,shape=straight]
@@ -8711,8 +8735,7 @@
 /execute positioned {C} run fill ~-45 ~14 ~34 ~-27 ~14 ~34 dark_oak_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~41 ~15 ~-52 ~57 ~15 ~-52 dark_oak_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-45 ~15 ~33 ~-27 ~15 ~33 dark_oak_stairs[facing=north,half=bottom,shape=straight]
-/execute positioned {C} run fill ~41 ~16 ~-53 ~55 ~16 ~-53 dark_oak_stairs[facing=north,half=bottom,shape=straight]
-/execute positioned {C} run setblock ~57 ~16 ~-53 dark_oak_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~41 ~16 ~-53 ~57 ~16 ~-53 dark_oak_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-8 ~23 ~-9 ~8 ~23 ~-9 dark_oak_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-40 ~2 ~-16 ~-19 ~2 ~-16 dark_oak_stairs[facing=north,half=top,shape=straight]
 /execute positioned {C} run fill ~-16 ~2 ~2 ~17 ~2 ~2 dark_oak_stairs[facing=north,half=top,shape=straight]
@@ -8730,12 +8753,6 @@
 /execute positioned {C} run fill ~12 ~8 ~3 ~13 ~8 ~3 dark_oak_stairs[facing=north,half=top,shape=straight]
 /execute positioned {C} run setblock ~15 ~8 ~3 dark_oak_stairs[facing=north,half=top,shape=straight]
 /execute positioned {C} run fill ~17 ~8 ~3 ~18 ~8 ~3 dark_oak_stairs[facing=north,half=top,shape=straight]
-/execute positioned {C} run fill ~-1 ~-1 ~85 ~1 ~-1 ~85 dark_oak_stairs[facing=south,half=bottom,shape=straight]
-/execute positioned {C} run fill ~-1 ~ ~86 ~1 ~ ~86 dark_oak_stairs[facing=south,half=bottom,shape=straight]
-/execute positioned {C} run fill ~-1 ~1 ~88 ~1 ~1 ~88 dark_oak_stairs[facing=south,half=bottom,shape=straight]
-/execute positioned {C} run fill ~-7 ~2 ~-38 ~-5 ~2 ~-38 dark_oak_stairs[facing=south,half=bottom,shape=straight]
-/execute positioned {C} run fill ~-7 ~3 ~-37 ~-5 ~3 ~-37 dark_oak_stairs[facing=south,half=bottom,shape=straight]
-/execute positioned {C} run fill ~-7 ~4 ~-36 ~-5 ~4 ~-36 dark_oak_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-51 ~8 ~-29 ~-39 ~8 ~-29 dark_oak_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~42 ~8 ~-26 ~63 ~8 ~-26 dark_oak_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-40 ~8 ~56 ~-6 ~8 ~56 dark_oak_stairs[facing=south,half=bottom,shape=straight]
@@ -8753,7 +8770,7 @@
 /execute positioned {C} run fill ~-45 ~14 ~29 ~-27 ~14 ~29 dark_oak_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~41 ~15 ~-56 ~57 ~15 ~-56 dark_oak_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-45 ~15 ~30 ~-27 ~15 ~30 dark_oak_stairs[facing=south,half=bottom,shape=straight]
-/execute positioned {C} run fill ~41 ~16 ~-55 ~55 ~16 ~-55 dark_oak_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run fill ~41 ~16 ~-55 ~57 ~16 ~-55 dark_oak_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-8 ~23 ~-13 ~8 ~23 ~-13 dark_oak_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-40 ~2 ~-35 ~-19 ~2 ~-35 dark_oak_stairs[facing=south,half=top,shape=straight]
 /execute positioned {C} run fill ~-16 ~2 ~-23 ~17 ~2 ~-23 dark_oak_stairs[facing=south,half=top,shape=straight]
@@ -8786,6 +8803,7 @@
 /execute positioned {C} run fill ~57 ~10 ~3 ~57 ~10 ~20 dark_oak_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~4 ~10 ~12 dark_oak_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run fill ~46 ~10 ~32 ~46 ~10 ~40 dark_oak_stairs[facing=west,half=bottom,shape=straight]
+/execute positioned {C} run fill ~1 ~11 ~-7 ~1 ~11 ~-6 dark_oak_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run fill ~56 ~11 ~3 ~56 ~11 ~20 dark_oak_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run fill ~2 ~13 ~ ~2 ~13 ~12 dark_oak_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run fill ~56 ~14 ~-44 ~56 ~14 ~-28 dark_oak_stairs[facing=west,half=bottom,shape=straight]
@@ -8850,8 +8868,8 @@
 /execute positioned {C} run fill ~-39 ~7 ~65 ~-38 ~7 ~65 deepslate_tile_slab
 /execute positioned {C} run setblock ~-7 ~7 ~65 deepslate_tile_slab
 /execute positioned {C} run fill ~-59 ~8 ~-59 ~-59 ~8 ~-58 deepslate_tile_slab
-/execute positioned {C} run setblock ~-51 ~8 ~-59 deepslate_tile_slab
-/execute positioned {C} run fill ~-58 ~8 ~-58 ~-52 ~8 ~-58 deepslate_tile_slab
+/execute positioned {C} run fill ~-51 ~8 ~-59 ~-50 ~8 ~-59 deepslate_tile_slab
+/execute positioned {C} run fill ~-58 ~8 ~-58 ~-51 ~8 ~-58 deepslate_tile_slab
 /execute positioned {C} run fill ~-61 ~8 ~-57 ~-60 ~8 ~-57 deepslate_tile_slab
 /execute positioned {C} run setblock ~-49 ~8 ~-57 deepslate_tile_slab
 /execute positioned {C} run fill ~-60 ~8 ~-56 ~-60 ~8 ~-49 deepslate_tile_slab
@@ -8995,6 +9013,7 @@
 /execute positioned {C} run fill ~-55 ~12 ~-52 ~-54 ~12 ~-52 deepslate_tile_slab
 /execute positioned {C} run fill ~43 ~12 ~-47 ~55 ~12 ~-47 deepslate_tile_slab
 /execute positioned {C} run fill ~42 ~12 ~-46 ~43 ~12 ~-46 deepslate_tile_slab
+/execute positioned {C} run setblock ~56 ~12 ~-46 deepslate_tile_slab
 /execute positioned {C} run fill ~-37 ~12 ~-32 ~-22 ~12 ~-32 deepslate_tile_slab
 /execute positioned {C} run fill ~-38 ~12 ~-31 ~-38 ~12 ~-19 deepslate_tile_slab
 /execute positioned {C} run fill ~-22 ~12 ~-31 ~-22 ~12 ~-19 deepslate_tile_slab
@@ -9011,10 +9030,8 @@
 /execute positioned {C} run fill ~23 ~12 ~8 ~38 ~12 ~8 deepslate_tile_slab
 /execute positioned {C} run fill ~-44 ~12 ~26 ~-28 ~12 ~26 deepslate_tile_slab
 /execute positioned {C} run fill ~-44 ~12 ~37 ~-28 ~12 ~37 deepslate_tile_slab
-/execute positioned {C} run fill ~42 ~13 ~-59 ~43 ~13 ~-59 deepslate_tile_slab
-/execute positioned {C} run fill ~45 ~13 ~-59 ~56 ~13 ~-59 deepslate_tile_slab
-/execute positioned {C} run fill ~42 ~13 ~-49 ~53 ~13 ~-49 deepslate_tile_slab
-/execute positioned {C} run setblock ~56 ~13 ~-49 deepslate_tile_slab
+/execute positioned {C} run fill ~42 ~13 ~-59 ~56 ~13 ~-59 deepslate_tile_slab
+/execute positioned {C} run fill ~42 ~13 ~-49 ~56 ~13 ~-49 deepslate_tile_slab
 /execute positioned {C} run fill ~47 ~13 ~-43 ~48 ~13 ~-42 deepslate_tile_slab
 /execute positioned {C} run fill ~59 ~13 ~-43 ~59 ~13 ~-42 deepslate_tile_slab
 /execute positioned {C} run fill ~48 ~13 ~-41 ~48 ~13 ~-29 deepslate_tile_slab
@@ -9157,6 +9174,7 @@
 /execute positioned {C} run setblock ~44 ~9 ~11 deepslate_tile_slab[type=double]
 /execute positioned {C} run setblock ~19 ~9 ~14 deepslate_tile_slab[type=double]
 /execute positioned {C} run setblock ~41 ~9 ~14 deepslate_tile_slab[type=double]
+/execute positioned {C} run setblock ~-44 ~10 ~-38 deepslate_tile_slab[type=double]
 /execute positioned {C} run setblock ~-16 ~10 ~-38 deepslate_tile_slab[type=double]
 /execute positioned {C} run setblock ~-41 ~10 ~-35 deepslate_tile_slab[type=double]
 /execute positioned {C} run setblock ~-19 ~10 ~-35 deepslate_tile_slab[type=double]
@@ -9274,6 +9292,7 @@
 /execute positioned {C} run fill ~43 ~7 ~-10 ~43 ~7 ~2 deepslate_tile_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run fill ~49 ~7 ~4 ~49 ~7 ~19 deepslate_tile_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run fill ~61 ~7 ~20 ~61 ~7 ~24 deepslate_tile_stairs[facing=east,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~-50 ~8 ~-59 deepslate_tile_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-60 ~8 ~-57 deepslate_tile_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-60 ~8 ~-49 deepslate_tile_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-50 ~8 ~-47 deepslate_tile_stairs[facing=east,half=bottom,shape=straight]
@@ -9364,6 +9383,7 @@
 /execute positioned {C} run fill ~-5 ~7 ~68 ~-4 ~7 ~68 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~4 ~7 ~68 ~5 ~7 ~68 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-61 ~8 ~-58 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~-49 ~8 ~-58 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-59 ~8 ~-48 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-51 ~8 ~-48 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-50 ~8 ~-27 ~-40 ~8 ~-27 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
@@ -9416,7 +9436,7 @@
 /execute positioned {C} run fill ~-44 ~11 ~38 ~-28 ~11 ~38 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-7 ~11 ~63 ~-4 ~11 ~63 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~4 ~11 ~63 ~7 ~11 ~63 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
-/execute positioned {C} run fill ~42 ~12 ~-48 ~55 ~12 ~-48 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~42 ~12 ~-48 ~56 ~12 ~-48 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-36 ~12 ~-20 ~-24 ~12 ~-20 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~48 ~12 ~-2 ~56 ~12 ~-2 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-13 ~12 ~-1 ~13 ~12 ~-1 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
@@ -9428,7 +9448,7 @@
 /execute positioned {C} run fill ~-44 ~14 ~34 ~-28 ~14 ~34 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~42 ~15 ~-52 ~56 ~15 ~-52 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-44 ~15 ~33 ~-28 ~15 ~33 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
-/execute positioned {C} run fill ~42 ~16 ~-53 ~55 ~16 ~-53 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~42 ~16 ~-53 ~56 ~16 ~-53 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-9 ~17 ~-1 ~-6 ~17 ~-1 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~6 ~17 ~-1 ~9 ~17 ~-1 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-13 ~18 ~-20 deepslate_tile_stairs[facing=north,half=bottom,shape=straight]
@@ -9449,7 +9469,8 @@
 /execute positioned {C} run fill ~-8 ~5 ~61 ~-7 ~5 ~61 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~7 ~5 ~61 ~60 ~5 ~61 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-60 ~6 ~-36 ~-50 ~6 ~-36 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
-/execute positioned {C} run fill ~-49 ~6 ~-32 ~-41 ~6 ~-32 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-49 ~6 ~-32 ~-43 ~6 ~-32 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~-41 ~6 ~-32 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~45 ~6 ~-29 ~60 ~6 ~-29 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-37 ~6 ~53 ~-9 ~6 ~53 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-58 ~7 ~-59 ~-52 ~7 ~-59 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
@@ -9463,6 +9484,7 @@
 /execute positioned {C} run fill ~-5 ~7 ~56 ~-4 ~7 ~56 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~4 ~7 ~56 ~5 ~7 ~56 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-59 ~8 ~-58 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~-51 ~8 ~-58 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-61 ~8 ~-48 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-49 ~8 ~-48 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-40 ~8 ~-38 ~-20 ~8 ~-38 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
@@ -9508,7 +9530,7 @@
 /execute positioned {C} run fill ~48 ~11 ~-7 ~56 ~11 ~-7 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-44 ~11 ~25 ~-28 ~11 ~25 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-7 ~11 ~61 ~7 ~11 ~61 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
-/execute positioned {C} run fill ~42 ~12 ~-60 ~55 ~12 ~-60 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run fill ~42 ~12 ~-60 ~56 ~12 ~-60 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-36 ~12 ~-31 ~-24 ~12 ~-31 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-13 ~12 ~-20 ~13 ~12 ~-20 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~24 ~12 ~-7 ~36 ~12 ~-7 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
@@ -9521,7 +9543,7 @@
 /execute positioned {C} run fill ~-44 ~14 ~29 ~-28 ~14 ~29 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~42 ~15 ~-56 ~56 ~15 ~-56 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-44 ~15 ~30 ~-28 ~15 ~30 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
-/execute positioned {C} run fill ~42 ~16 ~-55 ~55 ~16 ~-55 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run fill ~42 ~16 ~-55 ~56 ~16 ~-55 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-9 ~17 ~-21 ~9 ~17 ~-21 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-11 ~18 ~-20 ~-11 ~18 ~-19 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~11 ~18 ~-20 ~11 ~18 ~-3 deepslate_tile_stairs[facing=south,half=bottom,shape=straight]
@@ -9538,8 +9560,7 @@
 /execute positioned {C} run setblock ~4 ~11 ~2 deepslate_tile_stairs[facing=west,half=bottom,shape=inner_right]
 /execute positioned {C} run setblock ~5 ~17 ~-1 deepslate_tile_stairs[facing=west,half=bottom,shape=inner_right]
 /execute positioned {C} run fill ~2 ~19 ~-4 ~2 ~19 ~ deepslate_tile_stairs[facing=west,half=bottom,shape=inner_right]
-/execute positioned {C} run fill ~-61 ~5 ~-46 ~-61 ~5 ~-45 deepslate_tile_stairs[facing=west,half=bottom,shape=straight]
-/execute positioned {C} run fill ~-61 ~5 ~-43 ~-61 ~5 ~16 deepslate_tile_stairs[facing=west,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-61 ~5 ~-46 ~-61 ~5 ~16 deepslate_tile_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run fill ~63 ~5 ~-43 ~63 ~5 ~5 deepslate_tile_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~63 ~5 ~18 deepslate_tile_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-61 ~5 ~22 ~-61 ~5 ~48 deepslate_tile_stairs[facing=west,half=bottom,shape=straight]
@@ -9557,6 +9578,7 @@
 /execute positioned {C} run fill ~61 ~7 ~4 ~61 ~7 ~19 deepslate_tile_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run fill ~63 ~7 ~20 ~63 ~7 ~24 deepslate_tile_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-60 ~8 ~-59 deepslate_tile_stairs[facing=west,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~-50 ~8 ~-57 deepslate_tile_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-50 ~8 ~-49 deepslate_tile_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-60 ~8 ~-47 deepslate_tile_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-16 ~8 ~-34 ~-16 ~8 ~-29 deepslate_tile_stairs[facing=west,half=bottom,shape=straight]
@@ -9668,6 +9690,7 @@
 /execute positioned {C} run setblock ~42 ~8 ~-49 mossy_stone_brick_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~17 ~3 ~-41 mossy_stone_brick_stairs[facing=east,half=top,shape=straight]
 /execute positioned {C} run setblock ~28 ~3 ~51 mossy_stone_brick_stairs[facing=east,half=top,shape=straight]
+/execute positioned {C} run setblock ~-54 ~1 ~-43 mossy_stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-31 ~3 ~105 mossy_stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-60 ~4 ~-3 mossy_stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~33 ~4 ~25 mossy_stone_brick_stairs[facing=north,half=bottom,shape=straight]
@@ -9722,9 +9745,22 @@
 /execute positioned {C} run fill ~43 ~6 ~-49 ~43 ~7 ~-49 mossy_stone_brick_wall[north=none,south=none,east=none,west=none,up=true]
 /execute positioned {C} run fill ~46 ~6 ~-48 ~46 ~7 ~-48 mossy_stone_brick_wall[north=none,south=none,east=none,west=none,up=true]
 /execute positioned {C} run fill ~52 ~6 ~-48 ~52 ~7 ~-48 mossy_stone_brick_wall[north=none,south=none,east=none,west=none,up=true]
-/execute positioned {C} run fill ~-4 ~ ~13 ~4 ~ ~13 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
-/execute positioned {C} run fill ~-4 ~1 ~12 ~4 ~1 ~12 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
-/execute positioned {C} run fill ~-4 ~2 ~11 ~4 ~2 ~11 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-5 ~1 ~13 ~5 ~1 ~13 polished_andesite_slab[type=bottom]
+/execute positioned {C} run fill ~-44 ~1 ~-34 ~-44 ~1 ~-32 polished_andesite_stairs[facing=east,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-43 ~2 ~-34 ~-43 ~2 ~-32 polished_andesite_stairs[facing=east,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-42 ~3 ~-34 ~-42 ~3 ~-32 polished_andesite_stairs[facing=east,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-32 ~1 ~-13 ~-30 ~1 ~-13 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-4 ~1 ~13 ~4 ~1 ~13 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~28 ~1 ~14 ~30 ~1 ~14 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-32 ~2 ~-14 ~-30 ~2 ~-14 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-4 ~2 ~12 ~4 ~2 ~12 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~28 ~2 ~13 ~30 ~2 ~13 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-32 ~3 ~-15 ~-30 ~3 ~-15 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-4 ~3 ~11 ~4 ~3 ~11 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~28 ~3 ~12 ~30 ~3 ~12 polished_andesite_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~39 ~1 ~-14 ~41 ~1 ~-14 polished_andesite_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run fill ~39 ~2 ~-13 ~41 ~2 ~-13 polished_andesite_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run fill ~39 ~3 ~-12 ~41 ~3 ~-12 polished_andesite_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-33 ~-10 ~-3 polished_blackstone_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~44 ~7 ~-38 polished_blackstone_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~44 ~7 ~-35 polished_blackstone_stairs[facing=east,half=bottom,shape=straight]
@@ -9827,6 +9863,11 @@
 /execute positioned {C} run setblock ~-5 ~7 ~72 red_nether_brick_slab[type=bottom]
 /execute positioned {C} run setblock ~5 ~7 ~72 red_nether_brick_slab[type=bottom]
 /execute positioned {C} run setblock ~44 ~9 ~-47 red_nether_brick_slab[type=bottom]
+/execute positioned {C} run fill ~-9 ~3 ~-24 ~-7 ~3 ~-24 smooth_stone_slab[type=bottom]
+/execute positioned {C} run fill ~7 ~3 ~-24 ~9 ~3 ~-24 smooth_stone_slab[type=bottom]
+/execute positioned {C} run fill ~-18 ~3 ~-11 ~-18 ~3 ~-9 smooth_stone_slab[type=bottom]
+/execute positioned {C} run fill ~-9 ~3 ~3 ~-8 ~3 ~3 smooth_stone_slab[type=bottom]
+/execute positioned {C} run fill ~8 ~3 ~3 ~9 ~3 ~3 smooth_stone_slab[type=bottom]
 /execute positioned {C} run setblock ~49 ~1 ~18 spruce_fence[north=false,south=false,east=false,west=true]
 /execute positioned {C} run fill ~46 ~1 ~18 ~48 ~1 ~18 spruce_fence[north=false,south=false,east=true,west=false]
 /execute positioned {C} run fill ~55 ~2 ~9 ~60 ~2 ~9 spruce_fence[north=false,south=false,east=true,west=false]
@@ -9854,8 +9895,7 @@
 /execute positioned {C} run fill ~37 ~7 ~30 ~37 ~7 ~42 spruce_slab
 /execute positioned {C} run fill ~52 ~7 ~30 ~52 ~7 ~42 spruce_slab
 /execute positioned {C} run setblock ~36 ~7 ~43 spruce_slab
-/execute positioned {C} run fill ~38 ~7 ~43 ~45 ~7 ~43 spruce_slab
-/execute positioned {C} run fill ~48 ~7 ~43 ~51 ~7 ~43 spruce_slab
+/execute positioned {C} run fill ~38 ~7 ~43 ~51 ~7 ~43 spruce_slab
 /execute positioned {C} run setblock ~53 ~7 ~43 spruce_slab
 /execute positioned {C} run fill ~37 ~7 ~44 ~38 ~7 ~44 spruce_slab
 /execute positioned {C} run setblock ~52 ~7 ~44 spruce_slab
@@ -9882,15 +9922,21 @@
 /execute positioned {C} run setblock ~50 ~8 ~41 spruce_slab[type=double]
 /execute positioned {C} run fill ~-49 ~2 ~-30 ~-42 ~2 ~-30 spruce_slab[type=top]
 /execute positioned {C} run fill ~-49 ~2 ~-26 ~-42 ~2 ~-26 spruce_slab[type=top]
+/execute positioned {C} run setblock ~38 ~1 ~31 spruce_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~50 ~2 ~-32 spruce_stairs[facing=east,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-49 ~2 ~-29 ~-49 ~2 ~-27 spruce_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~51 ~3 ~-32 spruce_stairs[facing=east,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-44 ~3 ~-29 ~-44 ~3 ~-27 spruce_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~52 ~4 ~-32 spruce_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~53 ~5 ~-32 spruce_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~54 ~6 ~-32 spruce_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run fill ~36 ~6 ~31 ~36 ~6 ~41 spruce_stairs[facing=east,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~55 ~7 ~-32 spruce_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run fill ~38 ~7 ~33 ~38 ~7 ~41 spruce_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run fill ~40 ~8 ~33 ~40 ~8 ~39 spruce_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run fill ~43 ~10 ~33 ~43 ~10 ~39 spruce_stairs[facing=east,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-56 ~1 ~-23 ~-54 ~1 ~-23 spruce_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~47 ~1 ~43 ~49 ~1 ~43 spruce_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~39 ~6 ~44 ~46 ~6 ~44 spruce_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~48 ~6 ~44 ~50 ~6 ~44 spruce_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~39 ~7 ~42 ~50 ~7 ~42 spruce_stairs[facing=north,half=bottom,shape=straight]
@@ -9898,6 +9944,8 @@
 /execute positioned {C} run fill ~39 ~6 ~28 ~50 ~6 ~28 spruce_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~39 ~7 ~30 ~50 ~7 ~30 spruce_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run fill ~41 ~8 ~32 ~48 ~8 ~32 spruce_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run fill ~45 ~2 ~-6 ~45 ~2 ~-4 spruce_stairs[facing=west,half=bottom,shape=straight]
+/execute positioned {C} run fill ~42 ~3 ~-6 ~42 ~3 ~-4 spruce_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run fill ~53 ~6 ~31 ~53 ~6 ~41 spruce_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run fill ~51 ~7 ~31 ~51 ~7 ~41 spruce_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run fill ~49 ~8 ~33 ~49 ~8 ~39 spruce_stairs[facing=west,half=bottom,shape=straight]
@@ -9931,11 +9979,10 @@
 /execute positioned {C} run fill ~4 ~4 ~28 ~6 ~4 ~28 stone_brick_slab[type=bottom]
 /execute positioned {C} run fill ~-6 ~4 ~30 ~-4 ~4 ~30 stone_brick_slab[type=bottom]
 /execute positioned {C} run fill ~4 ~4 ~30 ~6 ~4 ~30 stone_brick_slab[type=bottom]
-/execute positioned {C} run fill ~-2 ~-1 ~33 ~2 ~ ~33 stone_brick_slab[type=top]
-/execute positioned {C} run fill ~-2 ~-1 ~41 ~2 ~ ~41 stone_brick_slab[type=top]
-/execute positioned {C} run fill ~-2 ~ ~34 ~2 ~ ~35 stone_brick_slab[type=top]
-/execute positioned {C} run fill ~-2 ~ ~39 ~2 ~ ~41 stone_brick_slab[type=top]
-/execute positioned {C} run fill ~-2 ~1 ~36 ~2 ~1 ~39 stone_brick_slab[type=top]
+/execute positioned {C} run fill ~-2 ~ ~33 ~2 ~ ~34 stone_brick_slab[type=top]
+/execute positioned {C} run fill ~-2 ~ ~40 ~2 ~ ~41 stone_brick_slab[type=top]
+/execute positioned {C} run fill ~-2 ~1 ~35 ~2 ~1 ~39 stone_brick_slab[type=top]
+/execute positioned {C} run setblock ~48 ~1 ~-36 stone_brick_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-5 ~3 ~75 stone_brick_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~3 ~3 ~75 stone_brick_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-5 ~3 ~79 stone_brick_stairs[facing=east,half=bottom,shape=straight]
@@ -9946,6 +9993,7 @@
 /execute positioned {C} run setblock ~4 ~4 ~20 stone_brick_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-6 ~4 ~29 stone_brick_stairs[facing=east,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~4 ~4 ~29 stone_brick_stairs[facing=east,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-39 ~-17 ~-11 ~-38 ~-17 ~-11 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-39 ~-16 ~-12 ~-38 ~-16 ~-12 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-39 ~-15 ~-13 ~-38 ~-15 ~-13 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-39 ~-14 ~-14 ~-38 ~-14 ~-14 stone_brick_stairs[facing=north,half=bottom,shape=straight]
@@ -9953,7 +10001,9 @@
 /execute positioned {C} run fill ~-39 ~-12 ~-16 ~-38 ~-12 ~-16 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-39 ~-11 ~-17 ~-38 ~-11 ~-17 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-39 ~-10 ~-18 ~-38 ~-10 ~-18 stone_brick_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-24 ~-9 ~-20 ~-23 ~-9 ~-20 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-39 ~-9 ~-19 ~-38 ~-9 ~-19 stone_brick_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-24 ~-8 ~-21 ~-23 ~-8 ~-21 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-24 ~-7 ~-22 ~-23 ~-7 ~-22 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-24 ~-6 ~-23 ~-23 ~-6 ~-23 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-24 ~-5 ~-24 ~-23 ~-5 ~-24 stone_brick_stairs[facing=north,half=bottom,shape=straight]
@@ -9962,12 +10012,15 @@
 /execute positioned {C} run fill ~-24 ~-2 ~-27 ~-23 ~-2 ~-27 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-24 ~-1 ~-28 ~-23 ~-1 ~-28 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-24 ~ ~-29 ~-23 ~ ~-29 stone_brick_stairs[facing=north,half=bottom,shape=straight]
-/execute positioned {C} run fill ~-2 ~ ~41 ~2 ~ ~41 stone_brick_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-3 ~ ~63 ~3 ~ ~63 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~39 ~1 ~-41 ~41 ~1 ~-41 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-24 ~1 ~-30 ~-23 ~1 ~-30 stone_brick_stairs[facing=north,half=bottom,shape=straight]
-/execute positioned {C} run fill ~-2 ~1 ~39 ~2 ~1 ~39 stone_brick_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~52 ~1 ~3 stone_brick_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-37 ~1 ~42 ~-35 ~1 ~42 stone_brick_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-55 ~2 ~-49 ~-54 ~2 ~-49 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~39 ~2 ~-42 ~41 ~2 ~-42 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~-24 ~2 ~-31 ~-23 ~2 ~-31 stone_brick_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-37 ~2 ~41 ~-35 ~2 ~41 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~39 ~3 ~-43 ~41 ~3 ~-43 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-4 ~3 ~76 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~4 ~3 ~76 stone_brick_stairs[facing=north,half=bottom,shape=straight]
@@ -9981,8 +10034,13 @@
 /execute positioned {C} run setblock ~-5 ~4 ~30 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~5 ~4 ~30 stone_brick_stairs[facing=north,half=bottom,shape=straight]
 /execute positioned {C} run fill ~47 ~5 ~-48 ~51 ~5 ~-48 stone_brick_stairs[facing=north,half=bottom,shape=straight]
-/execute positioned {C} run fill ~-2 ~ ~33 ~2 ~ ~33 stone_brick_stairs[facing=south,half=bottom,shape=straight]
-/execute positioned {C} run fill ~-2 ~1 ~35 ~2 ~1 ~35 stone_brick_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run fill ~47 ~6 ~-49 ~51 ~6 ~-49 stone_brick_stairs[facing=north,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-55 ~1 ~47 ~-53 ~1 ~47 stone_brick_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~-35 ~1 ~55 stone_brick_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~-28 ~1 ~55 stone_brick_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~-21 ~1 ~55 stone_brick_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run setblock ~-14 ~1 ~55 stone_brick_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-55 ~2 ~48 ~-53 ~2 ~48 stone_brick_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-4 ~3 ~74 stone_brick_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~4 ~3 ~74 stone_brick_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-4 ~3 ~78 stone_brick_stairs[facing=south,half=bottom,shape=straight]
@@ -9993,6 +10051,9 @@
 /execute positioned {C} run setblock ~5 ~4 ~19 stone_brick_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-5 ~4 ~28 stone_brick_stairs[facing=south,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~5 ~4 ~28 stone_brick_stairs[facing=south,half=bottom,shape=straight]
+/execute positioned {C} run fill ~63 ~ ~19 ~63 ~ ~23 stone_brick_stairs[facing=west,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-24 ~1 ~31 ~-24 ~1 ~32 stone_brick_stairs[facing=west,half=bottom,shape=straight]
+/execute positioned {C} run fill ~-25 ~2 ~31 ~-25 ~2 ~32 stone_brick_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-3 ~3 ~75 stone_brick_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~5 ~3 ~75 stone_brick_stairs[facing=west,half=bottom,shape=straight]
 /execute positioned {C} run setblock ~-3 ~3 ~79 stone_brick_stairs[facing=west,half=bottom,shape=straight]
@@ -10346,7 +10407,7 @@
 /execute positioned {C} run fill ~-59 ~-2 ~-16 ~-49 ~ ~-10 water
 /execute positioned {C} run fill ~-60 ~-2 ~-14 ~-49 ~ ~-13 water
 /execute positioned {C} run fill ~-48 ~-2 ~-12 ~-48 ~ ~-6 water
-/execute positioned {C} run fill ~-47 ~-2 ~-11 ~-47 ~-1 ~-7 water
+/execute positioned {C} run fill ~-47 ~-2 ~-11 ~-47 ~ ~-7 water
 /execute positioned {C} run fill ~-49 ~-2 ~-9 ~-48 ~ ~-6 water
 /execute positioned {C} run fill ~-56 ~-2 ~-7 ~-47 ~ ~-7 water
 /execute positioned {C} run fill ~-52 ~-2 ~-6 ~-48 ~ ~-6 water
@@ -10368,8 +10429,7 @@
 /execute positioned {C} run fill ~-18 ~-2 ~23 ~-18 ~-1 ~31 water
 /execute positioned {C} run fill ~-17 ~-2 ~26 ~-17 ~-1 ~32 water
 /execute positioned {C} run fill ~-16 ~-2 ~30 ~-16 ~-1 ~33 water
-/execute positioned {C} run fill ~25 ~-2 ~31 ~26 ~-1 ~51 water
-/execute positioned {C} run fill ~27 ~-2 ~31 ~32 ~-2 ~52 water
+/execute positioned {C} run fill ~25 ~-2 ~31 ~32 ~-1 ~47 water
 /execute positioned {C} run fill ~-15 ~-2 ~32 ~-15 ~-1 ~34 water
 /execute positioned {C} run fill ~24 ~-2 ~32 ~33 ~-1 ~47 water
 /execute positioned {C} run fill ~40 ~-2 ~32 ~44 ~-1 ~33 water
@@ -10398,6 +10458,7 @@
 /execute positioned {C} run fill ~23 ~-2 ~41 ~38 ~-2 ~49 water
 /execute positioned {C} run fill ~43 ~-2 ~41 ~43 ~-1 ~51 water
 /execute positioned {C} run fill ~45 ~-2 ~42 ~45 ~-1 ~49 water
+/execute positioned {C} run fill ~25 ~-2 ~50 ~33 ~-1 ~51 water
 /execute positioned {C} run fill ~26 ~-2 ~52 ~34 ~-1 ~52 water
 /execute positioned {C} run fill ~39 ~-2 ~52 ~39 ~-1 ~54 water
 /execute positioned {C} run fill ~40 ~-2 ~52 ~41 ~-1 ~53 water
@@ -10427,12 +10488,10 @@
 /execute positioned {C} run fill ~11 ~-1 ~-32 ~17 ~-1 ~-32 water
 /execute positioned {C} run setblock ~7 ~-1 ~-30 water
 /execute positioned {C} run fill ~-12 ~-1 ~-28 ~4 ~-1 ~-28 water
-/execute positioned {C} run fill ~-50 ~-1 ~-8 ~-48 ~ ~-6 water
+/execute positioned {C} run fill ~-50 ~-1 ~-8 ~-47 ~ ~-7 water
 /execute positioned {C} run fill ~-21 ~-1 ~12 ~-20 ~-1 ~14 water
 /execute positioned {C} run fill ~-19 ~-1 ~13 ~-19 ~-1 ~30 water
-/execute positioned {C} run fill ~29 ~-1 ~30 ~29 ~-1 ~53 water
-/execute positioned {C} run fill ~28 ~-1 ~31 ~29 ~-1 ~53 water
-/execute positioned {C} run fill ~30 ~-1 ~31 ~32 ~-1 ~47 water
+/execute positioned {C} run fill ~27 ~-1 ~30 ~29 ~-1 ~53 water
 /execute positioned {C} run fill ~42 ~-1 ~31 ~42 ~-1 ~52 water
 /execute positioned {C} run fill ~23 ~-1 ~33 ~34 ~-1 ~39 water
 /execute positioned {C} run fill ~35 ~-1 ~34 ~35 ~-1 ~51 water
@@ -10449,7 +10508,6 @@
 /execute positioned {C} run fill ~30 ~-1 ~49 ~45 ~-1 ~49 water
 /execute positioned {C} run fill ~24 ~-1 ~50 ~33 ~-1 ~51 water
 /execute positioned {C} run setblock ~43 ~-1 ~52 water
-/execute positioned {C} run fill ~27 ~-1 ~53 ~41 ~-1 ~53 water
 /execute positioned {C} run setblock ~40 ~-1 ~54 water
 /execute positioned {C} run fill ~-43 ~-1 ~68 ~-37 ~-1 ~68 water
 /execute positioned {C} run fill ~-35 ~-1 ~68 ~-28 ~-1 ~68 water
@@ -10476,7 +10534,6 @@
 /execute positioned {C} run fill ~28 ~-1 ~83 ~35 ~-1 ~83 water
 /execute positioned {C} run fill ~37 ~-1 ~83 ~43 ~-1 ~83 water
 /execute positioned {C} run fill ~-57 ~ ~-30 ~-54 ~1 ~-29 water
-/execute positioned {C} run fill ~-47 ~ ~-11 ~-47 ~ ~-9 water
 /execute positioned {C} run fill ~7 ~7 ~-58 ~8 ~7 ~-54 water
 #SECTION Lantern chains
 /execute positioned {C} run fill ~46 ~11 ~-49 ~48 ~11 ~-49 iron_chain[axis=x]
@@ -10578,7 +10635,6 @@
 /execute positioned {C} run setblock ~17 ~1 ~20 azure_bluet
 /execute positioned {C} run setblock ~-21 ~1 ~41 azure_bluet
 /execute positioned {C} run fill ~-56 ~4 ~-44 ~-56 ~6 ~-44 bamboo[age=0,leaves=large,stage=1]
-/execute positioned {C} run fill ~-53 ~4 ~-42 ~-53 ~6 ~-42 bamboo[age=0,leaves=large,stage=1]
 /execute positioned {C} run fill ~-45 ~5 ~-8 ~-45 ~7 ~-8 bamboo[age=0,leaves=large,stage=1]
 /execute positioned {C} run fill ~-50 ~7 ~-41 ~-50 ~9 ~-41 bamboo[age=0,leaves=large,stage=1]
 /execute positioned {C} run fill ~-45 ~7 ~-20 ~-45 ~9 ~-20 bamboo[age=0,leaves=large,stage=1]
@@ -10607,7 +10663,6 @@
 /execute positioned {C} run fill ~13 ~16 ~-62 ~13 ~18 ~-62 bamboo[age=0,leaves=large,stage=1]
 /execute positioned {C} run fill ~-59 ~17 ~-62 ~-59 ~19 ~-62 bamboo[age=0,leaves=large,stage=1]
 /execute positioned {C} run fill ~11 ~20 ~-59 ~11 ~22 ~-59 bamboo[age=0,leaves=large,stage=1]
-/execute positioned {C} run fill ~-53 ~1 ~-42 ~-53 ~3 ~-42 bamboo[age=0,leaves=none,stage=1]
 /execute positioned {C} run fill ~-50 ~1 ~-41 ~-50 ~6 ~-41 bamboo[age=0,leaves=none,stage=1]
 /execute positioned {C} run fill ~60 ~1 ~-31 ~60 ~7 ~-31 bamboo[age=0,leaves=none,stage=1]
 /execute positioned {C} run fill ~-46 ~1 ~-22 ~-45 ~12 ~-22 bamboo[age=0,leaves=none,stage=1]
@@ -10644,12 +10699,10 @@
 /execute positioned {C} run fill ~-46 ~4 ~-6 ~-46 ~6 ~-6 bamboo[age=1,leaves=large,stage=1]
 /execute positioned {C} run fill ~-47 ~4 ~-4 ~-47 ~6 ~-4 bamboo[age=1,leaves=large,stage=1]
 /execute positioned {C} run fill ~-44 ~4 ~9 ~-42 ~6 ~9 bamboo[age=1,leaves=large,stage=1]
-/execute positioned {C} run fill ~-54 ~5 ~-42 ~-54 ~7 ~-42 bamboo[age=1,leaves=large,stage=1]
 /execute positioned {C} run fill ~-58 ~5 ~-41 ~-58 ~7 ~-41 bamboo[age=1,leaves=large,stage=1]
 /execute positioned {C} run fill ~-60 ~5 ~-40 ~-60 ~7 ~-40 bamboo[age=1,leaves=large,stage=1]
 /execute positioned {C} run fill ~-44 ~6 ~8 ~-44 ~8 ~8 bamboo[age=1,leaves=large,stage=1]
-/execute positioned {C} run fill ~-54 ~7 ~-44 ~-54 ~9 ~-44 bamboo[age=1,leaves=large,stage=1]
-/execute positioned {C} run fill ~-54 ~7 ~-38 ~-53 ~9 ~-38 bamboo[age=1,leaves=large,stage=1]
+/execute positioned {C} run fill ~-54 ~7 ~-38 ~-54 ~9 ~-38 bamboo[age=1,leaves=large,stage=1]
 /execute positioned {C} run fill ~-47 ~7 ~-18 ~-47 ~9 ~-18 bamboo[age=1,leaves=large,stage=1]
 /execute positioned {C} run fill ~-45 ~7 ~-16 ~-45 ~9 ~-15 bamboo[age=1,leaves=large,stage=1]
 /execute positioned {C} run fill ~-43 ~7 ~9 ~-42 ~9 ~9 bamboo[age=1,leaves=large,stage=1]
@@ -10676,7 +10729,6 @@
 /execute positioned {C} run fill ~-58 ~9 ~14 ~-58 ~11 ~14 bamboo[age=1,leaves=large,stage=1]
 /execute positioned {C} run fill ~ ~10 ~-62 ~ ~12 ~-61 bamboo[age=1,leaves=large,stage=1]
 /execute positioned {C} run fill ~14 ~10 ~-59 ~14 ~12 ~-59 bamboo[age=1,leaves=large,stage=1]
-/execute positioned {C} run fill ~-53 ~10 ~-38 ~-53 ~11 ~-38 bamboo[age=1,leaves=large,stage=1]
 /execute positioned {C} run fill ~-46 ~10 ~-15 ~-46 ~12 ~-15 bamboo[age=1,leaves=large,stage=1]
 /execute positioned {C} run fill ~-60 ~10 ~1 ~-60 ~12 ~1 bamboo[age=1,leaves=large,stage=1]
 /execute positioned {C} run fill ~-58 ~10 ~8 ~-58 ~12 ~8 bamboo[age=1,leaves=large,stage=1]
@@ -10725,11 +10777,10 @@
 /execute positioned {C} run fill ~11 ~20 ~-62 ~11 ~22 ~-62 bamboo[age=1,leaves=large,stage=1]
 /execute positioned {C} run fill ~11 ~20 ~-60 ~11 ~22 ~-60 bamboo[age=1,leaves=large,stage=1]
 /execute positioned {C} run fill ~60 ~1 ~-43 ~60 ~7 ~-41 bamboo[age=1,leaves=none,stage=1]
-/execute positioned {C} run fill ~-54 ~1 ~-42 ~-54 ~4 ~-42 bamboo[age=1,leaves=none,stage=1]
 /execute positioned {C} run fill ~-60 ~1 ~-40 ~-60 ~4 ~-40 bamboo[age=1,leaves=none,stage=1]
 /execute positioned {C} run fill ~-55 ~1 ~-39 ~-54 ~3 ~-39 bamboo[age=1,leaves=none,stage=1]
 /execute positioned {C} run fill ~-52 ~1 ~-39 ~-52 ~8 ~-39 bamboo[age=1,leaves=none,stage=1]
-/execute positioned {C} run fill ~-54 ~1 ~-38 ~-53 ~6 ~-38 bamboo[age=1,leaves=none,stage=1]
+/execute positioned {C} run fill ~-54 ~1 ~-38 ~-54 ~6 ~-38 bamboo[age=1,leaves=none,stage=1]
 /execute positioned {C} run fill ~-60 ~1 ~-37 ~-60 ~7 ~-37 bamboo[age=1,leaves=none,stage=1]
 /execute positioned {C} run fill ~-46 ~1 ~-37 ~-46 ~8 ~-37 bamboo[age=1,leaves=none,stage=1]
 /execute positioned {C} run fill ~60 ~1 ~-32 ~60 ~8 ~-32 bamboo[age=1,leaves=none,stage=1]
@@ -10766,7 +10817,6 @@
 /execute positioned {C} run fill ~-43 ~1 ~14 ~-42 ~6 ~14 bamboo[age=1,leaves=none,stage=1]
 /execute positioned {C} run fill ~-48 ~1 ~19 ~-48 ~9 ~19 bamboo[age=1,leaves=none,stage=1]
 /execute positioned {C} run fill ~-50 ~1 ~44 ~-49 ~9 ~44 bamboo[age=1,leaves=none,stage=1]
-/execute positioned {C} run fill ~-54 ~2 ~-44 ~-54 ~6 ~-44 bamboo[age=1,leaves=none,stage=1]
 /execute positioned {C} run fill ~-56 ~2 ~-42 ~-56 ~7 ~-42 bamboo[age=1,leaves=none,stage=1]
 /execute positioned {C} run fill ~-57 ~3 ~-43 ~-57 ~8 ~-43 bamboo[age=1,leaves=none,stage=1]
 /execute positioned {C} run fill ~-60 ~3 ~-41 ~-60 ~8 ~-41 bamboo[age=1,leaves=none,stage=1]
@@ -10785,7 +10835,6 @@
 /execute positioned {C} run fill ~4 ~7 ~-60 ~4 ~14 ~-60 bamboo[age=1,leaves=none,stage=1]
 /execute positioned {C} run fill ~3 ~7 ~-59 ~3 ~15 ~-59 bamboo[age=1,leaves=none,stage=1]
 /execute positioned {C} run fill ~12 ~7 ~-59 ~12 ~11 ~-59 bamboo[age=1,leaves=none,stage=1]
-/execute positioned {C} run fill ~-53 ~7 ~-38 ~-53 ~8 ~-38 bamboo[age=1,leaves=none,stage=1]
 /execute positioned {C} run fill ~-60 ~8 ~-62 ~-60 ~14 ~-60 bamboo[age=1,leaves=none,stage=1]
 /execute positioned {C} run fill ~-56 ~8 ~-62 ~-56 ~14 ~-62 bamboo[age=1,leaves=none,stage=1]
 /execute positioned {C} run fill ~-61 ~8 ~-61 ~-61 ~15 ~-61 bamboo[age=1,leaves=none,stage=1]
@@ -10986,6 +11035,8 @@
 /execute positioned {C} run setblock ~4 ~2 ~83 lantern
 /execute positioned {C} run setblock ~-2 ~2 ~85 lantern
 /execute positioned {C} run setblock ~2 ~2 ~85 lantern
+/execute positioned {C} run setblock ~-2 ~2 ~93 lantern
+/execute positioned {C} run setblock ~2 ~2 ~93 lantern
 /execute positioned {C} run setblock ~-2 ~2 ~95 lantern
 /execute positioned {C} run setblock ~2 ~2 ~95 lantern
 /execute positioned {C} run setblock ~-31 ~2 ~104 lantern
@@ -11009,15 +11060,13 @@
 /execute positioned {C} run setblock ~-29 ~3 ~58 lantern
 /execute positioned {C} run setblock ~-22 ~3 ~58 lantern
 /execute positioned {C} run setblock ~-15 ~3 ~58 lantern
-/execute positioned {C} run setblock ~-2 ~3 ~93 lantern
-/execute positioned {C} run setblock ~2 ~3 ~93 lantern
+/execute positioned {C} run setblock ~-2 ~3 ~89 lantern
+/execute positioned {C} run setblock ~2 ~3 ~89 lantern
 /execute positioned {C} run setblock ~-42 ~4 ~26 lantern
 /execute positioned {C} run setblock ~-30 ~4 ~26 lantern
 /execute positioned {C} run setblock ~-44 ~4 ~30 lantern
 /execute positioned {C} run setblock ~-28 ~4 ~30 lantern
 /execute positioned {C} run setblock ~-44 ~4 ~38 lantern
-/execute positioned {C} run setblock ~-2 ~4 ~89 lantern
-/execute positioned {C} run setblock ~2 ~4 ~89 lantern
 /execute positioned {C} run setblock ~-34 ~5 ~-42 lantern
 /execute positioned {C} run setblock ~-26 ~5 ~-42 lantern
 /execute positioned {C} run setblock ~-38 ~5 ~-27 lantern
@@ -11602,9 +11651,7 @@
 /execute positioned {C} run setblock ~14 ~ ~103 pink_petals[flower_amount=4,facing=east]
 /execute positioned {C} run setblock ~13 ~ ~104 pink_petals[flower_amount=4,facing=east]
 /execute positioned {C} run setblock ~-49 ~1 ~-41 pink_petals[flower_amount=4,facing=east]
-/execute positioned {C} run setblock ~-53 ~1 ~-40 pink_petals[flower_amount=4,facing=east]
 /execute positioned {C} run setblock ~-50 ~1 ~-39 pink_petals[flower_amount=4,facing=east]
-/execute positioned {C} run setblock ~-52 ~1 ~-38 pink_petals[flower_amount=4,facing=east]
 /execute positioned {C} run setblock ~-45 ~1 ~-7 pink_petals[flower_amount=4,facing=east]
 /execute positioned {C} run setblock ~-47 ~1 ~-5 pink_petals[flower_amount=4,facing=east]
 /execute positioned {C} run setblock ~-40 ~1 ~5 pink_petals[flower_amount=4,facing=east]
@@ -12051,7 +12098,6 @@
 /execute positioned {C} run setblock ~-17 ~ ~92 white_tulip
 /execute positioned {C} run setblock ~9 ~ ~95 white_tulip
 /execute positioned {C} run setblock ~33 ~ ~106 white_tulip
-/execute positioned {C} run setblock ~-45 ~1 ~-33 white_tulip
 /execute positioned {C} run setblock ~19 ~1 ~27 white_tulip
 /execute positioned {C} run setblock ~58 ~1 ~47 white_tulip
 /execute positioned {C} run setblock ~12 ~1 ~57 white_tulip
@@ -12131,7 +12177,6 @@
 /execute positioned {C} run setblock ~-27 ~5 ~22 lantern[hanging=true]
 /execute positioned {C} run setblock ~-47 ~5 ~41 lantern[hanging=true]
 /execute positioned {C} run setblock ~-42 ~5 ~41 lantern[hanging=true]
-/execute positioned {C} run setblock ~-37 ~5 ~41 lantern[hanging=true]
 /execute positioned {C} run setblock ~-32 ~5 ~41 lantern[hanging=true]
 /execute positioned {C} run setblock ~-27 ~5 ~41 lantern[hanging=true]
 /execute positioned {C} run setblock ~-56 ~5 ~49 lantern[hanging=true]
@@ -12147,10 +12192,6 @@
 /execute positioned {C} run setblock ~37 ~4 ~32 lantern[hanging=true]
 /execute positioned {C} run setblock ~37 ~4 ~40 lantern[hanging=true]
 /execute positioned {C} run setblock ~52 ~4 ~43 lantern[hanging=true]
-/execute positioned {C} run setblock ~-35 ~4 ~55 lantern[hanging=true]
-/execute positioned {C} run setblock ~-28 ~4 ~55 lantern[hanging=true]
-/execute positioned {C} run setblock ~-21 ~4 ~55 lantern[hanging=true]
-/execute positioned {C} run setblock ~-14 ~4 ~55 lantern[hanging=true]
 /execute positioned {C} run setblock ~-37 ~-5 ~-30 lantern[hanging=true]
 /execute positioned {C} run setblock ~-30 ~-5 ~-30 lantern[hanging=true]
 /execute positioned {C} run setblock ~-37 ~-5 ~-24 lantern[hanging=true]
@@ -12419,6 +12460,7 @@
 /execute positioned {C} run setblock ~-5 ~5 ~-56 light[level=7]
 /execute positioned {C} run setblock ~-61 ~5 ~-52 light[level=7]
 /execute positioned {C} run setblock ~-60 ~5 ~-47 light[level=7]
+/execute positioned {C} run setblock ~-6 ~5 ~-36 light[level=7]
 /execute positioned {C} run setblock ~-2 ~5 ~-7 light[level=7]
 /execute positioned {C} run setblock ~ ~5 ~10 light[level=7]
 /execute positioned {C} run setblock ~13 ~5 ~99 light[level=7]
@@ -12495,6 +12537,7 @@
 /execute positioned {C} run setblock ~-61 ~9 ~19 light[level=7]
 /execute positioned {C} run setblock ~45 ~9 ~21 light[level=7]
 /execute positioned {C} run setblock ~46 ~9 ~35 light[level=7]
+/execute positioned {C} run setblock ~-29 ~9 ~51 light[level=7]
 /execute positioned {C} run setblock ~21 ~9 ~54 light[level=7]
 /execute positioned {C} run setblock ~-32 ~9 ~60 light[level=7]
 /execute positioned {C} run setblock ~-25 ~9 ~60 light[level=7]

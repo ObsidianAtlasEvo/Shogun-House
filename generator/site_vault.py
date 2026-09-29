@@ -36,6 +36,11 @@ def vault(w, rng):
     w.fill(-26, -8, -21, -22, -5, -19, AIR)
     w.fill(-27, -10, -22, -21, -4, -18, "stone_bricks", only_air=False, replace=["stone", "dirt"])
     w.fill(-26, -8, -21, -22, -5, -19, AIR)
+    # the last two steps of the flight land exactly on the landing (no 2-block drop at the bottom)
+    for i in (10, 11):
+        for x in (-24, -23):
+            w.set(x, 2 - i, -31 + i, stairs("stone_brick", "north"))
+            w.set(x, 1 - i, -31 + i, "stone_bricks")
 
     # ---- main hall
     x0, x1, z0, z1 = -40, -27, -34, -20
@@ -127,7 +132,7 @@ def vault(w, rng):
 
     # connect the stair bottom
     for x in (-39, -38):
-        for z in range(z1 + 9, -8):
+        for z in range(z1 + 10, -8):  # start past the last step so it is not carved away
             for y in (-17, -16, -15):
                 w.set(x, y, z, AIR)
             w.set(x, -18, z, "stone_bricks")
